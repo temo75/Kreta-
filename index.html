@@ -61,6 +61,18 @@ const vriskoPharmacies=[
 {name:'Γεωργουλάκη Κλειώ Χ.',addr:'Χατζηδάκη Γεωργίου 25, Ρέθυμνο',phone:'2831025740'},
 {name:'Κολέλης Κωνσταντίνος Ν.',addr:'Πορτάλιου Εμμανουήλ 21, Ρέθυμνο',phone:'2831050348'}
 ];
+const vriskoExtraPharmacies=[
+{name:'Μαρακάκης Ιωάννης Ε.',addr:'Πρινές, Ρέθυμνο',phone:'2831031262'},
+{name:'Νικολουδάκης Νικόλαος Ε.',addr:'Πλατεία Αγνώστου Στρατιώτη 31, Ρέθυμνο',phone:'2831026052'},
+{name:'ΣΥΣΤΕΓΑΣΜΕΝΑ ΦΑΡΜΑΚΕΙΑ ΜΑΣΤΟΡΑΚΗ ΕΛΕΝΗ ΚΕΡΑΜΙΑΝΑΚΗ ΔΗΜΗΤΡΑ ΚΕΡΑΜΙΑΝΑΚΗ ΜΑΡΙΑ ΠΑΝΑΓΙΩΤΑ ΟΕ',addr:'Πορτάλιου Μάρκου 20, Ρέθυμνο',phone:'2831051113'},
+{name:'Στεφανάκη Ελένη Ν.',addr:'Μπονιαλή Τζανή 33, Ρέθυμνο',phone:'2831052474'},
+{name:'Παγώνη Ευγενία Α.',addr:'Μοάτσου Θεμιστοκλή 33, Ρέθυμνο',phone:'2831024158'},
+{name:'Γύπαρη Ευδοξία Α.',addr:'Χορτατζή Γεωργίου 38, Ρέθυμνο',phone:'2831026453'},
+{name:'Ζωγράφος Στέφανος',addr:'Ηγουμένου Γαβριήλ 26, Ρέθυμνο',phone:'2831027730'},
+{name:'ΣΥΣΤΕΓΑΣΜΕΝΑ ΦΑΡΜΑΚΕΙΑ ΠΡΙΝΙΩΤΑΚΗΣ ΗΛΙΑΣ ΒΑΝΔΩΡΟΥ ΑΝΝΑ ΠΡΙΝΙΩΤΑΚΗΣ ΠΑΝΑΓΙΩΤΗΣ ΟΕ',addr:'Λεωφόρος Ναυάρχου Κουντουριώτη Παύλου 81, Ρέθυμνο',phone:'2831027264'},
+{name:'ΦΑΡΜΑΚΕΙΟ ΚΑΒΒΑΛΟΥ ΟΕ',addr:'Βιολί Χαράκι, Ρέθυμνο',phone:'2831028200'},
+{name:'Μαρία Χιωτάκη - Μανωλεσάκη ΟΕ',addr:'Κουντουριώτου 17, Ρέθυμνο',phone:'2831028305'}
+];
 const dutyPharmacies={
 '2026-10-06':[
 {name:'Βουμβουράκη Αναστασία',addr:'Τρανταλίδου 15, Ρέθυμνο',phone:'2831022305',from:'08:00',to:'21:00'},
@@ -80,7 +92,7 @@ function prevKey(){const d=new Date();d.setDate(d.getDate()-1);return d.getFullY
 function dutyNow(){const mins=new Date().getHours()*60+new Date().getMinutes();const today=dutyPharmacies[todayKey()]||[];const yesterday=dutyPharmacies[prevKey()]||[];return today.filter(x=>{const a=+x.from.slice(0,2)*60+ +x.from.slice(3),b=+x.to.slice(0,2)*60+ +x.to.slice(3);return a<=b?mins>=a&&mins<b:mins>=a}).concat(yesterday.filter(x=>x.from>x.to&&mins<+x.to.slice(0,2)*60+ +x.to.slice(3)))}
 
 function norm(x){return String(x||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[^a-z0-9α-ωάέήίόύώϊϋς]+/gi,'')}
-function pharmacyMatch(t,a){if(catNow!=='pharmacy')return null;const phone=norm(t.phone||t['contact:phone']||'');const addr=norm(a);return vriskoPharmacies.find(v=>phone&&norm(v.phone)===phone)||vriskoPharmacies.find(v=>addr&&norm(v.addr).split('rethymno')[0].length>5&&addr.includes(norm(v.addr).split('rethymno')[0]));}
+function pharmacyMatch(t,a){if(catNow!=='pharmacy')return null;const phone=norm(t.phone||t['contact:phone']||'');const addr=norm(a);const all=vriskoPharmacies.concat(vriskoExtraPharmacies);return all.find(v=>phone&&norm(v.phone)===phone)||all.find(v=>addr&&norm(v.addr).split('rethymno')[0].length>5&&addr.includes(norm(v.addr).split('rethymno')[0]));}
 
 function query(id){const a='around:'+document.getElementById('radius').value+','+lat+','+lon;const m={pharmacy:'nwr[amenity=pharmacy]',supermarket:'nwr[shop=supermarket]',cafe:'nwr[amenity=cafe]',bar:'nwr[amenity=bar]',restaurant:'nwr[amenity=restaurant]',bakery:'nwr[shop=bakery]',butcher:'nwr[shop=butcher]',fuel:'nwr[amenity=fuel]',shop:'nwr[shop]',taxi:'nwr[amenity=taxi]',clinic:'nwr[amenity=clinic];nwr[healthcare]',service:'nwr[craft];nwr[shop=car_repair]'};return'[out:json][timeout:25];('+m[id]+'('+a+'););out center tags;'}
 async function over(q){const urls=['https://overpass.private.coffee/api/interpreter','https://z.overpass-api.de/api/interpreter','https://maps.mail.ru/osm/tools/overpass/api/interpreter','https://overpass-api.de/api/interpreter'];const jobs=urls.map(u=>{const ctl=new AbortController(),tm=setTimeout(()=>ctl.abort(),6000);return fetch(u+'?data='+encodeURIComponent(q),{method:'GET',signal:ctl.signal,cache:'no-store'}).then(r=>{if(!r.ok)throw Error('http');return r.json()}).finally(()=>clearTimeout(tm))});try{return await Promise.any(jobs)}catch(e){throw Error('network')}}
