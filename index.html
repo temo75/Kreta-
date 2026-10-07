@@ -126,7 +126,7 @@ async function over(q){
   let lastError=null;
   for(const u of urls){
     const ctl=new AbortController();
-    const tm=setTimeout(()=>ctl.abort(),20000);
+    const tm=setTimeout(()=>ctl.abort(),4000);
     try{
       const r=await fetch(u,{
         method:'POST',
