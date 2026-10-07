@@ -18,10 +18,57 @@ document.getElementById('categories').innerHTML=cats.map(c=>'<button class="cate
 function esc(x){return String(x??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function dist(a,b,c,d){const R=6371,r=Math.PI/180,x=(c-a)*r,y=(d-b)*r,z=Math.sin(x/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin(y/2)**2;return R*2*Math.atan2(Math.sqrt(z),Math.sqrt(1-z))}
 function st(t){const o=t.opening_hours;if(!o)return['საათები უცნობია','unknown'];if(o.trim()==='24/7')return['🟢 ღიაა 24/7','open'];const m=[...o.matchAll(/(\d{1,2}):(\d{2})\s*[-–]\s*(\d{1,2}):(\d{2})/g)],n=new Date(),q=n.getHours()*60+n.getMinutes();if(m.length){for(const x of m){const a=+x[1]*60+ +x[2],b=+x[3]*60+ +x[4];if((a<=b&&q>=a&&q<b)||(a>b&&(q>=a||q<b)))return['🟢 ახლა ღიაა','open']}return['🔴 ახლა დაკეტილია','closed']}return['ℹ️ '+o,'unknown']}
+
+const vriskoPharmacies=[
+{name:'ΚΟΥΝΟΥΠΑΣ ΑΝΔΡΕΑΣ',addr:'Μανιουδάκη 19 & Καστρινογιαννάκη, Ρέθυμνο',phone:'2831022420'},
+{name:'ΣΥΣΤΕΓΑΣΜΕΝΑ ΦΑΡΜΑΚΕΙΑ ΣΠΑΝΤΙΔΑΚΗ ΙΩΣΗΦ & ΣΠΑΝΤΙΔΑΚΗ ΙΩΑΝΝΑΣ Ο.Ε.Ε.',addr:'Πλ. Τεσσάρων Μαρτύρων 10, Ρέθυμνο',phone:'2831023666'},
+{name:'ΦΡΑΓΚΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ',addr:'Λιανδρή Χαράλαμπου, Ατσιπόπουλο',phone:'2831305122'},
+{name:'ΣΥΣΤΕΓΑΣΜΕΝΑ ΦΑΡΜΑΚΕΙΑ ΦΡΑΓΚΙΑΔΑΚΗ ΕΙΡΗΝΗ ΦΡΑΓΚΙΑΔΑΚΗ ΔΗΜΗΤΡΗ ΟΕ',addr:'Ασκούτση Ν. 2, Ρέθυμνο',phone:'2831025813'},
+{name:'Στεφανάκη Όλγα Κ.',addr:'Κριάρη Κωνσταντίνου 32 & Τρανταλίδου 28, Ρέθυμνο',phone:'2831028283'},
+{name:'Γαλερού Νίκη Σ.',addr:'Ατσιπόπουλο',phone:'2831042111'},
+{name:'ΣΥΣΤΕΓΑΣΜΕΝΑ ΦΑΡΜΑΚΕΙΑ ΤΣΙΟΜΠΙΚΑΣ ΔΑΜΒΑΚΕΡΑΚΗΣ ΟΕ',addr:'Οπλαρχηγού Παχλά Εμμανουήλ 33, Περιβόλια',phone:'2831054706'},
+{name:'Βαρδιάμπαση - Καλοειδά Ελένη Σ.',addr:'Δημοκρατίας 9, Ρέθυμνο',phone:'2831024198'},
+{name:'Σπανδάγος Βασίλειος Σ.',addr:'Κριάρη Κ. 1, Ρέθυμνο',phone:'2831021022'},
+{name:'Καλαφατάκη Ελένη Γεωργία Π.',addr:'Δημητρακάκη Στυλιανού 21, Ρέθυμνο',phone:'2831055212'},
+{name:'ΣΥΣΤΕΓΑΣΜΕΝΑ ΦΑΡΜΑΚΕΙΑ ΜΠΡΟΚΑΛΑΚΗ ΖΑΧΑΡΕΝΙΑ ΠΕΡΙΣΤΕΡΑΚΗ ΤΕΡΕΖΑ ΚΑΙ ΣΙΑ ΟΕ',addr:'Κουμουνδούρου Αλεξάνδρου 2, Ρέθυμνο',phone:'2831025123'},
+{name:'Θωμαδάκη Ιωάννα Ε.',addr:'Ηγουμένου Γαβριήλ 29, Ρέθυμνο',phone:'2831028366'},
+{name:'Μανωλεσάκης Φώτιος Παναγιώτης Α.',addr:'Βιολί Χαράκι & Αβάτζου Μάρκου, Ατσιπόπουλο',phone:'2831042897'},
+{name:'Ψυχαράκης Σωκράτης Γ.',addr:'Σφακάκι',phone:'2831074500'},
+{name:'Κατσιμπράκη Καλλιόπη Ν.',addr:'Μοάτσου Θεμιστοκλή 5, Ρέθυμνο',phone:'2831022414'},
+{name:'PHARMAFRESH',addr:'Κουρμούλη Γεωργίου 3, Ρέθυμνο',phone:'2831100455'},
+{name:'Δασκαλάκη Αικατερίνη Ι.',addr:'Κουρμούλη Γεωργίου 3, Ρέθυμνο',phone:'2831022441'},
+{name:'ΚΑΛΟΓΕΡΑΚΗΣ ΙΩΑΝΝΗΣ ΚΑΙ ΣΙΑ ΟΕ',addr:'Μοάτσου Θεμιστοκλή 8-10, Ρέθυμνο',phone:'2831022187'},
+{name:'PHARMACY ALEFANTINOU ΙΚΕ',addr:'Ζαμπελίου Σπυρίδωνος 19, Ρέθυμνο',phone:'2831026115'},
+{name:'Χατζηδάκης Επαμεινώνδας Ε.',addr:'Τρανταλίδου 22, Ρέθυμνο',phone:'2831028856'},
+{name:'Παπατζανή Μαρία',addr:'Γερακάρη Κωνσταντίνου 96, Ρέθυμνο',phone:'2831023347'},
+{name:'Καββάλου Ελένη Δ.',addr:'Λεωφόρος Κουντουριώτου Παύλου 157, Ρέθυμνο',phone:'2831021115'},
+{name:'Κυμιωνή Μικαέλα',addr:'Εθνικής Αντιστάσεως 26-28, Ρέθυμνο',phone:'2831052192'},
+{name:'Μαγγανιώτης Σταμάτιος Δ.',addr:'Σικελιανού Αγγέλου 7, Ρέθυμνο',phone:'2831027828'},
+{name:'Κουδουναράκης Λεωνίδας Ι.',addr:'Μοάτσου Θεμιστοκλή 60, Ρέθυμνο',phone:'2831050640'},
+{name:'Δανδουλάκη Σταυρούλα',addr:'Λεωφόρος Κουντουριώτη Παύλου 62, Ρέθυμνο',phone:'2831025888'},
+{name:'Ψυχαράκη Ευρυδίκη Γ.',addr:'Ατσιπόπουλο',phone:'2831032927'},
+{name:'ΦΑΡΜΑΚΕΙΟ ΚΑΒΒΑΛΟΥ ΟΕ',addr:'Βιολί Χαράκι',phone:'2831028200'},
+{name:'Χατζιδάκι Αγγελική Ε.',addr:'Τρανταλλίδη Γεωργίου 24Α, Ρέθυμνο',phone:'2831026519'},
+{name:'Παπαγεωργίου Δέσποινα Β.',addr:'Αρμένοι',phone:'2831041499'},
+{name:'Δραμιτινού Γεωργία',addr:'Δασκαλάκη Χαρίκλειας 5, Ρέθυμνο',phone:'2831023026'},
+{name:'Στεφανάκης Εμμανουήλ Σ.',addr:'Πηγή',phone:'2831073044'},
+{name:'Παναγάτου Μαρία Χ.',addr:'Οπλαρχηγού Πάχλα Εμμανουήλ 86, Ρέθυμνο',phone:'2831023344'},
+{name:'Δαφνομήλη Γεωργία Γ.',addr:'Δημοκρατίας 6, Ρέθυμνο',phone:'2831056850'},
+{name:'Βουμβουράκη Αναστασία',addr:'Τρανταλίδου 13-15, Ρέθυμνο',phone:'2831022305'},
+{name:'ΠΕΤΡΟΠΟΥΛΟΥ ΑΓΑΠΗ Α.',addr:'Γεράνι',phone:'2831033200'},
+{name:'Χαρκιανάκης Νικόλαος Ι.',addr:'Αρκαδίου 31, Ρέθυμνο',phone:'2831023088'},
+{name:'ΚΑΡΤΑΛΗΣ Θ ΝΙΚΟΛΑΟΣ ΚΑΙ ΣΙΑ ΟΕ',addr:'Εθνικής Αντιστάσεως 63, Ρέθυμνο',phone:'2831023427'},
+{name:'Γεωργουλάκη Κλειώ Χ.',addr:'Χατζηδάκη Γεωργίου 25, Ρέθυμνο',phone:'2831025740'},
+{name:'Κολέλης Κωνσταντίνος Ν.',addr:'Πορτάλιου Εμμανουήλ 21, Ρέθυμνο',phone:'2831050348'},
+{name:'Ζωγράφος Στέφανος',addr:'Ηγουμένου Γαβριήλ 26, Ρέθυμνο',phone:'2831027730'}
+];
+function norm(x){return String(x||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[^a-z0-9α-ωάέήίόύώϊϋς]+/gi,'')}
+function pharmacyMatch(t,a){if(catNow!=='pharmacy')return null;const phone=norm(t.phone||t['contact:phone']||'');const addr=norm(a);return vriskoPharmacies.find(v=>phone&&norm(v.phone)===phone)||vriskoPharmacies.find(v=>addr&&norm(v.addr).split('rethymno')[0].length>5&&addr.includes(norm(v.addr).split('rethymno')[0]));}
+
 function query(id){const a='around:'+document.getElementById('radius').value+','+lat+','+lon;const m={pharmacy:'nwr[amenity=pharmacy]',supermarket:'nwr[shop=supermarket]',cafe:'nwr[amenity=cafe]',bar:'nwr[amenity=bar]',restaurant:'nwr[amenity=restaurant]',bakery:'nwr[shop=bakery]',butcher:'nwr[shop=butcher]',fuel:'nwr[amenity=fuel]',shop:'nwr[shop]',taxi:'nwr[amenity=taxi]',clinic:'nwr[amenity=clinic];nwr[healthcare]',service:'nwr[craft];nwr[shop=car_repair]'};return'[out:json][timeout:25];('+m[id]+'('+a+'););out center tags;'}
 async function over(q){for(const u of ['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter'])try{const r=await fetch(u,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'data='+encodeURIComponent(q)});if(r.ok)return r.json()}catch(e){}throw Error('network')}
 async function openCat(id){catNow=id;const c=cats.find(x=>x[0]===id);document.getElementById('title').textContent=c[1]+' '+c[2];page.classList.add('show');if(!lat){document.getElementById('info').textContent='📍 ჯერ ჩართე „ჩემი მდებარეობა“.';results.innerHTML='<div class="card">GPS-ის ჩართვის შემდეგ აქ გამოჩნდება ახლომდებარე ობიექტები.</div>';return}load()}
-async function load(){document.getElementById('info').textContent='🔎 ვეძებ ახლომდებარე ობიექტებს…';results.innerHTML='<div class="loading">იტვირთება…</div>';try{const d=await over(query(catNow));const arr=d.elements.map(e=>{const p=e.lat!=null?[e.lat,e.lon]:e.center?[e.center.lat,e.center.lon]:null;if(!p)return null;const t=e.tags||{};return{lat:p[0],lon:p[1],t,n:t.name||t['name:en']||t['name:el']||'უსახელო ობიექტი',d:dist(lat,lon,p[0],p[1])}}).filter(Boolean).sort((a,b)=>a.d-b.d);document.getElementById('info').textContent='ნაპოვნია '+arr.length+' ობიექტი • უახლოესი პირველია';results.innerHTML=arr.length?arr.map(p=>{const s=st(p.t),a=p.t['addr:street']?(p.t['addr:street']+' '+(p.t['addr:housenumber']||'')):(p.t['addr:full']||'მისამართი უცნობია'),ph=p.t.phone||p.t['contact:phone']||'';return'<div class="card"><h3>'+esc(p.n)+'</h3><div class="meta">📍 '+(p.d<1?Math.round(p.d*1000)+' მ':p.d.toFixed(1)+' კმ')+'<br>🏠 '+esc(a)+'<br><span class="'+s[1]+'">'+esc(s[0])+'</span>'+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions"><button onclick="showMap('+p.lat+','+p.lon+')">🗺️ რუკა</button><button class="secondary" onclick="route('+p.lat+','+p.lon+')">🚗 გზა</button>'+(ph?'<button class="secondary" onclick="location.href=\'tel:'+ph.replace(/[^+\d]/g,'')+'\'">📞 დარეკვა</button>':'')+'</div></div>'}).join(''):'<div class="card">😔 ამ რადიუსში ვერაფერი ვიპოვე.</div>'}catch(e){document.getElementById('info').textContent='❌ ძიება ვერ შესრულდა';results.innerHTML='<div class="card">ინტერნეტთან ან რუკის მონაცემებთან პრობლემაა. ისევ სცადე.</div>'}}
+async function load(){document.getElementById('info').textContent='🔎 ვეძებ ახლომდებარე ობიექტებს…';results.innerHTML='<div class="loading">იტვირთება…</div>';try{const d=await over(query(catNow));const arr=d.elements.map(e=>{const p=e.lat!=null?[e.lat,e.lon]:e.center?[e.center.lat,e.center.lon]:null;if(!p)return null;const t=e.tags||{};return{lat:p[0],lon:p[1],t,n:t.name||t['name:en']||t['name:el']||'უსახელო ობიექტი',d:dist(lat,lon,p[0],p[1])}}).filter(Boolean).sort((a,b)=>a.d-b.d);document.getElementById('info').textContent='ნაპოვნია '+arr.length+' ობიექტი • უახლოესი პირველია';results.innerHTML=arr.length?arr.map(p=>{const s=st(p.t),rawA=p.t['addr:street']?(p.t['addr:street']+' '+(p.t['addr:housenumber']||'')):(p.t['addr:full']||'მისამართი უცნობია'),v=pharmacyMatch(p.t,rawA),name=v?v.name:p.n,a=v?v.addr:rawA,ph=v?v.phone:(p.t.phone||p.t['contact:phone']||'');return'<div class="card"><h3>'+esc(name)+'</h3><div class="meta">📍 '+(p.d<1?Math.round(p.d*1000)+' მ':p.d.toFixed(1)+' კმ')+'<br>🏠 '+esc(a)+'<br><span class="'+s[1]+'">'+esc(s[0])+'</span>'+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions"><button onclick="showMap('+p.lat+','+p.lon+')">🗺️ რუკა</button><button class="secondary" onclick="route('+p.lat+','+p.lon+')">🚗 გზა</button>'+(ph?'<button class="secondary" onclick="location.href=\'tel:'+ph.replace(/[^+\d]/g,'')+'\'">📞 დარეკვა</button>':'')+'</div></div>'}).join(''):'<div class="card">😔 ამ რადიუსში ვერაფერი ვიპოვე.</div>'}catch(e){document.getElementById('info').textContent='❌ ძიება ვერ შესრულდა';results.innerHTML='<div class="card">ინტერნეტთან ან რუკის მონაცემებთან პრობლემაა. ისევ სცადე.</div>'}}
 document.getElementById('radius').onchange=()=>lat&&load();document.getElementById('back').onclick=()=>page.classList.remove('show');function showMap(a,b){page.classList.remove('show');map.setView([a,b],17);L.popup().setLatLng([a,b]).setContent('📍 ობიექტი').openOn(map)}function route(a,b){window.open('https://www.google.com/maps/dir/?api=1&destination='+a+','+b,'_blank')}
 document.getElementById('locate').onclick=()=>{if(!navigator.geolocation){status.textContent='ამ ბრაუზერს GPS არ აქვს.';return}status.textContent='📍 GPS მდებარეობას ვიღებ…';navigator.geolocation.getCurrentPosition(p=>{lat=p.coords.latitude;lon=p.coords.longitude;if(marker)map.removeLayer(marker);if(circle)map.removeLayer(circle);marker=L.marker([lat,lon]).addTo(map).bindPopup('📍 შენი მდებარეობა').openPopup();circle=L.circle([lat,lon],{radius:p.coords.accuracy}).addTo(map);map.setView([lat,lon],16);status.textContent='📍 მდებარეობა მიღებულია • სიზუსტე ±'+Math.round(p.coords.accuracy)+' მ';cards.innerHTML='<div class="card"><h3>კატეგორია აირჩიე 👇</h3><div class="meta">აირჩიე სასურველი კატეგორია და გაიხსნება ცალკე გვერდი.</div></div>'},e=>status.textContent='GPS-ის მიღება ვერ მოხერხდა: '+e.message,{enableHighAccuracy:true,timeout:15000,maximumAge:0})};
 document.getElementById('open').onclick=()=>status.textContent=lat?'🟢 აირჩიე კატეგორია — შემდეგ გვერდზე გამოჩნდება ობიექტების სტატუსი.':'📍 ჯერ ჩართე ჩემი მდებარეობა';document.getElementById('all').onclick=()=>status.textContent=lat?'აირჩიე სასურველი კატეგორია ზემოთ.':'📍 ჯერ ჩართე ჩემი მდებარეობა';
