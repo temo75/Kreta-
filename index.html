@@ -131,21 +131,26 @@ function applyCachedLocation(x){
   marker=L.marker([lat,lon]).addTo(map).bindPopup('📍 შენი მდებარეობა').openPopup();
   circle=L.circle([lat,lon],{radius:x.accuracy||50}).addTo(map);
   map.setView([lat,lon],16);
-  status.textContent='📍 მდებარეობა მიღებულია';
+  status.textContent='📍 მდებარეობა დადასტურებულია';
   cards.innerHTML='<div class="card"><h3>კატეგორია აირჩიე 👇</h3><div class="meta">აირჩიე სასურველი კატეგორია და გაიხსნება ცალკე გვერდი.</div></div>';
 }
 function getLocation(auto=false){
   if(!navigator.geolocation){status.textContent='ამ ბრაუზერს GPS არ აქვს.';return}
-  if(!auto)status.textContent='📍 GPS მდებარეობას ვიღებ…';
+  status.textContent='📍 მდებარეობას ვადასტურებ…';
   navigator.geolocation.getCurrentPosition(p=>{
     lat=p.coords.latitude;lon=p.coords.longitude;
     try{localStorage.setItem('kretaLocationData',JSON.stringify({lat,lon,accuracy:p.coords.accuracy,time:Date.now()}))}catch(e){}
     applyCachedLocation({lat,lon,accuracy:p.coords.accuracy});
   },e=>{
-    if(e.code===1)status.textContent='📍 მდებარეობის ნებართვა საჭიროა. ჩართე Location ამ საიტისთვის.';
-    else if(e.code===2)status.textContent='📍 ტელეფონის Location გამორთულია — ჩართე Location.';
-    else if(e.code===3)status.textContent='📍 მდებარეობის მიღებას დრო დასჭირდა. ისევ სცადე.';
-    else status.textContent='📍 მდებარეობის მიღება ვერ მოხერხდა.';
+    if(e.code===1){
+      status.innerHTML='📍 მდებარეობის დასტური საჭიროა.<br><button class="secondary" style="margin-top:8px" onclick="getLocation(false)">📍 ხელახლა დადასტურება</button>';
+    }else if(e.code===2){
+      status.textContent='📍 ტელეფონის Location გამორთულია — ჩართე Location.';
+    }else if(e.code===3){
+      status.innerHTML='📍 მდებარეობის მიღებას დრო დასჭირდა.<br><button class="secondary" style="margin-top:8px" onclick="getLocation(false)">📍 ხელახლა ცდა</button>';
+    }else{
+      status.textContent='📍 მდებარეობის მიღება ვერ მოხერხდა.';
+    }
   },{enableHighAccuracy:true,timeout:15000,maximumAge:30000})
 }
 function restoreLocation(){
@@ -153,25 +158,10 @@ function restoreLocation(){
     const x=JSON.parse(localStorage.getItem('kretaLocationData')||'null');
     if(x&&typeof x.lat==='number'&&typeof x.lon==='number'&&Date.now()-x.time<3600000){
       applyCachedLocation(x);
-      if(navigator.permissions&&navigator.permissions.query){
-        navigator.permissions.query({name:'geolocation'}).then(s=>{
-          if(s.state==='granted')getLocation(true);
-        }).catch(()=>{});
-      }
       return;
     }
-    if(navigator.permissions&&navigator.permissions.query){
-      navigator.permissions.query({name:'geolocation'}).then(s=>{
-        if(s.state==='denied'){
-          status.textContent='📍 მდებარეობის ნებართვა გამორთულია — ჩართე Location ამ საიტისთვის.';
-        }else{
-          getLocation(true);
-        }
-      }).catch(()=>getLocation(true));
-    }else{
-      getLocation(true);
-    }
-  }catch(e){getLocation(true);}
+  }catch(e){}
+  getLocation(true);
 }
 restoreLocation();
 document.getElementById('open').onclick=()=>status.textContent=lat?'🟢 აირჩიე კატეგორია — შემდეგ გვერდზე გამოჩნდება ობიექტების სტატუსი.':'📍 ჯერ ჩართე ჩემი მდებარეობა';document.getElementById('all').onclick=()=>status.textContent=lat?'აირჩიე სასურველი კატეგორია ზემოთ.':'📍 ჯერ ჩართე ჩემი მდებარეობა';
