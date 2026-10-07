@@ -121,8 +121,10 @@ function restoreLocation(){
     }
     if(navigator.permissions&&navigator.permissions.query){
       navigator.permissions.query({name:'geolocation'}).then(p=>{
-        if(p.state==='granted')getLocation(true);
-      }).catch(()=>{});
+        if(p.state==='granted'||p.state==='prompt')getLocation(true);
+      }).catch(()=>getLocation(true));
+    }else{
+      getLocation(true);
     }
   }catch(e){}
 }
