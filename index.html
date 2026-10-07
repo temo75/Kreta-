@@ -82,20 +82,17 @@ const vriskoMissingPharmacies=[
 {name:'ΜΑΝΩΛΕΣΑΚΗ ΜΑΡΙΑ ΧΙΩΤΑΚΗ ΧΑΡΙΣΤΗ ΟΕ',addr:'Κουντουριώτου 17, Ρέθυμνο',phone:'2831028305'},
 {name:'ΚΑΛΛΙΟΠΗ ΚΑΤΣΙΜΠΡΑΚΗ ΜΑΡΙΑ ΚΑΡΓΑΚΗ ΟΕ',addr:'Καλλέργη Βάρδα 1 & Γερακάρη, Ρέθυμνο',phone:'2831022414'}
 ];
-const dutyPharmacies={
-'2026-10-06':[
-{name:'Βουμβουράκη Αναστασία',addr:'Τρανταλίδου 15, Ρέθυμνο',phone:'2831022305',from:'08:00',to:'21:00'},
-{name:'Παπατζανή Μαρία',addr:'Γερακάρη 96, Ρέθυμνο',phone:'2831023347',from:'21:00',to:'08:00'}
-],
-'2026-10-07':[
-{name:'Κουδουναράκης Λεωνίδας',addr:'Μοάτσου 60, Ρέθυμνο',phone:'2831050640',from:'08:00',to:'21:00'},
-{name:'Χατζιδάκι Αγγελική',addr:'Τρανταλλίδου 24, Ρέθυμνο',phone:'2831026519',from:'08:00',to:'21:00'},
-{name:'Δρανδάκη - Λιάσκος',addr:'Αρκαδίου 92, Ρέθυμνο',phone:'2831028795',from:'21:00',to:'08:00'}
-],
-'2026-10-08':[
-{name:'Νικოლουδάκης Νικόλαος - Ευαγγελία',addr:'Πλ. Αγνώστου Στρατιώτη 31, Ρέθυμνο',phone:'2831026052',from:'08:00',to:'21:00'},
-{name:'Θωμαδάκη Ιωάννα',addr:'Ηγουμένου Γαβριήλ 29, Ρέθυμνο',phone:'2831028366',from:'21:00',to:'08:00'}
-]};
+const dutyPharmacies={};
+async function loadDutyPharmacies(){
+  try{
+    const r=await fetch('./pharmacies.json?'+Date.now(),{cache:'no-store'});
+    if(!r.ok)throw Error('HTTP '+r.status);
+    const d=await r.json();
+    if(d&&typeof d.duty==='object')Object.assign(dutyPharmacies,d.duty);
+  }catch(e){
+    console.warn('Duty data load failed',e);
+  }
+}
 function todayKey(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
 function prevKey(){const d=new Date();d.setDate(d.getDate()-1);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
 function dutyNow(){const mins=new Date().getHours()*60+new Date().getMinutes();const today=dutyPharmacies[todayKey()]||[];const yesterday=dutyPharmacies[prevKey()]||[];return today.filter(x=>{const a=+x.from.slice(0,2)*60+ +x.from.slice(3),b=+x.to.slice(0,2)*60+ +x.to.slice(3);return a<=b?mins>=a&&mins<b:mins>=a}).concat(yesterday.filter(x=>x.from>x.to&&mins<+x.to.slice(0,2)*60+ +x.to.slice(3)))}
@@ -148,7 +145,7 @@ async function over(q){
   throw lastError||Error('network');
 }
 async function openCat(id){catNow=id;const c=cats.find(x=>x[0]===id);document.getElementById('title').textContent=c[1]+' '+c[2];page.classList.add('show');if(!lat){document.getElementById('info').textContent='📍 ჯერ ჩართე ტელეფონის მდებარეობა.';results.innerHTML='<div class="card">მდებარეობის მიღების შემდეგ აქ გამოჩნდება ახლომდებარე ობიექტები.</div>';return}load()}
-async function load(){document.getElementById('info').textContent='🔎 ვეძებ ახლომდებარე ობიექტებს…';results.innerHTML='<div class="loading">იტვირთება…</div>';try{const d=await over(query(catNow));const duties=catNow==='pharmacy'?dutyNow():[];const arr=d.elements.map(e=>{const p=e.lat!=null?[e.lat,e.lon]:e.center?[e.center.lat,e.center.lon]:null;if(!p)return null;const t=e.tags||{};const ss=st(t);return{lat:p[0],lon:p[1],t,n:t.name||t['name:en']||t['name:el']||'უსახელო ობიექტი',d:dist(lat,lon,p[0],p[1]),isOpen:ss[1]==='open'}}).filter(Boolean).map(p=>{if(catNow==='pharmacy'){const v=duties.find(x=>norm(x.phone)===norm(p.t.phone||p.t['contact:phone']||''));if(v)p.duty=v}return p}).sort((a,b)=>{if(catNow==='pharmacy'&&!!a.duty!==!!b.duty)return a.duty?-1:1;if(catNow==='pharmacy'&&a.isOpen!==b.isOpen)return a.isOpen?-1:1;return a.d-b.d});document.getElementById('info').textContent='ნაპოვნია '+arr.length+' ობიექტი • უახლოესი პირველია';results.innerHTML=arr.length?arr.map(p=>{const s=st(p.t),rawA=p.t['addr:street']?(p.t['addr:street']+' '+(p.t['addr:housenumber']||'')):(p.t['addr:full']||'მისამართი უცნობია'),v=pharmacyMatch(p.t,rawA),name=v?v.name:p.n,a=v?v.addr:rawA,ph=v?v.phone:(p.t.phone||p.t['contact:phone']||'');return'<div class="card"><h3>'+esc(name)+'</h3><div class="meta">📍 '+(p.d<1?Math.round(p.d*1000)+' მ':p.d.toFixed(1)+' კმ')+'<br>🏠 '+esc(a)+'<br><span class="'+s[1]+'">'+esc(s[0])+'</span>'+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions"><button onclick="showMap('+p.lat+','+p.lon+')">🗺️ რუკა</button><button class="secondary" onclick="route('+p.lat+','+p.lon+')">🚗 გზა</button>'+(ph?'<button class="secondary" onclick="location.href=\'tel:'+ph.replace(/[^+\d]/g,'')+'\'">📞 დარეკვა</button>':'')+'</div></div>'}).join(''):'<div class="card">😔 ამ რადიუსში ვერაფერი ვიპოვე.</div>'}catch(e){document.getElementById('info').textContent='❌ ძიება ვერ შესრულდა';results.innerHTML='<div class="card">ინტერნეტთან ან რუკის მონაცემებთან პრობლემაა. ისევ სცადე.</div>'}}
+async function load(){document.getElementById('info').textContent='🔎 ვეძებ ახლომდებარე ობიექტებს…';results.innerHTML='<div class="loading">იტვირთება…</div>';try{const d=await over(query(catNow));const duties=catNow==='pharmacy'?dutyNow():[];const arr=d.elements.map(e=>{const p=e.lat!=null?[e.lat,e.lon]:e.center?[e.center.lat,e.center.lon]:null;if(!p)return null;const t=e.tags||{};const ss=st(t);return{lat:p[0],lon:p[1],t,n:t.name||t['name:en']||t['name:el']||'უსახელო ობიექტი',d:dist(lat,lon,p[0],p[1]),isOpen:ss[1]==='open'}}).filter(Boolean).map(p=>{if(catNow==='pharmacy'){const v=duties.find(x=>norm(x.phone)===norm(p.t.phone||p.t['contact:phone']||''));if(v)p.duty=v}return p}).sort((a,b)=>{if(catNow==='pharmacy'&&!!a.duty!==!!b.duty)return a.duty?-1:1;if(catNow==='pharmacy'&&a.isOpen!==b.isOpen)return a.isOpen?-1:1;return a.d-b.d});document.getElementById('info').textContent='ნაპოვნია '+arr.length+' ობიექტი • უახლოესი პირველია';results.innerHTML=arr.length?arr.map(p=>{const s=st(p.t),dutyLabel=p.duty?'<br><span class="open">🟠 მორიგე აფთიაქია</span>':'',rawA=p.t['addr:street']?(p.t['addr:street']+' '+(p.t['addr:housenumber']||'')):(p.t['addr:full']||'მისამართი უცნობია'),v=pharmacyMatch(p.t,rawA),name=v?v.name:p.n,a=v?v.addr:rawA,ph=v?v.phone:(p.t.phone||p.t['contact:phone']||'');return'<div class="card"><h3>'+esc(name)+'</h3><div class="meta">📍 '+(p.d<1?Math.round(p.d*1000)+' მ':p.d.toFixed(1)+' კმ')+'<br>🏠 '+esc(a)+'<br><span class="'+s[1]+'">'+esc(s[0])+'</span>'+dutyLabel+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions"><button onclick="showMap('+p.lat+','+p.lon+')">🗺️ რუკა</button><button class="secondary" onclick="route('+p.lat+','+p.lon+')">🚗 გზა</button>'+(ph?'<button class="secondary" onclick="location.href=\'tel:'+ph.replace(/[^+\d]/g,'')+'\'">📞 დარეკვა</button>':'')+'</div></div>'}).join(''):'<div class="card">😔 ამ რადიუსში ვერაფერი ვიპოვე.</div>'}catch(e){document.getElementById('info').textContent='❌ ძიება ვერ შესრულდა';results.innerHTML='<div class="card">ინტერნეტთან ან რუკის მონაცემებთან პრობლემაა. ისევ სცადე.</div>'}}
 document.getElementById('radius').onchange=()=>lat&&load();document.getElementById('back').onclick=()=>page.classList.remove('show');function showMap(a,b){page.classList.remove('show');map.setView([a,b],17);L.popup().setLatLng([a,b]).setContent('📍 ობიექტი').openOn(map)}function route(a,b){window.open('https://www.google.com/maps/dir/?api=1&destination='+a+','+b,'_blank')}
 let locationWatchId=null;
 let locationBusy=false;
@@ -222,7 +219,7 @@ function getLocation(){
 }
 
 document.addEventListener('visibilitychange',()=>{
-  if(document.visibilityState==='visible')getLocation();
+  if(document.visibilityState==='visible')loadDutyPharmacies().then(()=>getLocation());
 });
 
 getLocation();
