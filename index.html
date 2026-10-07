@@ -110,23 +110,21 @@ function restoreLocation(){
   try{
     const x=JSON.parse(localStorage.getItem('kretaLocationData')||'null');
     if(x&&Date.now()-x.time<3600000){
-      lat=x.lat;lon=x.lon;
-      if(marker)map.removeLayer(marker);if(circle)map.removeLayer(circle);
-      marker=L.marker([lat,lon]).addTo(map).bindPopup('📍 შენი მდებარეობა');
-      circle=L.circle([lat,lon],{radius:x.accuracy||50}).addTo(map);
-      map.setView([lat,lon],16);
-      status.textContent='📍 მდებარეობა ჩართულია';
-      cards.innerHTML='<div class="card"><h3>კატეგორია აირჩიე 👇</h3><div class="meta">აირჩიე სასურველი კატეგორია და გაიხსნება ცალკე გვერდი.</div></div>';
+      navigator.geolocation.getCurrentPosition(p=>getLocation(true),e=>{
+        if(e.code===1){
+          status.textContent='📍 ტელეფონში მდებარეობის ჩართვაა საჭირო.';
+          return;
+        }
+        if(e.code===2){
+          status.textContent='📍 ტელეფონის მდებარეობა გამორთულია — ჩართე Location.';
+          return;
+        }
+        if(e.code===3)getLocation(true);
+      },{enableHighAccuracy:true,timeout:5000,maximumAge:0});
       return;
     }
-    if(navigator.permissions&&navigator.permissions.query){
-      navigator.permissions.query({name:'geolocation'}).then(p=>{
-        if(p.state==='granted'||p.state==='prompt')getLocation(true);
-      }).catch(()=>getLocation(true));
-    }else{
-      getLocation(true);
-    }
-  }catch(e){}
+    getLocation(true);
+  }catch(e){getLocation(true);}
 }
 restoreLocation();
 document.getElementById('open').onclick=()=>status.textContent=lat?'🟢 აირჩიე კატეგორია — შემდეგ გვერდზე გამოჩნდება ობიექტების სტატუსი.':'📍 ჯერ ჩართე ჩემი მდებარეობა';document.getElementById('all').onclick=()=>status.textContent=lat?'აირჩიე სასურველი კატეგორია ზემოთ.':'📍 ჯერ ჩართე ჩემი მდებარეობა';
