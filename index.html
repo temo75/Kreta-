@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>კრეტა — ახლოს რა არის ღია?</title>
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#fff;
+  color:#123;
+}
+
+header{
+  padding:18px;
+  text-align:center;
+  background:#eef8ff;
+  border-bottom:1px solid #cdeaff;
+}
+
+h1{
+  margin:0 0 6px;
+  color:#087dcc;
+}
+
+header p{
+  margin:0;
+  color:#567;
+}
+
+.controls{
+  padding:14px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+button{
+  border:0;
+  border-radius:12px;
+  padding:12px 16px;
+  background:#0b8fe3;
+  color:white;
+  font-size:16px;
+  font-weight:700;
+}
+
+button.secondary{
+  background:#e9f5ff;
+  color:#087dcc;
+}
+
+#status{
+  padding:0 14px 12px;
+  font-size:14px;
+  color:#456;
+  text-align:center;
+}
+
+#map{
+  height:58vh;
+  min-height:360px;
+}
+
+.cards{
+  padding:14px;
+}
+
+.card{
+  padding:14px;
+  border:1px solid #dcecf7;
+  border-radius:14px;
+  margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>📍 ახლოს რა არის ღია?</h1>
+  <p>იპოვე შენთან ახლოს ღია ადგილები — კრეტა</p>
+</header>
+
+<div class="controls">
+
+  <button id="locate">
+    📍 ჩემი მდებარეობა
+  </button>
+
+  <button class="secondary" id="open">
+    🟢 ახლა ღიაა
+  </button>
+
+  <button class="secondary" id="all">
+    ყველა
+  </button>
+
+</div>
+
+<div id="status">
+  დააჭირე „ჩემი მდებარეობა“-ს GPS-ის ჩასართავად.
+</div>
+
+<div id="map"></div>
+
+<div class="cards" id="cards"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+const map = L.map('map').setView(
+  [35.3656,24.4823],
+  14
+);
+
+L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {
+    maxZoom:19,
+    attribution:'© OpenStreetMap contributors'
+  }
+).addTo(map);
+
+let userMarker = null;
+let userCircle = null;
+
+const status =
+  document.getElementById('status');
+
+const cards =
+  document.getElementById('cards');
+
+
+document.getElementById('locate').onclick = () => {
+
+  if(!navigator.geolocation){
+
+    status.textContent =
+      'ამ ბრაუზერს GPS არ აქვს.';
+
+    return;
+  }
+
+  status.textContent =
+    '📍 GPS მდებარეობას ვიღებ…';
+
+
+  navigator.geolocation.getCurrentPosition(
+
+    position => {
+
+      const lat =
+        position.coords.latitude;
+
+      const lon =
+        position.coords.longitude;
+
+      const accuracy =
+        position.coords.accuracy;
+
+
+      if(userMarker)
+        map.removeLayer(userMarker);
+
+      if(userCircle)
+        map.removeLayer(userCircle);
+
+
+      userMarker =
+        L.marker([lat,lon])
+        .addTo(map)
+        .bindPopup('📍 შენი მდებარეობა')
+        .openPopup();
+
+
+      userCircle =
+        L.circle(
+          [lat,lon],
+          {
+            radius:accuracy
+          }
+        )
+        .addTo(map);
+
+
+      map.setView(
+        [lat,lon],
+        16
+      );
+
+
+      status.textContent =
+        '📍 მდებარეობა მიღებულია • სიზუსტე ±'
+        + Math.round(accuracy)
+        + ' მ';
+
+
+      cards.innerHTML = `
+        <div class="card">
+          📍 შენი მდებარეობა ნაპოვნია.
+          <br><br>
+          შემდეგ ეტაპზე აქ ავტომატურად
+          გამოჩნდება ახლომდებარე მაღაზიები,
+          აფთიაქები, კაფეები და სხვა ობიექტები.
+        </div>
+      `;
+
+    },
+
+    error => {
+
+      status.textContent =
+        'GPS-ის მიღება ვერ მოხერხდა: '
+        + error.message;
+
+    },
+
+    {
+      enableHighAccuracy:true,
+      timeout:15000,
+      maximumAge:0
+    }
+
+  );
+
+};
+
+
+document.getElementById('open').onclick = () => {
+
+  status.textContent =
+    '🟢 ღია ობიექტების ძიება შემდეგ ეტაპზე დაემატება.';
+
+};
+
+
+document.getElementById('all').onclick = () => {
+
+  status.textContent =
+    'ყველა ახლომდებარე ობიექტის სია შემდეგ ეტაპზე დაემატება.';
+
+};
+
+</script>
+
+</body>
+</html>
