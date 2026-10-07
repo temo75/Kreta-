@@ -89,6 +89,13 @@ async function load(){document.getElementById('info').textContent='🔎 ვე�
 document.getElementById('radius').onchange=()=>lat&&load();document.getElementById('back').onclick=()=>page.classList.remove('show');function showMap(a,b){page.classList.remove('show');map.setView([a,b],17);L.popup().setLatLng([a,b]).setContent('📍 ობიექტი').openOn(map)}function route(a,b){window.open('https://www.google.com/maps/dir/?api=1&destination='+a+','+b,'_blank')}
 function getLocation(auto=false){if(!navigator.geolocation){status.textContent='ამ ბრაუზერს GPS არ აქვს.';return}if(!auto)status.textContent='📍 GPS მდებარეობას ვიღებ…';navigator.geolocation.getCurrentPosition(p=>{lat=p.coords.latitude;lon=p.coords.longitude;try{sessionStorage.setItem('kretaLocationEnabled','1')}catch(e){}if(marker)map.removeLayer(marker);if(circle)map.removeLayer(circle);marker=L.marker([lat,lon]).addTo(map).bindPopup('📍 შენი მდებარეობა').openPopup();circle=L.circle([lat,lon],{radius:p.coords.accuracy}).addTo(map);map.setView([lat,lon],16);status.textContent='📍 მდებარეობა მიღებულია • სიზუსტე ±'+Math.round(p.coords.accuracy)+' მ';cards.innerHTML='<div class="card"><h3>კატეგორია აირჩიე 👇</h3><div class="meta">აირჩიე სასურველი კატეგორია და გაიხსნება ცალკე გვერდი.</div></div>'},e=>{if(!auto)status.textContent='GPS-ის მიღება ვერ მოხერხდა: '+e.message},{enableHighAccuracy:true,timeout:15000,maximumAge:30000})}
 document.getElementById('locate').onclick=()=>getLocation(false);
-// ავტომატური GPS გამორთულია — მდებარეობა ჩაირთვება მხოლოდ „ჩემი მდებარეობა“ ღილაკით.
+async function restoreLocation(){
+  if(!navigator.permissions||!navigator.permissions.query)return;
+  try{
+    const p=await navigator.permissions.query({name:'geolocation'});
+    if(p.state==='granted')getLocation(true);
+  }catch(e){}
+}
+restoreLocation();
 document.getElementById('open').onclick=()=>status.textContent=lat?'🟢 აირჩიე კატეგორია — შემდეგ გვერდზე გამოჩნდება ობიექტების სტატუსი.':'📍 ჯერ ჩართე ჩემი მდებარეობა';document.getElementById('all').onclick=()=>status.textContent=lat?'აირჩიე სასურველი კატეგორია ზემოთ.':'📍 ჯერ ჩართე ჩემი მდებარეობა';
 </script></body></html>
