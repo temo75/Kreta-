@@ -233,7 +233,7 @@ let preloadRunning=false;
 let preloadLat=null,preloadLon=null,preloadRadius=null;
 
 function categoryCacheKey(id){
-  return id+'|'+document.getElementById('radius').value+'|'+Number(lat).toFixed(4)+'|'+Number(lon).toFixed(4);
+  return id+'|'+document.getElementById('radius').value;
 }
 
 async function fetchCategoryData(id){
@@ -259,14 +259,22 @@ async function prepareCategory(id){
   const key=categoryCacheKey(id);
   if(categoryCache[key])return categoryCache[key];
   if(categoryLoading[key])return categoryLoading[key];
-  categoryLoading[key]=fetchCategoryData(id).then(function(arr){
-    categoryCache[key]=arr;
+  categoryLoading[key]=(async function(){
+    let lastError=null;
+    for(let attempt=1;attempt<=3;attempt++){
+      try{
+        const arr=await fetchCategoryData(id);
+        categoryCache[key]=arr;
+        delete categoryLoading[key];
+        return arr;
+      }catch(e){
+        lastError=e;
+        if(attempt<3)await new Promise(r=>setTimeout(r,700));
+      }
+    }
     delete categoryLoading[key];
-    return arr;
-  }).catch(function(e){
-    delete categoryLoading[key];
-    throw e;
-  });
+    throw lastError||Error('category load failed');
+  })();
   return categoryLoading[key];
 }
 
