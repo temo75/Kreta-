@@ -278,7 +278,7 @@ function renderGeneralCategory(arr){
     const ph=p.t.phone||p.t['contact:phone']||'';
     const placeName=p.n||'ობიექტი';
     const locationButtons='<button onclick="showMap('+p.lat+','+p.lon+')">🗺️ რუკა</button><button class="secondary" onclick="route('+p.lat+','+p.lon+')">🚗 გზა</button>';
-    const phoneButton=ph?'<button class="secondary" onclick="callPhone(\\''+phoneHref(ph)+'\\')">📞 '+esc(ph)+' დარეკვა</button>':'';
+    const phoneButton=ph?'<button class="secondary" onclick="callPhone(\''+phoneHref(ph)+'\')">📞 '+esc(ph)+' დარეკვა</button>':'';
     return '<div class="card"><h3>'+esc(placeName)+'</h3><div class="meta">📍 '+(p.d<1?Math.round(p.d*1000)+' მ':p.d.toFixed(1)+' კმ')+'<br>🏠 '+esc(rawA)+'<br><span class="'+s[1]+'">'+esc(s[0])+'</span>'+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions">'+locationButtons+phoneButton+'</div></div>';
   }).join(''):'<div class="card">😔 ამ რადიუსში ვერაფერი ვიპოვე.</div>';
 }
