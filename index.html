@@ -172,12 +172,24 @@ function pharmacyDistanceText(d){
   return '📍 '+(d<1?Math.round(d*1000)+' მ':d.toFixed(1)+' კმ');
 }
 let pharmacyRenderItems=[];
+function phoneHref(raw){
+  const d=String(raw||'').replace(/\\D/g,'');
+  if(!d)return '';
+  return d.startsWith('30')?'+'+d:'+30'+d;
+}
+function callPhone(raw){
+  const tel=phoneHref(raw);
+  if(tel)window.location.href='tel:'+tel;
+}
+function routeByName(name,addr){
+  const q=encodeURIComponent(String(name||'')+', '+String(addr||'')+', Rethymno, Crete, Greece');
+  window.open('https://www.google.com/maps/search/?api=1&query='+q,'_blank');
+}
 function pharmacyRouteByIndex(i){
   const p=pharmacyRenderItems[i];
   const v=p&&p.v?p.v:p;
   if(!v)return;
-  const q=encodeURIComponent(String(v.name||'')+', '+String(v.addr||'')+', Rethymno, Crete, Greece');
-  window.open('https://www.google.com/maps/search/?api=1&query='+q,'_blank');
+  routeByName(v.name,v.addr);
 }
 function pharmacyCard(p,i){
   const v=p.v||p;
@@ -192,9 +204,7 @@ function pharmacyCard(p,i){
     buttons+='<button class="secondary" onclick="pharmacyRouteByIndex('+i+')">🚗 გზა</button>';
   }
   if(ph){
-    const digits=ph.replace(/\\D/g,'');
-    const tel=digits.startsWith('30')?'+'+digits:'+30'+digits;
-    buttons+='<button class="secondary" onclick="window.location.href=\'tel:'+tel+'\'">📞 '+esc(ph)+' დარეკვა</button>';
+    buttons+='<button class="secondary" onclick="callPhone(\''+phoneHref(ph)+'\')">📞 '+esc(ph)+' დარეკვა</button>';
   }
   return '<div class="card"><h3>'+esc(v.name)+'</h3><div class="meta">'+pharmacyDistanceText(p.d)+'<br>🏠 '+esc(v.addr)+'<br>'+status+(duty?'<br>🕐 '+esc(duty.start)+'–'+esc(duty.end):'')+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions">'+buttons+'</div></div>';
 }
@@ -242,7 +252,10 @@ async function load(){
       const s=st(p.t);
       const rawA=p.t['addr:street']?(p.t['addr:street']+' '+(p.t['addr:housenumber']||'')):(p.t['addr:full']||'მისამართი უცნობია');
       const ph=p.t.phone||p.t['contact:phone']||'';
-      return '<div class="card"><h3>'+esc(p.n||'ობიექტი')+'</h3><div class="meta">📍 '+(p.d<1?Math.round(p.d*1000)+' მ':p.d.toFixed(1)+' კმ')+'<br>🏠 '+esc(rawA)+'<br><span class="'+s[1]+'">'+esc(s[0])+'</span>'+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions"><button onclick="showMap('+p.lat+','+p.lon+')">🗺️ რუკა</button><button class="secondary" onclick="route('+p.lat+','+p.lon+')">🚗 გზა</button>'+(ph?'<button class="secondary" onclick="location.href=\'tel:'+ph.replace(/[^+\\d]/g,'')+'\'">📞 დარეკვა</button>':'')+'</div></div>';
+      const placeName=p.n||'ობიექტი';
+      const locationButtons='<button onclick="showMap('+p.lat+','+p.lon+')">🗺️ რუკა</button><button class="secondary" onclick="route('+p.lat+','+p.lon+')">🚗 გზა</button>';
+      const phoneButton=ph?'<button class="secondary" onclick="callPhone(\''+phoneHref(ph)+'\')">📞 '+esc(ph)+' დარეკვა</button>':'';
+      return '<div class="card"><h3>'+esc(placeName)+'</h3><div class="meta">📍 '+(p.d<1?Math.round(p.d*1000)+' მ':p.d.toFixed(1)+' კმ')+'<br>🏠 '+esc(rawA)+'<br><span class="'+s[1]+'">'+esc(s[0])+'</span>'+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions">'+locationButtons+phoneButton+'</div></div>';
     }).join(''):'<div class="card">😔 ამ რადიუსში ვერაფერი ვიპოვე.</div>';
   }catch(e){
     document.getElementById('info').textContent='❌ ძიება ვერ შესრულდა';
