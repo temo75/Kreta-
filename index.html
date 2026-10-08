@@ -227,40 +227,131 @@ function renderPharmacies(arr,sourceLabel){
   document.getElementById('info').textContent=sourceLabel||('ნაპოვნია '+pharmacyRenderItems.length+' აფთიაქი • მორიგე პირველია');
   results.innerHTML=pharmacyRenderItems.length?pharmacyRenderItems.map(function(p,i){return pharmacyCard(p,i)}).join(''):'<div class="card">😔 აფთიაქები ვერ მოიძებნა.</div>';
 }
-async function load(){
-  document.getElementById('info').textContent=catNow==='pharmacy'?'🔎 ვამოწმებ აფთიაქებს…':'🔎 ვეძებ ახლომდებარე ობიექტებს…';
-  results.innerHTML='<div class="loading">იტვირთება…</div>';
-  if(catNow==='pharmacy'){
-    const base=vriskoPharmacies.map(function(v){return {v:v,d:Infinity,lat:null,lon:null,isOpen:false}});
-    renderPharmacies(base,'Vrisko-ზე ნაპოვნია '+vriskoPharmacies.length+' აფთიაქი • მორიგე პირველია');
+const categoryCache={};
+const categoryLoading={};
+let preloadRunning=false;
+let preloadLat=null,preloadLon=null,preloadRadius=null;
+
+function categoryCacheKey(id){
+  return id+'|'+document.getElementById('radius').value+'|'+Number(lat).toFixed(4)+'|'+Number(lon).toFixed(4);
+}
+
+async function fetchCategoryData(id){
+  if(id==='pharmacy'){
+    return vriskoPharmacies.map(function(v){
+      return {v:v,d:Infinity,lat:null,lon:null,isOpen:false};
+    });
+  }
+  const d=await over(query(id));
+  return d.elements.map(function(e){
+    const p=e.lat!=null?[e.lat,e.lon]:e.center?[e.center.lat,e.center.lon]:null;
+    if(!p)return null;
+    const t=e.tags||{};
+    const ss=st(t);
+    return {lat:p[0],lon:p[1],t:t,n:t.name||t['name:en']||t['name:el']||'',d:dist(lat,lon,p[0],p[1]),isOpen:ss[1]==='open'};
+  }).filter(Boolean).sort(function(a,b){
+    if(a.isOpen!==b.isOpen)return a.isOpen?-1:1;
+    return a.d-b.d;
+  });
+}
+
+async function prepareCategory(id){
+  const key=categoryCacheKey(id);
+  if(categoryCache[key])return categoryCache[key];
+  if(categoryLoading[key])return categoryLoading[key];
+  categoryLoading[key]=fetchCategoryData(id).then(function(arr){
+    categoryCache[key]=arr;
+    delete categoryLoading[key];
+    return arr;
+  }).catch(function(e){
+    delete categoryLoading[key];
+    throw e;
+  });
+  return categoryLoading[key];
+}
+
+function renderGeneralCategory(arr){
+  document.getElementById('info').textContent='ნაპოვნია '+arr.length+' ობიექტი • უახლოესი პირველია';
+  results.innerHTML=arr.length?arr.map(function(p){
+    const s=st(p.t);
+    const rawA=p.t['addr:street']?(p.t['addr:street']+' '+(p.t['addr:housenumber']||'')):(p.t['addr:full']||'მისამართი უცნობია');
+    const ph=p.t.phone||p.t['contact:phone']||'';
+    const placeName=p.n||'ობიექტი';
+    const locationButtons='<button onclick="showMap('+p.lat+','+p.lon+')">🗺️ რუკა</button><button class="secondary" onclick="route('+p.lat+','+p.lon+')">🚗 გზა</button>';
+    const phoneButton=ph?'<button class="secondary" onclick="callPhone(\\''+phoneHref(ph)+'\\')">📞 '+esc(ph)+' დარეკვა</button>':'';
+    return '<div class="card"><h3>'+esc(placeName)+'</h3><div class="meta">📍 '+(p.d<1?Math.round(p.d*1000)+' მ':p.d.toFixed(1)+' კმ')+'<br>🏠 '+esc(rawA)+'<br><span class="'+s[1]+'">'+esc(s[0])+'</span>'+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions">'+locationButtons+phoneButton+'</div></div>';
+  }).join(''):'<div class="card">😔 ამ რადიუსში ვერაფერი ვიპოვე.</div>';
+}
+
+async function preloadAllCategories(){
+  if(!lat||!lon||preloadRunning)return;
+  preloadRunning=true;
+  preloadLat=lat;preloadLon=lon;preloadRadius=document.getElementById('radius').value;
+  const ids=cats.map(function(c){return c[0]});
+  status.textContent='📍 მდებარეობა ჩართულია • კატეგორიებს ვამზადებ…';
+  let done=0;
+  const worker=async function(){
+    while(ids.length){
+      const id=ids.shift();
+      try{await prepareCategory(id)}catch(_){}
+      done++;
+      status.textContent='📍 მდებარეობა ჩართულია • კატეგორიები მზადდება '+done+'/'+cats.length+'…';
+    }
+  };
+  await Promise.all([worker(),worker()]);
+  preloadRunning=false;
+  if(lat&&lon){
+    preloadLat=lat;preloadLon=lon;preloadRadius=document.getElementById('radius').value;
+    status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
+  }
+}
+
+async function openCat(id){
+  catNow=id;
+  const c=cats.find(x=>x[0]===id);
+  document.getElementById('title').textContent=c[1]+' '+c[2];
+  page.classList.add('show');
+  if(!lat){
+    document.getElementById('info').textContent='📍 ჯერ ჩართე ტელეფონის მდებარეობა.';
+    results.innerHTML='<div class="card">მდებარეობის მიღების შემდეგ აქ გამოჩნდება ახლომდებარე ობიექტები.</div>';
     return;
   }
+  load();
+}
+
+async function load(){
+  const key=categoryCacheKey(catNow);
+  if(catNow==='pharmacy'){
+    document.getElementById('info').textContent='Vrisko-ზე ნაპოვნია '+vriskoPharmacies.length+' აფთიაქი • მორიგე პირველია';
+    const arr=categoryCache[key]||await prepareCategory(catNow);
+    renderPharmacies(arr,'Vrisko-ზე ნაპოვნია '+arr.length+' აფთიაქი • მორიგე პირველია');
+    return;
+  }
+  if(categoryCache[key]){
+    renderGeneralCategory(categoryCache[key]);
+    return;
+  }
+  document.getElementById('info').textContent='🔎 ამ კატეგორიის ჩატვირთვას ვასრულებ…';
+  results.innerHTML='<div class="loading">იტვირთება…</div>';
   try{
-    const d=await over(query(catNow));
-    const arr=d.elements.map(function(e){
-      const p=e.lat!=null?[e.lat,e.lon]:e.center?[e.center.lat,e.center.lon]:null;
-      if(!p)return null;
-      const t=e.tags||{};
-      const ss=st(t);
-      return {lat:p[0],lon:p[1],t:t,n:t.name||t['name:en']||t['name:el']||'',d:dist(lat,lon,p[0],p[1]),isOpen:ss[1]==='open'};
-    }).filter(Boolean).sort(function(a,b){
-      if(a.isOpen!==b.isOpen)return a.isOpen?-1:1;
-      return a.d-b.d;
-    });
-    document.getElementById('info').textContent='ნაპოვნია '+arr.length+' ობიექტი • უახლოესი პირველია';
-    results.innerHTML=arr.length?arr.map(function(p){
-      const s=st(p.t);
-      const rawA=p.t['addr:street']?(p.t['addr:street']+' '+(p.t['addr:housenumber']||'')):(p.t['addr:full']||'მისამართი უცნობია');
-      const ph=p.t.phone||p.t['contact:phone']||'';
-      const placeName=p.n||'ობიექტი';
-      const locationButtons='<button onclick="showMap('+p.lat+','+p.lon+')">🗺️ რუკა</button><button class="secondary" onclick="route('+p.lat+','+p.lon+')">🚗 გზა</button>';
-      const phoneButton=ph?'<button class="secondary" onclick="callPhone(\''+phoneHref(ph)+'\')">📞 '+esc(ph)+' დარეკვა</button>':'';
-      return '<div class="card"><h3>'+esc(placeName)+'</h3><div class="meta">📍 '+(p.d<1?Math.round(p.d*1000)+' მ':p.d.toFixed(1)+' კმ')+'<br>🏠 '+esc(rawA)+'<br><span class="'+s[1]+'">'+esc(s[0])+'</span>'+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions">'+locationButtons+phoneButton+'</div></div>';
-    }).join(''):'<div class="card">😔 ამ რადიუსში ვერაფერი ვიპოვე.</div>';
+    const arr=await prepareCategory(catNow);
+    if(catNow===catNow)renderGeneralCategory(arr);
   }catch(e){
     document.getElementById('info').textContent='❌ ძიება ვერ შესრულდა';
     results.innerHTML='<div class="card">ინტერნეტთან ან რუკის მონაცემებთან პრობლემაა. ისევ სცადე.</div>';
   }
+}
+
+document.getElementById('radius').onchange=async function(){
+  if(!lat)return;
+  for(const k of Object.keys(categoryCache)){if(k.startsWith('pharmacy|')||k)delete categoryCache[k]}
+  for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
+  await preloadAllCategories();
+  if(catNow)load();
+}
+document.getElementById('back').onclick=()=>page.classList.remove('show');
+function showMap(a,b){page.classList.remove('show');map.setView([a,b],17);L.popup().setLatLng([a,b]).setContent('📍 ობიექტი').openOn(map)}
+function route(a,b){window.open('https://www.google.com/maps/dir/?api=1&destination='+a+','+b,'_blank')}
 }document.getElementById('radius').onchange=()=>lat&&load();document.getElementById('back').onclick=()=>page.classList.remove('show');function showMap(a,b){page.classList.remove('show');map.setView([a,b],17);L.popup().setLatLng([a,b]).setContent('📍 ობიექტი').openOn(map)}function route(a,b){window.open('https://www.google.com/maps/dir/?api=1&destination='+a+','+b,'_blank')}
 let locationWatchId=null;
 let locationBusy=false;
@@ -288,6 +379,7 @@ function restoreLocation(){
 }
 
 function applyLocation(p){
+  const oldLat=lat,oldLon=lon;
   lat=p.coords.latitude;
   lon=p.coords.longitude;
   saveLocation();
@@ -296,8 +388,15 @@ function applyLocation(p){
   marker=L.marker([lat,lon]).addTo(map).bindPopup('📍 შენი მდებარეობა');
   circle=L.circle([lat,lon],{radius:p.coords.accuracy||50}).addTo(map);
   map.setView([lat,lon],16);
-  status.textContent='📍 მდებარეობა ჩართულია';
   cards.innerHTML='<div class="card"><h3>კატეგორია აირჩიე 👇</h3><div class="meta">აირჩიე სასურველი კატეგორია და გაიხსნება ცალკე გვერდი.</div></div>';
+  const moved=!Number.isFinite(preloadLat)||!Number.isFinite(preloadLon)||dist(preloadLat,preloadLon,lat,lon)>0.2||preloadRadius!==document.getElementById('radius').value;
+  if((oldLat===null||moved)&&!preloadRunning){
+    for(const k of Object.keys(categoryCache))delete categoryCache[k];
+    for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
+    preloadAllCategories();
+  }else if(!preloadRunning){
+    status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
+  }
 }
 
 function locationError(e){
