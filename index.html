@@ -8,7 +8,7 @@
 </style></head><body>
 <header><h1>📍 ახლოს რა არის ღია?</h1><p>იპოვე შენთან ახლოს ღია ადგილები — კრეტა</p></header>
 <div class="controls"><button class="secondary" id="open">🟢 ახლა ღიაა</button><button class="secondary" id="all">ყველა</button></div>
-<div id="status">📍 ვამოწმებ მდებარეობას…</div><div id="categories"></div><div id="map"></div><div class="cards" id="cards"></div>
+<div id="status">📍 ვამოწმებ მდებარეობას…</div><section id="dutyBox" style="margin:0 14px 10px;padding:14px;border:1px solid #cdeaff;border-radius:14px;background:#f7fcff"><h2 style="margin:0 0 10px;color:#087dcc;font-size:18px">🔴 მორიგე და ღია აფთიაქები</h2><div id="dutyResults" class="meta">მონაცემები იტვირთება…</div></section><div id="categories"></div><div id="map"></div><div class="cards" id="cards"></div>
 <section id="page"><div class="head"><button class="back" id="back">← უკან</button><h2 id="title"></h2></div><div id="info"></div><div class="radius">მანძილი: <select id="radius"><option value="2000">2 კმ</option><option value="5000" selected>5 კმ</option><option value="10000">10 კმ</option></select></div><div id="results"></div></section>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>
 const map=L.map('map').setView([35.3656,24.4823],14);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);
@@ -76,6 +76,20 @@ const vriskoPharmacies=[
 {name:'ΚΑΛΛΙΟΠΗ ΚΑΤΣΙΜΠΡΑΚΗ ΜΑΡΙΑ ΚΑΡΓΑΚΗ ΟΕ',addr:'Καλλέργη Βάρδα 1 & Γερακάρη, Ρέθυμνο',phone:'2831022414'}
 ];
 function norm(x){return String(x||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[^a-z0-9α-ωάέήίόύώϊϋς]+/gi,'')}
+const vriskoDuty=[{name:'ΣΥΣΤΕΓΑΣΜΕΝΑ ΦΑΡΜΑΚΕΙΑ ΑΘΑΝΑΣΙΟΣ ΚΙΜΩΝ ΛΙΑΣΚΟΣ ΚΑΙ ΕΛΕΝΗ ΔΡΑΝΔΑΚΗ ΛΙΑΣΚΟΥ ΟΕ',addr:'Αρκαδίου 92, Ρέθυμνο, 74131',phone:'2831028795',start:'21:00',end:'08:00',date:'7/10/2026'}];
+function minutesNow(){const n=new Date();return n.getHours()*60+n.getMinutes()}
+function inHours(start,end){const [sh,sm]=start.split(':').map(Number),[eh,em]=end.split(':').map(Number),q=minutesNow(),a=sh*60+sm,b=eh*60+em;return a<=b?q>=a&&q<b:(q>=a||q<b)}
+function dutyNow(){
+  return vriskoDuty.filter(x=>inHours(x.start,x.end)).map(x=>({...x,open:true}));
+}
+function renderDuty(){
+  const box=document.getElementById('dutyResults');
+  const d=dutyNow();
+  box.innerHTML=d.length?d.map(x=>'<div class="card" style="margin:0 0 8px;background:#fff"><h3>'+esc(x.name)+'</h3><div class="meta">📍 '+esc(x.addr)+'<br>📞 '+esc(x.phone)+'<br><span class="open">🟢 ახლა ღიაა • მორიგე</span><br>🕐 '+esc(x.start)+'–'+esc(x.end)+'</div></div>').join(''):'<div>ამ მომენტში Vrisko-ს დადასტურებული მორიგე და ღია აფთიაქი ვერ დადასტურდა.</div>';
+}
+renderDuty();
+setInterval(renderDuty,60000);
+
 function pharmacyMatch(t,a){if(catNow!=='pharmacy')return null;const phone=norm(t.phone||t['contact:phone']||'');const byPhone=vriskoPharmacies.find(v=>phone&&norm(v.phone)===phone);if(byPhone)return byPhone;const na=norm(a);const byAddress=vriskoPharmacies.find(v=>{const va=norm(v.addr);return va&&na&&va.split(/\\d+/)[0].split(/[^α-ω]+/i).filter(x=>x.length>4).some(w=>na.includes(w))});return byAddress||null}
 
 function query(id){const a='around:'+document.getElementById('radius').value+','+lat+','+lon;const m={pharmacy:'nwr[amenity=pharmacy]',supermarket:'nwr[shop=supermarket]',cafe:'nwr[amenity=cafe]',bar:'nwr[amenity=bar]',restaurant:'nwr[amenity=restaurant]',bakery:'nwr[shop=bakery]',butcher:'nwr[shop=butcher]',fuel:'nwr[amenity=fuel]',shop:'nwr[shop]',taxi:'nwr[amenity=taxi]',clinic:'nwr[amenity=clinic];nwr[healthcare]',service:'nwr[craft];nwr[shop=car_repair]'};return'[out:json][timeout:25];('+m[id]+'('+a+'););out center tags;'}
