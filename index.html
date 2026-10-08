@@ -218,25 +218,6 @@ async function load(){
   if(catNow==='pharmacy'){
     const base=vriskoPharmacies.map(function(v){return {v:v,d:Infinity,lat:null,lon:null,isOpen:false}});
     renderPharmacies(base,'Vrisko-ზე ნაპოვნია '+vriskoPharmacies.length+' აფთიაქი • მორიგე პირველია');
-    try{
-      const d=await over(query('pharmacy'));
-      const byPhone=new Map();
-      d.elements.forEach(function(e){
-        const t=e.tags||{};
-        const p=e.lat!=null?[e.lat,e.lon]:e.center?[e.center.lat,e.center.lon]:null;
-        if(!p)return;
-        const ph=String(t.phone||t['contact:phone']||'').replace(/\\D/g,'');
-        if(ph)byPhone.set(ph,{lat:p[0],lon:p[1],t:t});
-      });
-      const enriched=vriskoPharmacies.map(function(v){
-        const hit=byPhone.get(String(v.phone||'').replace(/\\D/g,''));
-        if(!hit)return {v:v,d:Infinity,lat:null,lon:null,isOpen:false};
-        return {v:v,d:dist(lat,lon,hit.lat,hit.lon),lat:hit.lat,lon:hit.lon,t:hit.t,isOpen:st(hit.t)[1]==='open'};
-      });
-      renderPharmacies(enriched,'Vrisko-ზე ნაპოვნია '+enriched.length+' აფთიაქი • მანძილი რუკის მონაცემებიდან');
-    }catch(_){
-      renderPharmacies(base,'Vrisko-ზე ნაპოვნია '+vriskoPharmacies.length+' აფთიაქი • რუკის სერვისი დროებით მიუწვდომელია');
-    }
     return;
   }
   try{
