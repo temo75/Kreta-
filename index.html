@@ -191,7 +191,11 @@ function pharmacyCard(p,i){
   }else{
     buttons+='<button class="secondary" onclick="pharmacyRouteByIndex('+i+')">🚗 გზა</button>';
   }
-  if(ph){const tel=ph.replace(/[^+\\d]/g,'');buttons+='<a class="secondary" href="tel:'+tel+'" style="display:inline-block;border:0;border-radius:12px;padding:9px 11px;color:#087dcc;text-decoration:none;font-size:13px;font-weight:700;background:#e9f5ff">📞 '+esc(ph)+' დარეკვა</a>';}
+  if(ph){
+    const digits=ph.replace(/\\D/g,'');
+    const tel=digits.startsWith('30')?'+'+digits:'+30'+digits;
+    buttons+='<button class="secondary" onclick="window.location.href=\'tel:'+tel+'\'">📞 '+esc(ph)+' დარეკვა</button>';
+  }
   return '<div class="card"><h3>'+esc(v.name)+'</h3><div class="meta">'+pharmacyDistanceText(p.d)+'<br>🏠 '+esc(v.addr)+'<br>'+status+(duty?'<br>🕐 '+esc(duty.start)+'–'+esc(duty.end):'')+(ph?'<br>📞 '+esc(ph):'')+'</div><div class="actions">'+buttons+'</div></div>';
 }
 function renderPharmacies(arr,sourceLabel){
