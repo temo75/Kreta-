@@ -75,6 +75,33 @@ const vriskoExtraPharmacies=[
 {name:'ΦΑΡΜΑΚΕΙΟ ΚΑΒΒΑΛΟΥ ΟΕ',addr:'Βιολί Χαράκι, Ρέθυμνο',phone:'2831028200'},
 {name:'Μαρία Χιωτάκη - Μανωλεσάκη ΟΕ',addr:'Κουντουριώτου 17, Ρέθυμνο',phone:'2831028305'}
 ];
+const officialMissingPharmacies=[
+{name:'Αγγελάκης Παναγιώτης',addr:'Ζωνιανά',phone:'2834061450'},
+{name:'Αντωνίου Ανδρέας',addr:'Σπήλι',phone:'2832022150'},
+{name:'Ατσαλή Μαριλένα',addr:'Μπαλί',phone:'2834094183'},
+{name:'Μερωνιανάκη Στυλιανή',addr:'Φουρφουράς',phone:'2833041050'},
+{name:'Καλλέργη Αγγελική',addr:'Γαράζο',phone:'2834041190'},
+{name:'Καρτσωνάκης Ματθαίος',addr:'Πλακιάς Σελλίων',phone:'283231666'},
+{name:'Πετροπούλου Αντωνία',addr:'Αγία Φωτεινή',phone:'2833022777'},
+{name:'Πολιουδάκη Αδαμαντία',addr:'Πέραμα',phone:'2834022701'},
+{name:'Σαρρής Νικόλαος',addr:'Πάνορμο',phone:'2834051115'},
+{name:'Σκαλίδης Ιωάννης',addr:'Κισσού Κάμπος',phone:'2832020010'},
+{name:'Σπυριδάκη Αναστασία',addr:'Αγία Γαλήνη',phone:'2832091168'},
+{name:'Στεφανάκη Μαρία',addr:'Μαργαρίτες',phone:'2834022550'},
+{name:'Τζιμπλακάκη Γεωργία',addr:'Πέραμα',phone:'2834022290'},
+{name:'Τσαούλης Γεώργιος',addr:'Μοάτσου 36, Ρέθυμνο',phone:'2831025360'},
+{name:'Χαλκιαδάκης Αντώνιος',addr:'Επισκοπή',phone:'2831061266'},
+{name:'Χατζιδάκι Αργυρή',addr:'Αργυρούπολη',phone:'2831081081'},
+{name:'Πασχαλίδου Ερωφίλη',addr:'Ρέθυμνο',phone:''},
+{name:'Αναστασάκη Παγώνα',addr:'Ρέθυμνο',phone:''},
+{name:'Βαρούχα Αναστασία',addr:'Ρέθυμνο',phone:''},
+{name:'Μιχαλάτου Μαρία',addr:'Ρέθυμνο',phone:''},
+{name:'Φραγκιαδάκη Μαρία',addr:'Ρέθυμνο',phone:''},
+{name:'Μπαμπαλιάρη Ραμόνα',addr:'Ρέθυμνο',phone:''},
+{name:'Μπερνιδάκη Στυλιανή',addr:'Ρέθυμνο',phone:''},
+{name:'Δρανδάκη Ελένη',addr:'Ρέθυμνο',phone:''},
+{name:'Παπατζάνης Βασίλης',addr:'Ρέθυμνο',phone:''}
+];
 const vriskoMorePharmacies=[
 {name:'ΠΑΠΑΔΑΚΗΣ ΜΙΧΑΗΛ ΚΑΙ ΣΙΑ ΟΕ',addr:'Αδελιανός Κάμπος, Ρέθυμνο',phone:'2831071431'},
 {name:'Βαρδιάμπασης Κωνσταντίνος Σ.',addr:'Άγιος Ανδρέας, Ρέθυμνο',phone:'2831031887'},
@@ -104,7 +131,7 @@ function pharmacyMatch(t,a){
   if(catNow!=='pharmacy')return null;
   const phone=norm(t.phone||t['contact:phone']||'');
   const addr=norm(a);
-  const all=vriskoPharmacies.concat(vriskoExtraPharmacies,vriskoMorePharmacies,vriskoMissingPharmacies);
+  const all=vriskoPharmacies.concat(vriskoExtraPharmacies,vriskoMorePharmacies,vriskoMissingPharmacies,officialMissingPharmacies);
   const byPhone=all.find(v=>phone&&norm(v.phone)===phone);
   if(byPhone)return byPhone;
   const streetNumber=addr.match(/([α-ω]+)\\d+/i)?.[0]||'';
