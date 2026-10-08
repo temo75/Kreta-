@@ -120,19 +120,18 @@ function pharmacyMatch(t,a){
 function query(id){const a='around:'+document.getElementById('radius').value+','+lat+','+lon;const m={pharmacy:'nwr[amenity=pharmacy][name]',supermarket:'nwr[shop=supermarket]',cafe:'nwr[amenity=cafe]',bar:'nwr[amenity=bar]',restaurant:'nwr[amenity=restaurant]',bakery:'nwr[shop=bakery]',butcher:'nwr[shop=butcher]',fuel:'nwr[amenity=fuel]',shop:'nwr[shop]',taxi:'nwr[amenity=taxi]',clinic:'nwr[amenity=clinic];nwr[healthcare]',service:'nwr[craft];nwr[shop=car_repair]'};return'[out:json][timeout:25];('+m[id]+'('+a+'););out center tags;'}
 async function over(q){
   const urls=[
-    'https://overpass.private.coffee/api/interpreter',
+    'https://overpass.kumi.systems/api/interpreter',
+    'https://overpass-api.de/api/interpreter',
     'https://z.overpass-api.de/api/interpreter',
-    'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
-    'https://overpass-api.de/api/interpreter'
+    'https://overpass.private.coffee/api/interpreter'
   ];
   const one=async u=>{
     const ctl=new AbortController();
-    const tm=setTimeout(()=>ctl.abort(),8000);
+    const tm=setTimeout(()=>ctl.abort(),12000);
     try{
-      const r=await fetch(u,{
-        method:'POST',
-        headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},
-        body:'data='+encodeURIComponent(q),
+      const r=await fetch(u+'?data='+encodeURIComponent(q),{
+        method:'GET',
+        headers:{'Accept':'application/json'},
         signal:ctl.signal,
         cache:'no-store'
       });
