@@ -181,6 +181,6 @@ function getLocation(){
   });
 }
 
-loadDutyPharmacies().then(()=>getLocation());
+getLocation();
 document.getElementById('open').onclick=()=>status.textContent=lat?'🟢 აირჩიე კატეგორია — შემდეგ გვერდზე გამოჩნდება ობიექტების სტატუსი.':'📍 ჯერ ჩართე ჩემი მდებარეობა';document.getElementById('all').onclick=()=>status.textContent=lat?'აირჩიე სასურველი კატეგორია ზემოთ.':'📍 ჯერ ჩართე ჩემი მდებარეობა';
 </script></body></html>
