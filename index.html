@@ -117,7 +117,7 @@ function pharmacyMatch(t,a){
   return bestScore>=8?best:null;
 }
 
-function query(id){const a='around:'+document.getElementById('radius').value+','+lat+','+lon;const m={pharmacy:'nwr[amenity=pharmacy][name]',supermarket:'nwr[shop=supermarket]',cafe:'nwr[amenity=cafe]',bar:'nwr[amenity=bar]',restaurant:'nwr[amenity=restaurant]',bakery:'nwr[shop=bakery]',butcher:'nwr[shop=butcher]',fuel:'nwr[amenity=fuel]',shop:'nwr[shop]',taxi:'nwr[amenity=taxi]',clinic:'nwr[amenity=clinic];nwr[healthcare]',service:'nwr[craft];nwr[shop=car_repair]'};return'[out:json][timeout:25];('+m[id]+'('+a+'););out center tags;'}
+function query(id){const a='around:'+document.getElementById('radius').value+','+lat+','+lon;const m={pharmacy:'nwr[amenity=pharmacy]',supermarket:'nwr[shop=supermarket]',cafe:'nwr[amenity=cafe]',bar:'nwr[amenity=bar]',restaurant:'nwr[amenity=restaurant]',bakery:'nwr[shop=bakery]',butcher:'nwr[shop=butcher]',fuel:'nwr[amenity=fuel]',shop:'nwr[shop]',taxi:'nwr[amenity=taxi]',clinic:'nwr[amenity=clinic];nwr[healthcare]',service:'nwr[craft];nwr[shop=car_repair]'};return'[out:json][timeout:25];('+m[id]+'('+a+'););out center tags;'}
 async function over(q){
   const urls=[
     'https://overpass.private.coffee/api/interpreter',
