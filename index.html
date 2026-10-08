@@ -126,23 +126,50 @@ async function load(){document.getElementById('info').textContent='🔎 ვე�
 document.getElementById('radius').onchange=()=>lat&&load();document.getElementById('back').onclick=()=>page.classList.remove('show');function showMap(a,b){page.classList.remove('show');map.setView([a,b],17);L.popup().setLatLng([a,b]).setContent('📍 ობიექტი').openOn(map)}function route(a,b){window.open('https://www.google.com/maps/dir/?api=1&destination='+a+','+b,'_blank')}
 let locationWatchId=null;
 let locationBusy=false;
+const LOCATION_KEY='temo_last_location_v2';
+
+function saveLocation(){
+  try{
+    localStorage.setItem(LOCATION_KEY,JSON.stringify({
+      lat,lon,ts:Date.now()
+    }));
+  }catch(_){}
+}
+
+function restoreLocation(){
+  try{
+    const x=JSON.parse(localStorage.getItem(LOCATION_KEY)||'null');
+    if(x&&Number.isFinite(x.lat)&&Number.isFinite(x.lon)){
+      lat=x.lat; lon=x.lon;
+      applyLocation({coords:{latitude:lat,longitude:lon,accuracy:100}});
+      status.textContent='📍 ბოლო შენახული მდებარეობა გამოიყენება';
+      return true;
+    }
+  }catch(_){}
+  return false;
+}
 
 function applyLocation(p){
   lat=p.coords.latitude;
   lon=p.coords.longitude;
+  saveLocation();
   if(marker)map.removeLayer(marker);
   if(circle)map.removeLayer(circle);
-  marker=L.marker([lat,lon]).addTo(map).bindPopup('📍 შენი მდებარეობა').openPopup();
+  marker=L.marker([lat,lon]).addTo(map).bindPopup('📍 შენი მდებარეობა');
   circle=L.circle([lat,lon],{radius:p.coords.accuracy||50}).addTo(map);
   map.setView([lat,lon],16);
-  status.textContent='📍 მდებარეობა დადასტურებულია';
+  status.textContent='📍 მდებარეობა ჩართულია';
   cards.innerHTML='<div class="card"><h3>კატეგორია აირჩიე 👇</h3><div class="meta">აირჩიე სასურველი კატეგორია და გაიხსნება ცალკე გვერდი.</div></div>';
 }
 
 function locationError(e){
   locationBusy=false;
   if(e.code===1){
-    status.innerHTML='📍 მდებარეობის ნებართვა საჭიროა.<br><button class="secondary" style="margin-top:8px" onclick="getLocation()">📍 მდებარეობის ჩართვა</button>';
+    if(lat!==null&&lon!==null){
+      status.textContent='📍 შენახული მდებარეობა გამოიყენება — ბრაუზერის ნებართვა ამჟამად შეზღუდულია.';
+    }else{
+      status.innerHTML='📍 მდებარეობის ნებართვა საჭიროა.<br><button class="secondary" style="margin-top:8px" onclick="getLocation()">📍 მდებარეობის ჩართვა</button>';
+    }
   }else if(e.code===2){
     status.innerHTML='📍 ტელეფონის Location ვერ მოიძებნა.<br><button class="secondary" style="margin-top:8px" onclick="getLocation()">📍 ხელახლა ცდა</button>';
   }else if(e.code===3){
@@ -175,19 +202,17 @@ function getLocation(){
     applyLocation(p);
     startLocationWatch();
   },e=>{
+    locationBusy=false;
     if(e.code===1){
       locationError(e);
       return;
     }
-    navigator.geolocation.getCurrentPosition(p=>{
-      locationBusy=false;
-      applyLocation(p);
+    const restored=restoreLocation();
+    if(restored){
       startLocationWatch();
-    },locationError,{
-      enableHighAccuracy:false,
-      timeout:20000,
-      maximumAge:0
-    });
+      return;
+    }
+    locationError(e);
   },{
     enableHighAccuracy:true,
     timeout:12000,
@@ -195,6 +220,8 @@ function getLocation(){
   });
 }
 
+const restoredAtStart=restoreLocation();
 getLocation();
+document.getElementById('open').onclick=()=>status.textContent=lat?'🟢 აირჩიე კატეგორია — შემდეგ გვერდზე გამოჩნდება ობიექტების სტატუსი.':'📍 ჯერ ჩართე ჩემი მდებარეობა';document.getElementById('all').onclick=()=>status.textContent=lat?'აირჩიე სასურველი კატეგორია ზემოთ.':'📍 ჯერ ჩართე ჩემი მდებარეობა';
 document.getElementById('open').onclick=()=>status.textContent=lat?'🟢 აირჩიე კატეგორია — შემდეგ გვერდზე გამოჩნდება ობიექტების სტატუსი.':'📍 ჯერ ჩართე ჩემი მდებარეობა';document.getElementById('all').onclick=()=>status.textContent=lat?'აირჩიე სასურველი კატეგორია ზემოთ.':'📍 ჯერ ჩართე ჩემი მდებარეობა';
 </script></body></html>
