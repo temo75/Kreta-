@@ -326,19 +326,28 @@ async function preloadAllCategories(){
   const ids=cats.map(function(c){return c[0]});
   status.textContent='📍 მდებარეობა ჩართულია • კატეგორიებს ვამზადებ…';
   let done=0;
+  const failed=[];
   const worker=async function(){
     while(ids.length){
       const id=ids.shift();
-      try{await prepareCategory(id)}catch(_){}
+      try{
+        await prepareCategory(id);
+      }catch(_){
+        failed.push(id);
+      }
       done++;
       status.textContent='📍 მდებარეობა ჩართულია • კატეგორიები მზადდება '+done+'/'+cats.length+'…';
     }
   };
   await Promise.all([worker(),worker()]);
   preloadRunning=false;
-  if(lat&&lon){
+  const ready=cats.every(function(cat){return !!categoryCache[categoryCacheKey(cat[0])]});
+  if(ready){
     preloadLat=lat;preloadLon=lon;preloadRadius=document.getElementById('radius').value;
+    persistCategoryCache();
     status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
+  }else{
+    status.textContent='⚠️ ზოგი კატეგორია ვერ ჩაიტვირთა. ხელახლა სცადეთ.';
   }
 }
 
@@ -367,7 +376,7 @@ async function load(){
     renderGeneralCategory(categoryCache[key]);
     return;
   }
-  document.getElementById('info').textContent='🔎 ამ კატეგორიის ჩატვირთვას ვასრულებ…';
+  document.getElementById('info').textContent='⚠️ ეს კატეგორია ჯერ მზად არ არის — ვცდი ჩატვირთვას…';
   results.innerHTML='<div class="loading">იტვირთება…</div>';
   try{
     const arr=await prepareCategory(catNow);
