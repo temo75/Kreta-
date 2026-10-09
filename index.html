@@ -229,13 +229,52 @@ function renderPharmacies(arr,sourceLabel){
 }
 const categoryCache={};
 const categoryLoading={};
-const CATEGORY_CACHE_KEY='kreta_category_cache_v1';
+const categoryMeta={};
+const CATEGORY_CACHE_KEY='kreta_category_cache_v2';
 const CATEGORY_CACHE_TTL=60*60*1000;
 let preloadRunning=false;
 let preloadLat=null,preloadLon=null,preloadRadius=null;
 
 function categoryCacheKey(id){
   return id+'|'+document.getElementById('radius').value;
+}
+function cacheIsFresh(key){
+  const m=categoryMeta[key];
+  return Array.isArray(categoryCache[key])&&!!m&&Date.now()-m.fetchedAt<CATEGORY_CACHE_TTL&&
+    m.radius===document.getElementById('radius').value&&
+    Number.isFinite(m.lat)&&Number.isFinite(m.lon)&&Number.isFinite(lat)&&Number.isFinite(lon)&&
+    dist(m.lat,m.lon,lat,lon)<=1;
+}
+function persistCategoryCache(){
+  try{
+    const saved={version:2,categories:{}};
+    Object.keys(categoryCache).forEach(function(key){
+      if(categoryMeta[key])saved.categories[key]={meta:categoryMeta[key],items:categoryCache[key]};
+    });
+    localStorage.setItem(CATEGORY_CACHE_KEY,JSON.stringify(saved));
+  }catch(_){}
+}
+function restoreCategoryCache(){
+  try{
+    const saved=JSON.parse(localStorage.getItem(CATEGORY_CACHE_KEY)||'null');
+    if(!saved||saved.version!==2||!saved.categories)return 0;
+    let count=0;
+    Object.keys(saved.categories).forEach(function(key){
+      const entry=saved.categories[key],m=entry&&entry.meta,items=entry&&entry.items;
+      if(!m||!Array.isArray(items)||!Number.isFinite(m.fetchedAt)||
+         Date.now()-m.fetchedAt>=CATEGORY_CACHE_TTL||
+         m.radius!==document.getElementById('radius').value||
+         !Number.isFinite(m.lat)||!Number.isFinite(m.lon)||!Number.isFinite(lat)||!Number.isFinite(lon)||
+         dist(m.lat,m.lon,lat,lon)>1)return;
+      categoryCache[key]=items.map(function(p){
+        if(p&&Number.isFinite(p.lat)&&Number.isFinite(p.lon))p.d=dist(lat,lon,p.lat,p.lon);
+        return p;
+      });
+      categoryMeta[key]=m;
+      count++;
+    });
+    return count;
+  }catch(_){return 0}
 }
 function persistCategoryCache(){
   try{
@@ -282,9 +321,9 @@ async function fetchCategoryData(id){
   });
 }
 
-async function prepareCategory(id){
+async function prepareCategory(id,forceRefresh){
   const key=categoryCacheKey(id);
-  if(categoryCache[key])return categoryCache[key];
+  if(!forceRefresh&&cacheIsFresh(key))return categoryCache[key];
   if(categoryLoading[key])return categoryLoading[key];
   categoryLoading[key]=(async function(){
     let lastError=null;
@@ -292,12 +331,13 @@ async function prepareCategory(id){
       try{
         const arr=await fetchCategoryData(id);
         categoryCache[key]=arr;
+        categoryMeta[key]={fetchedAt:Date.now(),lat:lat,lon:lon,radius:document.getElementById('radius').value};
         persistCategoryCache();
         delete categoryLoading[key];
         return arr;
       }catch(e){
         lastError=e;
-        if(attempt<3)await new Promise(r=>setTimeout(r,700));
+        if(attempt<3)await new Promise(function(resolve){setTimeout(resolve,700)});
       }
     }
     delete categoryLoading[key];
@@ -320,34 +360,35 @@ function renderGeneralCategory(arr){
 }
 
 async function preloadAllCategories(){
-  if(!lat||!lon||preloadRunning)return;
+  if(!Number.isFinite(lat)||!Number.isFinite(lon)||preloadRunning)return;
   preloadRunning=true;
-  preloadLat=lat;preloadLon=lon;preloadRadius=document.getElementById('radius').value;
-  const ids=cats.map(function(c){return c[0]});
+  const runRadius=document.getElementById('radius').value;
+  const ids=cats.map(function(cat){return cat[0]}).filter(function(id){return !cacheIsFresh(categoryCacheKey(id))});
+  if(!ids.length){
+    preloadRunning=false;
+    preloadLat=lat;preloadLon=lon;preloadRadius=runRadius;
+    status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
+    return;
+  }
   status.textContent='📍 მდებარეობა ჩართულია • კატეგორიებს ვამზადებ…';
-  let done=0;
+  let done=cats.length-ids.length;
   const failed=[];
   const worker=async function(){
     while(ids.length){
       const id=ids.shift();
-      try{
-        await prepareCategory(id);
-      }catch(_){
-        failed.push(id);
-      }
+      try{await prepareCategory(id,true)}catch(_){failed.push(id)}
       done++;
       status.textContent='📍 მდებარეობა ჩართულია • კატეგორიები მზადდება '+done+'/'+cats.length+'…';
     }
   };
   await Promise.all([worker(),worker()]);
   preloadRunning=false;
-  const ready=cats.every(function(cat){return !!categoryCache[categoryCacheKey(cat[0])]});
+  const ready=cats.every(function(cat){return cacheIsFresh(categoryCacheKey(cat[0]))});
   if(ready){
-    preloadLat=lat;preloadLon=lon;preloadRadius=document.getElementById('radius').value;
-    persistCategoryCache();
+    preloadLat=lat;preloadLon=lon;preloadRadius=runRadius;
     status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
   }else{
-    status.textContent='⚠️ ზოგი კატეგორია ვერ ჩაიტვირთა. ხელახლა სცადეთ.';
+    status.textContent='⚠️ ზოგი კატეგორია ვერ ჩაიტვირთა. შენახული შედეგები გამოჩნდება; განახლებას ხელახლა ვცდი.';
   }
 }
 
@@ -365,31 +406,46 @@ async function openCat(id){
 }
 
 async function load(){
-  const key=categoryCacheKey(catNow);
-  if(catNow==='pharmacy'){
-    document.getElementById('info').textContent='Vrisko-ზე ნაპოვნია '+vriskoPharmacies.length+' აფთიაქი • მორიგე პირველია';
-    const arr=categoryCache[key]||await prepareCategory(catNow);
-    renderPharmacies(arr,'Vrisko-ზე ნაპოვნია '+arr.length+' აფთიაქი • მორიგე პირველია');
+  const id=catNow,key=categoryCacheKey(id);
+  const cached=categoryCache[key],fresh=cacheIsFresh(key);
+  if(id==='pharmacy'){
+    if(cached)renderPharmacies(cached,'Vrisko-ზე ნაპოვნია '+cached.length+' აფთიაქი • მორიგე პირველია');
+    else{
+      document.getElementById('info').textContent='აფთიაქების მონაცემებს ვამზადებ…';
+      results.innerHTML='<div class="loading">იტვირთება…</div>';
+    }
+    if(fresh)return;
+    try{
+      const arr=await prepareCategory(id);
+      if(catNow===id)renderPharmacies(arr,'Vrisko-ზე ნაპოვნია '+arr.length+' აფთიაქი • მორიგე პირველია');
+    }catch(_){
+      if(!cached)document.getElementById('info').textContent='❌ აფთიაქების მონაცემები ვერ ჩაიტვირთა';
+    }
     return;
   }
-  if(categoryCache[key]){
-    renderGeneralCategory(categoryCache[key]);
-    return;
+  if(cached)renderGeneralCategory(cached);
+  else{
+    document.getElementById('info').textContent='🔎 ამ კატეგორიის მონაცემებს ვამზადებ…';
+    results.innerHTML='<div class="loading">იტვირთება…</div>';
   }
-  document.getElementById('info').textContent='⚠️ ეს კატეგორია ჯერ მზად არ არის — ვცდი ჩატვირთვას…';
-  results.innerHTML='<div class="loading">იტვირთება…</div>';
+  if(fresh)return;
   try{
-    const arr=await prepareCategory(catNow);
-    if(catNow===catNow)renderGeneralCategory(arr);
-  }catch(e){
-    document.getElementById('info').textContent='❌ ძიება ვერ შესრულდა';
-    results.innerHTML='<div class="card">ინტერნეტთან ან რუკის მონაცემებთან პრობლემაა. ისევ სცადე.</div>';
+    const arr=await prepareCategory(id);
+    if(catNow===id)renderGeneralCategory(arr);
+  }catch(_){
+    if(!cached){
+      document.getElementById('info').textContent='❌ ძიება ვერ შესრულდა';
+      results.innerHTML='<div class="card">ინტერნეტთან ან რუკის მონაცემებთან პრობლემაა. ისევ სცადე.</div>';
+    }else{
+      document.getElementById('info').textContent='ნაჩვენებია შენახული შედეგები • განახლება ვერ მოხერხდა';
+    }
   }
 }
 
 document.getElementById('radius').onchange=async function(){
   if(!lat)return;
   for(const k of Object.keys(categoryCache))delete categoryCache[k];
+  for(const k of Object.keys(categoryMeta))delete categoryMeta[k];
   for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
   try{localStorage.removeItem(CATEGORY_CACHE_KEY)}catch(_){}
   await preloadAllCategories();
@@ -436,20 +492,27 @@ function applyLocation(p){
   map.setView([lat,lon],16);
   cards.innerHTML='<div class="card"><h3>კატეგორია აირჩიე 👇</h3><div class="meta">აირჩიე სასურველი კატეგორია და გაიხსნება ცალკე გვერდი.</div></div>';
   if(oldLat===null){
-    const restored=restoreCategoryCache();
-    if(restored){
+    restoreCategoryCache();
+    const allFresh=cats.every(function(cat){return cacheIsFresh(categoryCacheKey(cat[0]))});
+    if(allFresh){
+      preloadLat=lat;preloadLon=lon;preloadRadius=document.getElementById('radius').value;
       status.textContent='📍 მდებარეობა ჩართულია • შენახული კატეგორიები მზადაა';
       return;
     }
+    preloadAllCategories();
+    return;
   }
   const moved=!Number.isFinite(preloadLat)||!Number.isFinite(preloadLon)||dist(preloadLat,preloadLon,lat,lon)>1||preloadRadius!==document.getElementById('radius').value;
-  if((oldLat===null||moved)&&!preloadRunning){
+  if(moved&&!preloadRunning){
     for(const k of Object.keys(categoryCache))delete categoryCache[k];
+    for(const k of Object.keys(categoryMeta))delete categoryMeta[k];
     for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
     try{localStorage.removeItem(CATEGORY_CACHE_KEY)}catch(_){}
     preloadAllCategories();
   }else if(!preloadRunning){
-    status.textContent='📍 მდებარეობა ჩართულია • შენახული კატეგორიები მზადაა';
+    const allFresh=cats.every(function(cat){return cacheIsFresh(categoryCacheKey(cat[0]))});
+    if(allFresh)status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
+    else preloadAllCategories();
   }
 }
 
