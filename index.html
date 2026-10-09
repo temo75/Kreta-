@@ -229,11 +229,38 @@ function renderPharmacies(arr,sourceLabel){
 }
 const categoryCache={};
 const categoryLoading={};
+const CATEGORY_CACHE_KEY='kreta_category_cache_v1';
+const CATEGORY_CACHE_TTL=60*60*1000;
 let preloadRunning=false;
 let preloadLat=null,preloadLon=null,preloadRadius=null;
 
 function categoryCacheKey(id){
   return id+'|'+document.getElementById('radius').value;
+}
+function persistCategoryCache(){
+  try{
+    localStorage.setItem(CATEGORY_CACHE_KEY,JSON.stringify({
+      savedAt:Date.now(),
+      lat:lat,
+      lon:lon,
+      radius:document.getElementById('radius').value,
+      items:categoryCache
+    }));
+  }catch(_){}
+}
+function restoreCategoryCache(){
+  try{
+    const saved=JSON.parse(localStorage.getItem(CATEGORY_CACHE_KEY)||'null');
+    if(!saved||!saved.items||!Number.isFinite(saved.savedAt)||Date.now()-saved.savedAt>=CATEGORY_CACHE_TTL){
+      localStorage.removeItem(CATEGORY_CACHE_KEY);
+      return false;
+    }
+    if(!Number.isFinite(saved.lat)||!Number.isFinite(saved.lon)||!Number.isFinite(lat)||!Number.isFinite(lon))return false;
+    if(saved.radius!==document.getElementById('radius').value||dist(saved.lat,saved.lon,lat,lon)>1)return false;
+    Object.keys(saved.items).forEach(function(k){categoryCache[k]=saved.items[k]});
+    preloadLat=lat;preloadLon=lon;preloadRadius=saved.radius;
+    return cats.every(function(cat){return !!categoryCache[categoryCacheKey(cat[0])]});
+  }catch(_){return false}
 }
 
 async function fetchCategoryData(id){
@@ -265,6 +292,7 @@ async function prepareCategory(id){
       try{
         const arr=await fetchCategoryData(id);
         categoryCache[key]=arr;
+        persistCategoryCache();
         delete categoryLoading[key];
         return arr;
       }catch(e){
@@ -352,8 +380,9 @@ async function load(){
 
 document.getElementById('radius').onchange=async function(){
   if(!lat)return;
-  for(const k of Object.keys(categoryCache)){if(k.startsWith('pharmacy|')||k)delete categoryCache[k]}
+  for(const k of Object.keys(categoryCache))delete categoryCache[k];
   for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
+  try{localStorage.removeItem(CATEGORY_CACHE_KEY)}catch(_){}
   await preloadAllCategories();
   if(catNow)load();
 }
@@ -397,13 +426,21 @@ function applyLocation(p){
   circle=L.circle([lat,lon],{radius:p.coords.accuracy||50}).addTo(map);
   map.setView([lat,lon],16);
   cards.innerHTML='<div class="card"><h3>კატეგორია აირჩიე 👇</h3><div class="meta">აირჩიე სასურველი კატეგორია და გაიხსნება ცალკე გვერდი.</div></div>';
-  const moved=!Number.isFinite(preloadLat)||!Number.isFinite(preloadLon)||dist(preloadLat,preloadLon,lat,lon)>0.2||preloadRadius!==document.getElementById('radius').value;
+  if(oldLat===null){
+    const restored=restoreCategoryCache();
+    if(restored){
+      status.textContent='📍 მდებარეობა ჩართულია • შენახული კატეგორიები მზადაა';
+      return;
+    }
+  }
+  const moved=!Number.isFinite(preloadLat)||!Number.isFinite(preloadLon)||dist(preloadLat,preloadLon,lat,lon)>1||preloadRadius!==document.getElementById('radius').value;
   if((oldLat===null||moved)&&!preloadRunning){
     for(const k of Object.keys(categoryCache))delete categoryCache[k];
     for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
+    try{localStorage.removeItem(CATEGORY_CACHE_KEY)}catch(_){}
     preloadAllCategories();
   }else if(!preloadRunning){
-    status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
+    status.textContent='📍 მდებარეობა ჩართულია • შენახული კატეგორიები მზადაა';
   }
 }
 
