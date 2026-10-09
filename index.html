@@ -384,11 +384,13 @@ async function preloadAllCategories(){
   await Promise.all([worker(),worker()]);
   preloadRunning=false;
   const ready=cats.every(function(cat){return cacheIsFresh(categoryCacheKey(cat[0]))});
+  // Record the location/radius for this attempt even if one source failed,
+  // so each GPS watch update does not start the whole preload again.
+  preloadLat=lat;preloadLon=lon;preloadRadius=runRadius;
   if(ready){
-    preloadLat=lat;preloadLon=lon;preloadRadius=runRadius;
     status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
   }else{
-    status.textContent='⚠️ ზოგი კატეგორია ვერ ჩაიტვირთა. შენახული შედეგები გამოჩნდება; განახლებას ხელახლა ვცდი.';
+    status.textContent='⚠️ ზოგი კატეგორია ვერ ჩაიტვირთა. შენახული შედეგები დარჩა; ხელახლა სცადე ან შეცვალე რადიუსი.';
   }
 }
 
