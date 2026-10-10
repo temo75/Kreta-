@@ -2,7 +2,10 @@ import json, re, urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
 
-CATALOG_URL = "https://www.rethymno.gr/guide/pharmacies"
+CATALOG_URLS = [
+    "https://www.rethymno.gr/guide/pharmacies",
+    "https://www.dreth.gr/%CF%86%CE%B1%CF%81%CE%BC%CE%B1%CE%BA%CE%B5%CE%AF%CE%B1/",
+]
 DUTY_URL = "https://www.rethymno.gr/information-services/pharmacies/pharmacies.html"
 
 class TextParser(HTMLParser):
@@ -45,7 +48,21 @@ def clean_phone(p):
     return digits
 
 def scrape_catalog():
-    parts=fetch_lines(CATALOG_URL)
+    parts = None
+    used_url = None
+    errors = []
+    for url in CATALOG_URLS:
+        try:
+            candidate = fetch_lines(url)
+            if len(candidate) >= 20:
+                parts = candidate
+                used_url = url
+                break
+            errors.append(f"{url}: response too short")
+        except Exception as exc:
+            errors.append(f"{url}: {exc}")
+    if parts is None:
+        raise RuntimeError("Could not fetch any official municipality pharmacy catalog: " + " | ".join(errors))
     rows=[]
     i=0
     while i < len(parts):
@@ -71,7 +88,11 @@ def scrape_catalog():
     for p in rows:
         key=(p["name"].casefold(),p["address"].casefold())
         if key not in unique: unique[key]=p
-    return list(unique.values())
+    result = list(unique.values())
+    if len(result) < 20:
+        raise RuntimeError(f"Catalog parser found only {len(result)} pharmacies at {used_url}")
+    print(f"Catalog source: {used_url}; parsed {len(result)} pharmacies", flush=True)
+    return result
 
 def scrape_duty():
     parts=fetch_lines(DUTY_URL)
@@ -122,7 +143,7 @@ def main():
     duty=scrape_duty()
     if len(catalog)<20: raise RuntimeError(f"Catalog parse returned only {len(catalog)} pharmacies; refusing to overwrite good data")
     if not duty: raise RuntimeError("No duty schedules parsed; refusing to overwrite good data")
-    Path("pharmacies.json").write_text(json.dumps({"updatedAt":__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),"source":CATALOG_URL,"pharmacies":catalog},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    Path("pharmacies.json").write_text(json.dumps({"updatedAt":__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),"source":"municipality official catalog (primary/fallback)","pharmacies":catalog},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     Path("duty.json").write_text(json.dumps({"updatedAt":__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),"source":DUTY_URL,"schedule":duty},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Saved {len(catalog)} pharmacies and {len(duty)} duty dates")
 
