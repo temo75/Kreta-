@@ -15,8 +15,18 @@ DUTY_SOURCE_USED = DUTY_URL
 
 class TextParser(HTMLParser):
     def __init__(self):
-        super().__init__(); self.parts=[]
+        super().__init__()
+        self.parts=[]
+        self.hidden_depth=0
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() in ("script", "style", "noscript", "svg", "head"):
+            self.hidden_depth += 1
+    def handle_endtag(self, tag):
+        if tag.lower() in ("script", "style", "noscript", "svg", "head") and self.hidden_depth:
+            self.hidden_depth -= 1
     def handle_data(self, data):
+        if self.hidden_depth:
+            return
         s=" ".join(data.split())
         if s: self.parts.append(s)
 
