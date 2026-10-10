@@ -6,7 +6,12 @@ CATALOG_URLS = [
     "https://www.rethymno.gr/guide/pharmacies",
     "https://www.dreth.gr/%CF%86%CE%B1%CF%81%CE%BC%CE%B1%CE%BA%CE%B5%CE%AF%CE%B1/",
 ]
-DUTY_URL = "https://www.rethymno.gr/information-services/pharmacies/pharmacies.html"
+DUTY_URLS = [
+    "https://www.rethymno.gr/information-services/pharmacies/pharmacies.html",
+    "https://rethymno.efhmeries.gr/Nearby/",
+]
+DUTY_URL = DUTY_URLS[0]
+DUTY_SOURCE_USED = DUTY_URL
 
 class TextParser(HTMLParser):
     def __init__(self):
@@ -95,7 +100,23 @@ def scrape_catalog():
     return result
 
 def scrape_duty():
-    parts=fetch_lines(DUTY_URL)
+    global DUTY_SOURCE_USED
+    parts=None
+    errors=[]
+    used_url=None
+    for url in DUTY_URLS:
+        try:
+            candidate=fetch_lines(url)
+            if len(candidate) >= 10:
+                parts=candidate
+                used_url=url
+                DUTY_SOURCE_USED=url
+                break
+            errors.append(f"{url}: response too short")
+        except Exception as exc:
+            errors.append(f"{url}: {exc}")
+    if parts is None:
+        raise RuntimeError("Could not fetch any duty schedule source: " + " | ".join(errors))
     records=[]
     current_date=None; period=None; i=0
     date_re=re.compile(r"(?:Δευτέρα|Τρίτη|Τετάρτη|Πέμπτη|Παρασκευή|Σάββατο|Κυριακή)\s+\d{1,2}\s+\w+\s+\d{4}",re.I)
@@ -136,7 +157,9 @@ def scrape_duty():
         m=re.search(r"(\d{1,2})\s+(\S+)\s+(\d{4})",r["dateLabel"])
         if m and m.group(2) in months:
             r["date"]=f'{m.group(3)}-{months[m.group(2)]}-{int(m.group(1)):02d}'
-    return [r for r in records if r["date"] and (r["day"] or r["night"])]
+    result=[r for r in records if r["date"] and (r["day"] or r["night"])]
+    print(f"Duty source: {used_url}; parsed {len(result)} duty dates", flush=True)
+    return result
 
 def main():
     catalog=scrape_catalog()
@@ -144,7 +167,7 @@ def main():
     if len(catalog)<20: raise RuntimeError(f"Catalog parse returned only {len(catalog)} pharmacies; refusing to overwrite good data")
     if not duty: raise RuntimeError("No duty schedules parsed; refusing to overwrite good data")
     Path("pharmacies.json").write_text(json.dumps({"updatedAt":__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),"source":"municipality official catalog (primary/fallback)","pharmacies":catalog},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    Path("duty.json").write_text(json.dumps({"updatedAt":__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),"source":DUTY_URL,"schedule":duty},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    Path("duty.json").write_text(json.dumps({"updatedAt":__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),"source":DUTY_SOURCE_USED,"schedule":duty},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Saved {len(catalog)} pharmacies and {len(duty)} duty dates")
 
 if __name__=="__main__": main()
