@@ -224,7 +224,7 @@ function renderPharmacies(arr,sourceLabel){
     if(ad!==bd)return ad-bd;
     return String(a.v.name).localeCompare(String(b.v.name),'el');
   });
-  document.getElementById('info').textContent=sourceLabel||('ნაპოვნია '+pharmacyRenderItems.length+' აფთიაქი • მორიგე პირველია');
+  document.getElementById('info').textContent='';
   results.innerHTML=pharmacyRenderItems.length?pharmacyRenderItems.map(function(p,i){return pharmacyCard(p,i)}).join(''):'<div class="card">😔 აფთიაქები ვერ მოიძებნა.</div>';
 }
 const categoryCache={};
