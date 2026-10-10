@@ -178,10 +178,7 @@ async function over(q){
   return Promise.any(urls.map(one));
 }
 async function openCat(id){catNow=id;const c=cats.find(x=>x[0]===id);document.getElementById('title').textContent=c[1]+' '+c[2];page.classList.add('show');if(!lat){document.getElementById('info').textContent='📍 ჯერ ჩართე ტელეფონის მდებარეობა.';results.innerHTML='<div class="card">მდებარეობის მიღების შემდეგ აქ გამოჩნდება ახლომდებარე ობიექტები.</div>';return}load()}
-function pharmacyDuty(v){
-  const p=String(v.phone||'').replace(/\\D/g,'');
-  return dutyNow().find(x=>String(x.phone||'').replace(/\\D/g,'')===p)||null;
-}
+function pharmacyDuty(v){return null;}
 function pharmacyDistanceText(d){
   if(!Number.isFinite(d))return '📍 მანძილი მიუწვდომელია';
   return '📍 '+(d<1?Math.round(d*1000)+' მ':d.toFixed(1)+' კმ');
@@ -209,7 +206,7 @@ function pharmacyRouteByIndex(i){
 function pharmacyCard(p,i){
   const v=p.v||p;
   const duty=p.duty||pharmacyDuty(v);
-  const status=duty?'<span class="open">🟢 ახლა ღიაა • მორიგე</span>':(p.isOpen?'<span class="open">🟢 ახლა ღიაა</span>':'<span class="unknown">ℹ️ საათები ვერ დადასტურდა</span>');
+  const status=duty?'<span class="open">🟢 ახლა ღიაა • მორიგე</span>':(p.isOpen?'<span class="open">🟢 ღიაა (რუკის საათების მიხედვით)</span>':(p.opening?'<span class="closed">🔴 დაკეტილია (რუკის საათების მიხედვით)</span>':'<span class="unknown">ℹ️ სამუშაო საათები ონლაინ წყაროში არ არის მითითებული</span>'));
   const ph=String(v.phone||'');
   let buttons='';
   if(Number.isFinite(p.lat)&&Number.isFinite(p.lon)){
@@ -239,8 +236,8 @@ function renderPharmacies(arr,sourceLabel){
     if(ad!==bd)return ad-bd;
     return String(a.v.name).localeCompare(String(b.v.name),'el');
   });
-  document.getElementById('info').textContent='';
-  results.innerHTML=pharmacyRenderItems.length?pharmacyRenderItems.map(function(p,i){return pharmacyCard(p,i)}).join(''):'<div class="card">😔 აფთიაქები ვერ მოიძებნა.</div>';
+  document.getElementById('info').innerHTML='ონლაინ რუკის მონაცემები • <a href="https://www.vrisko.gr/efimeries-farmakeion/rethymno" target="_blank" rel="noopener">დღევანდელი მორიგე აფთიაქები (Vrisko)</a>';
+  results.innerHTML=pharmacyRenderItems.length?pharmacyRenderItems.map(function(p,i){return pharmacyCard(p,i)}).join(''):'<div class="card">😔 ონლაინ რუკაში აფთიაქები ვერ მოიძებნა. სცადე განახლება ან გახსენი Vrisko-ს ოფიციალური სია: <a href="https://www.vrisko.gr/dir/farmakeia/rethymno/" target="_blank" rel="noopener">რეთიმნოს აფთიაქები</a>.</div>';
 }
 const categoryCache={};
 const categoryLoading={};
@@ -316,17 +313,20 @@ function restoreCategoryCache(){
 }
 
 async function fetchCategoryData(id){
-  if(id==='pharmacy'){
-    return vriskoPharmacies.map(function(v){
-      return {v:v,d:Infinity,lat:null,lon:null,isOpen:false};
-    });
-  }
   const d=await over(query(id));
   return d.elements.map(function(e){
     const p=e.lat!=null?[e.lat,e.lon]:e.center?[e.center.lat,e.center.lon]:null;
     if(!p)return null;
     const t=e.tags||{};
     const ss=st(t);
+    const address=id==='pharmacy'
+      ? [t['addr:street'],t['addr:housenumber'],t['addr:suburb']||t['addr:city']||'Rethymno'].filter(Boolean).join(' ')
+      : '';
+    if(id==='pharmacy'){
+      const phone=t.phone||t['contact:phone']||'';
+      const v={name:t.name||t['name:el']||t['name:en']||'აფთიაქი',addr:address||'მისამართი რუკის მონაცემებში მითითებული არ არის',phone:phone};
+      return {v:v,lat:p[0],lon:p[1],t:t,n:v.name,d:dist(lat,lon,p[0],p[1]),isOpen:ss[1]==='open',opening: t.opening_hours||''};
+    }
     return {lat:p[0],lon:p[1],t:t,n:t.name||t['name:en']||t['name:el']||'',d:dist(lat,lon,p[0],p[1]),isOpen:ss[1]==='open'};
   }).filter(Boolean).sort(function(a,b){
     if(a.isOpen!==b.isOpen)return a.isOpen?-1:1;
