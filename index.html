@@ -368,7 +368,7 @@ async function preloadAllCategories(){
     status.textContent='🌐 ინტერნეტიდან მონაცემები მზადაა';
     return;
   }
-  status.textContent='🌐 მონაცემები მზადდება…';
+  // No progress message: keep the page immediately usable.
   let done=cats.length-ids.length;
   const failed=[];
   const worker=async function(){
