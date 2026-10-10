@@ -9,7 +9,7 @@
 <div id="count" class="count"></div><div id="all" class="cards"></div>
 <div class="small">წყარო: Δήμος Ρεθύμνου — ოფიციალური აფთიაქების კატალოგი. სრული სია ამ გვერდის მონაცემებშია შენახული და აღარ არის ჩასმული iframe-ით.</div></main>
 <script>
-const pharmacies = [
+let pharmacies = [
 ["Αγγελάκης Παναγιώτης","Ζωνιανά",["2834061450"]],
 ["Αλεφαντινού Μαρία","Ζαμπελίου 19, έναντι κλ. Ασκληπιός",["2831026115"]],
 ["Αντωνίου Ανδρέας","Σπήλι",["2832022150"]],
@@ -85,17 +85,48 @@ const pharmacies = [
 ["Ψυχαράκη Ευρυδίκη","Ατσιπόπουλο",["2831032927"]],
 ["Ψυχαράκης Σωκράτης","Σφακάκι",["2831074500"]]
 ].map(([name,address,phones])=>({name,address,phones}));
-const schedule={
+let schedule={
 "2026-10-09":{day:["Αλεφαντινού Μαρία"],night:["Παπατζανή Μαρία"]},
 "2026-10-10":{day:["Πρινιωτάκης Ηλίας - Παναγιώτης","Τσαούλης Γεώργιος"],night:["Δαφνομήλη Γεωργία"]},
 "2026-10-11":{day:["Βουμβουράκη Αναστασία","Δρανδάκη - Λιάσκος"],night:["Κούνουπας Ανδρέας"]}
 };
-const now=new Date(), key=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0'), hour=now.getHours()+now.getMinutes()/60;
-document.getElementById('date').textContent='Ημερομηღე: '+new Intl.DateTimeFormat('el-GR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'}).format(now);
-let data=schedule[key];if(hour<8){const prev=new Date(now);prev.setDate(prev.getDate()-1);const pk=prev.getFullYear()+'-'+String(prev.getMonth()+1).padStart(2,'0')+'-'+String(prev.getDate()).padStart(2,'0');if(schedule[pk])data=schedule[pk]}
-const isNight=hour>=21||hour<8, activeNames=data?(isNight?data.night:data.day):[];
+let activeNames=[];
+function updateDuty(){
+ const now=new Date(), key=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0'), hour=now.getHours()+now.getMinutes()/60;
+ document.getElementById('date').textContent='Ημερομηνία: '+new Intl.DateTimeFormat('el-GR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'}).format(now);
+ let data=schedule[key];
+ if(hour<8){const prev=new Date(now);prev.setDate(prev.getDate()-1);const pk=prev.getFullYear()+'-'+String(prev.getMonth()+1).padStart(2,'0')+'-'+String(prev.getDate()).padStart(2,'0');if(schedule[pk])data=schedule[pk]}
+ const isNight=hour>=21||hour<8;
+ activeNames=data?(isNight?data.night:data.day).map(p=>typeof p==='string'?p:p.name):[];
+ const duty=document.getElementById('duty');
+ duty.innerHTML=activeNames.length?pharmacies.filter(p=>activeNames.includes(p.name)).map(p=>card(p,true)).join(''):'<article class="pharmacy">მორიგეობის მონაცემი დროებით მიუწვდომელია.</article>';
+}
+async function loadOfficialData(){
+ try {
+  const [catalogResponse,dutyResponse]=await Promise.all([
+   fetch('./pharmacies.json?'+Date.now(),{cache:'no-store'}),
+   fetch('./duty.json?'+Date.now(),{cache:'no-store'})
+  ]);
+  if(!catalogResponse.ok||!dutyResponse.ok)throw new Error('Official data files are not available yet');
+  const catalog=await catalogResponse.json(), dutyData=await dutyResponse.json();
+  if(!Array.isArray(catalog.pharmacies)||catalog.pharmacies.length<20)throw new Error('Catalog validation failed');
+  if(!Array.isArray(dutyData.schedule)||!dutyData.schedule.some(d=>d.date&&(d.day?.length||d.night?.length)))throw new Error('Duty schedule validation failed');
+  pharmacies=catalog.pharmacies;
+  const freshSchedule={};
+  for(const entry of dutyData.schedule){
+   if(entry.date)freshSchedule[entry.date]={day:Array.isArray(entry.day)?entry.day:[],night:Array.isArray(entry.night)?entry.night:[]};
+  }
+  if(!Object.keys(freshSchedule).length)throw new Error('No valid duty dates');
+  schedule=freshSchedule;
+ } catch(error) {
+  console.warn('Using embedded pharmacy data until official sync succeeds:',error);
+ }
+ updateDuty();
+ renderAll();
+}
 function card(p,active){const phoneLinks=p.phones.map(n=>'<a href="tel:'+n+'">☎ '+n+'</a>').join(' ');const map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.name+' '+p.address+' Rethymno Crete');return '<article class="pharmacy '+(active?'active':'')+'"><div class="status">'+(active?'● ახლა მორიგეა':'აფთიაქი')+'</div><div class="pname">'+p.name+'</div><div class="details">📍 '+p.address+'</div><div class="details">☎ '+p.phones.join(' · ')+'</div><div class="links">'+phoneLinks+'<a target="_blank" rel="noopener" href="'+map+'">რუკაზე ნახვა</a></div></article>'}
 function renderAll(){document.getElementById('count').textContent='ნაპოვნია '+pharmacies.length+' აფთიაქი';document.getElementById('all').innerHTML=pharmacies.map(p=>card(p,activeNames.includes(p.name))).join('')}
-const duty=document.getElementById('duty');duty.innerHTML=activeNames.length?pharmacies.filter(p=>activeNames.includes(p.name)).map(p=>card(p,true)).join(''):'<article class="pharmacy">ამ თარიღის მორიგეობის მონაცემი გვერდზე არ გვაქვს. გამოიყენე ოფიციალური გრაფიკის ბმული.</article>';
+updateDuty();
 renderAll();
+loadOfficialData();
 </script></body></html>
