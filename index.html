@@ -85,6 +85,11 @@ let pharmacies = [
 ["Ψυχαράκη Ευρυδίκη","Ατσιπόπουλο",["2831032927"]],
 ["Ψυχαράκης Σωκράτης","Σφακάκι",["2831074500"]]
 ].map(([name,address,phones])=>({name,address,phones}));
+const fallbackSchedule={
+"2026-10-09":{day:["Αλεφαντινού Μαρία"],night:["Παπατζανή Μαρία"]},
+"2026-10-10":{day:["Πρινιωτάκης Ηλίας - Παναγιώτης","Τσαούλης Γεώργιος"],night:["Δαφνομήλη Γεωργία"]},
+"2026-10-11":{day:["Βουμβουράκη Αναστασία","Δρανδάκη - Λιάσκος"],night:["Κούνουπας Ανδρέας"]}
+};
 let schedule=[];
 let activeNames=[];
 let currentDuty=[];
@@ -114,7 +119,7 @@ async function loadOfficialData(){
   const stamp=dutyData.updatedAt||pharmacyData.updatedAt;
   if(stamp)document.querySelector('.small:last-child').textContent='ოფიციალური მონაცემების ბოლო სინქრონიზაცია: '+new Date(stamp).toLocaleString('el-GR')+'. წყარო: რეთიმნოს მუნიციპალიტეტი.';
  }catch(e){
-  const fallbackDuty = schedule[key] || null;
+  const fallbackDuty = fallbackSchedule[key] || null;
   const fallbackNight = hour>=21 || hour<8;
   currentDuty = fallbackDuty ? (fallbackNight ? (fallbackDuty.night||[]) : (fallbackDuty.day||[])) : [];
   activeNames = currentDuty.map(p=>typeof p==='string'?p:p.name);
