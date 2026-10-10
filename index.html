@@ -133,32 +133,47 @@ function pharmacyMatch(t,a){
   return bestScore>=12?best:null;
 }
 
-function query(id){const a='around:'+document.getElementById('radius').value+','+lat+','+lon;const m={pharmacy:'nwr[amenity=pharmacy]',supermarket:'nwr[shop=supermarket]',cafe:'nwr[amenity=cafe]',bar:'nwr[amenity=bar]',restaurant:'nwr[amenity=restaurant]',bakery:'nwr[shop=bakery]',butcher:'nwr[shop=butcher]',fuel:'nwr[amenity=fuel]',shop:'nwr[shop]',taxi:'nwr[amenity=taxi]',clinic:'nwr[amenity=clinic];nwr[healthcare]',service:'nwr[craft];nwr[shop=car_repair]'};return'[out:json][timeout:25];('+m[id]+'('+a+'););out center tags;'}
+function query(id){
+  const a='around:'+document.getElementById('radius').value+','+lat+','+lon;
+  const m={
+    pharmacy:['nwr[amenity=pharmacy]'],
+    supermarket:['nwr[shop=supermarket]'],
+    cafe:['nwr[amenity=cafe]'],
+    bar:['nwr[amenity=bar]'],
+    restaurant:['nwr[amenity=restaurant]'],
+    bakery:['nwr[shop=bakery]'],
+    butcher:['nwr[shop=butcher]'],
+    fuel:['nwr[amenity=fuel]'],
+    shop:['nwr[shop]'],
+    taxi:['nwr[amenity=taxi]'],
+    clinic:['nwr[amenity=clinic]','nwr[healthcare]'],
+    service:['nwr[craft]','nwr[shop=car_repair]']
+  };
+  const selectors=m[id]||[];
+  return '[out:json][timeout:25];('+selectors.map(function(selector){return selector+'('+a+');'}).join('')+');out center tags;';
+}
 async function over(q){
   const urls=[
+    'https://overpass-api.de/api/interpreter',
     'https://overpass.private.coffee/api/interpreter',
     'https://z.overpass-api.de/api/interpreter',
-    'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
-    'https://overpass-api.de/api/interpreter'
+    'https://maps.mail.ru/osm/tools/overpass/api/interpreter'
   ];
-  const one=async u=>{
+  const one=async function(u){
     const ctl=new AbortController();
-    const tm=setTimeout(()=>ctl.abort(),8000);
+    const tm=setTimeout(function(){ctl.abort()},25000);
     try{
-      const r=await fetch(u,{
-        method:'POST',
-        headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},
-        body:'data='+encodeURIComponent(q),
+      const response=await fetch(u+'?data='+encodeURIComponent(q),{
+        method:'GET',
+        headers:{'Accept':'application/json'},
         signal:ctl.signal,
         cache:'no-store'
       });
-      if(!r.ok)throw Error('HTTP '+r.status);
-      const d=await r.json();
-      if(d&&Array.isArray(d.elements))return d;
-      throw Error('invalid response');
-    }finally{
-      clearTimeout(tm);
-    }
+      if(!response.ok)throw Error('Overpass HTTP '+response.status);
+      const data=await response.json();
+      if(data&&Array.isArray(data.elements))return data;
+      throw Error('Overpass invalid response');
+    }finally{clearTimeout(tm)}
   };
   return Promise.any(urls.map(one));
 }
