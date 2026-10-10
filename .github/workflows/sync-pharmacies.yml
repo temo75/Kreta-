@@ -1,0 +1,35 @@
+name: Sync Rethymno Pharmacies
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/sync_pharmacies.py"
+      - ".github/workflows/sync-pharmacies.yml"
+permissions:
+  contents: write
+concurrency:
+  group: pharmacy-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Download latest official pharmacy data
+        run: python scripts/sync_pharmacies.py
+      - name: Commit changed data
+        run: |
+          if [[ -n "$(git status --porcelain pharmacies.json duty.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add pharmacies.json duty.json
+            git commit -m "Update official pharmacy and duty data"
+            git push
+          else
+            echo "Pharmacy data is already up to date"
+          fi
