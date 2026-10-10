@@ -27,7 +27,8 @@ jobs:
           if [[ -n "$(git status --porcelain pharmacies.json duty.json)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add pharmacies.json duty.json
+            git add -f pharmacies.json
+            if [[ -f duty.json ]]; then git add duty.json; fi
             git commit -m "Update official pharmacy and duty data"
             git pull --rebase origin main
             git push
