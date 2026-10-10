@@ -13,11 +13,28 @@ class TextParser(HTMLParser):
         if s: self.parts.append(s)
 
 def fetch_lines(url):
-    req=urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0 TEMO-pharmacy-sync/1.0"})
-    with urllib.request.urlopen(req, timeout=30) as response:
-        html=response.read().decode("utf-8", "replace")
-    parser=TextParser(); parser.feed(html)
-    return parser.parts
+    import time
+    last_error = None
+    for attempt in range(1, 5):
+        try:
+            req=urllib.request.Request(url, headers={
+                "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
+                "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language":"el,en-US;q=0.9,en;q=0.8",
+                "Connection":"close"
+            })
+            with urllib.request.urlopen(req, timeout=45) as response:
+                html=response.read().decode("utf-8", "replace")
+            parser=TextParser(); parser.feed(html)
+            if len(parser.parts) < 10:
+                raise RuntimeError(f"Unexpectedly short response from {url}")
+            return parser.parts
+        except Exception as exc:
+            last_error = exc
+            print(f"Fetch attempt {attempt}/4 failed for {url}: {exc}", flush=True)
+            if attempt < 4:
+                time.sleep(attempt * 5)
+    raise RuntimeError(f"Could not fetch {url} after 4 attempts: {last_error}")
 
 def phone_numbers(text):
     return re.findall(r'(?<!\d)(?:\+30\s*)?(?:\d[\s.-]?){9,10}\d(?!\d)', text)
