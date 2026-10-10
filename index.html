@@ -521,7 +521,6 @@ document.getElementById('radius').onchange=async function(){
   for(const k of Object.keys(categoryMeta))delete categoryMeta[k];
   for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
   try{localStorage.removeItem(CATEGORY_CACHE_KEY)}catch(_){}
-  await preloadAllCategories();
   if(catNow)load();
 }
 document.getElementById('back').onclick=()=>page.classList.remove('show');
@@ -530,14 +529,22 @@ function route(a,b){window.open('https://www.google.com/maps/dir/?api=1&destinat
 
 
 function refreshOnline(){
-  for(const k of Object.keys(categoryCache))delete categoryCache[k];
-  for(const k of Object.keys(categoryMeta))delete categoryMeta[k];
-  for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
-  try{localStorage.removeItem(CATEGORY_CACHE_KEY)}catch(_){}
-  status.textContent='🌐 განახლება დაიწყო';
-  preloadRunning=false;
-  if(catNow)load();
-  preloadAllCategories();
+  const id=catNow;
+  if(!id){
+    status.textContent='🌐 აირჩიე კატეგორია — მონაცემები ჩაიტვირთება ინტერნეტიდან.';
+    return;
+  }
+  const key=categoryCacheKey(id);
+  delete categoryCache[key];
+  delete categoryMeta[key];
+  delete categoryLoading[key];
+  try{
+    const saved=JSON.parse(localStorage.getItem(CATEGORY_CACHE_KEY)||'null');
+    if(saved&&saved.categories)delete saved.categories[key];
+    localStorage.setItem(CATEGORY_CACHE_KEY,JSON.stringify(saved||{version:2,categories:{}}));
+  }catch(_){}
+  status.textContent='🌐 ვეძებ ონლაინ მონაცემებს…';
+  load();
 }
 document.getElementById('refresh').onclick=refreshOnline;
 document.getElementById('open').onclick=()=>{
@@ -548,6 +555,6 @@ document.getElementById('all').onclick=()=>{
   if(catNow)load();
   status.textContent='🌐 აირჩიე კატეგორია რეთიმნოში არსებული ადგილების სანახავად.';
 };
-status.textContent='🌐 მზადაა';
-// No network requests on startup. Load a category only when the user opens it.
+status.textContent='🟢 მზადაა — აირჩიე კატეგორია.';
+// No automatic background refresh. Each category loads online when opened.
 </script></body></html>
