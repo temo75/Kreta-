@@ -407,8 +407,32 @@ async function openCat(id){
   load();
 }
 
+async function renderFuelPrices(){
+  const info=document.getElementById('info');
+  const target=document.getElementById('results');
+  info.textContent='⛽ Vrisko-ს ფასებს ვამოწმებ…';
+  try{
+    const response=await fetch('./fuel-prices.json?t='+Date.now(),{cache:'no-store'});
+    if(!response.ok)throw Error('no fuel data');
+    const data=await response.json();
+    if(!Array.isArray(data.items)||!data.items.length)throw Error('empty fuel data');
+    const labels={unleaded95:'95 ბენზინი',unleaded100:'100 ბენზინი',diesel:'დიზელი',autogas:'გაზი'};
+    target.innerHTML=data.items.map(function(item){
+      const priceRows=Object.keys(labels).filter(k=>item.prices&&item.prices[k]!=null).map(k=>'<div>⛽ '+labels[k]+': <strong>'+Number(item.prices[k]).toFixed(3)+' € / ლ</strong></div>').join('');
+      return '<div class="card"><h3>'+esc(item.name||'ბენზინგასამართი')+'</h3><div class="meta">'+(item.address?('📍 '+esc(item.address)+'<br>'):'')+priceRows+(item.updatedAt?'<br>🕒 Vrisko: '+esc(item.updatedAt):'')+'</div></div>';
+    }).join('');
+    const stamp=data.fetchedAt?new Date(data.fetchedAt).toLocaleString():'';
+    info.textContent='Vrisko • '+data.items.length+' ჩანაწერი'+(stamp?' • შემოწმდა: '+stamp:'');
+    return true;
+  }catch(_){
+    info.textContent='⛽ საწვავის ფასების ავტომატური მონაცემები ჯერ მიუწვდომელია';
+    target.innerHTML='<div class="card">ფასები ჯერ ვერ ჩაიტვირთა. სცადე მოგვიანებით.</div>';
+    return false;
+  }
+}
 async function load(){
   const id=catNow,key=categoryCacheKey(id);
+  if(id==='fuel'){await renderFuelPrices();return;}
   const cached=categoryCache[key],fresh=cacheIsFresh(key);
   if(id==='pharmacy'){
     if(cached)renderPharmacies(cached,'Vrisko-ზე ნაპოვნია '+cached.length+' აფთიაქი • მორიგე პირველია');
