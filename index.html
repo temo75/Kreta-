@@ -236,7 +236,7 @@ function renderPharmacies(arr,sourceLabel){
     if(ad!==bd)return ad-bd;
     return String(a.v.name).localeCompare(String(b.v.name),'el');
   });
-  document.getElementById('info').innerHTML='ონლაინ რუკის მონაცემები • <a href="https://www.vrisko.gr/efimeries-farmakeion/rethymno" target="_blank" rel="noopener">დღევანდელი მორიგე აფთიაქები (Vrisko)</a>';
+  document.getElementById('info').innerHTML='აფთიაქები იტვირთება ონლაინ რუკიდან • მორიგეობის დღიური განრიგი: <a href="https://www.rethymno.gr/information-services/pharmacies/pharmacies.html" target="_blank" rel="noopener">რეთიმნოს მუნიციპალიტეტის ოფიციალური სია</a>';
   results.innerHTML=pharmacyRenderItems.length?pharmacyRenderItems.map(function(p,i){return pharmacyCard(p,i)}).join(''):'<div class="card">😔 ონლაინ რუკაში აფთიაქები ვერ მოიძებნა. სცადე განახლება ან გახსენი Vrisko-ს ოფიციალური სია: <a href="https://www.vrisko.gr/dir/farmakeia/rethymno/" target="_blank" rel="noopener">რეთიმნოს აფთიაქები</a>.</div>';
 }
 const categoryCache={};
@@ -252,7 +252,8 @@ function categoryCacheKey(id){
 }
 function cacheIsFresh(key){
   const m=categoryMeta[key];
-  return Array.isArray(categoryCache[key])&&!!m&&Date.now()-m.fetchedAt<CATEGORY_CACHE_TTL&&
+  const ttl=key.startsWith('pharmacy|')?15*60*1000:CATEGORY_CACHE_TTL;
+  return Array.isArray(categoryCache[key])&&!!m&&Date.now()-m.fetchedAt<ttl&&
     m.radius===document.getElementById('radius').value&&
     Number.isFinite(m.lat)&&Number.isFinite(m.lon)&&dist(m.lat,m.lon,lat,lon)<=1;
 }
