@@ -3,11 +3,8 @@
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f2f7fb;color:#183247;font-family:Arial,sans-serif}header{background:linear-gradient(135deg,#087dcc,#064d83);color:#fff;text-align:center;padding:24px 12px}.brand{font-size:12px;letter-spacing:4px;font-weight:800}h1{font-size:clamp(24px,5vw,35px);margin:9px 0 5px}header p{margin:0;color:#dcefff}main{max-width:1000px;margin:auto;padding:15px 12px 35px}.notice{padding:12px;border-radius:12px;background:#fff5df;border:1px solid #f0dca8;line-height:1.5;font-size:14px;margin-bottom:15px}.section-title{font-size:20px;margin:22px 2px 10px}.cards{display:grid;gap:10px}.pharmacy{background:#fff;border:1px solid #d7e5ef;border-radius:14px;padding:15px;box-shadow:0 2px 8px #1436500b}.pharmacy.active{background:#17232f;color:#fff;border:2px solid #101820;box-shadow:0 8px 20px #0d182455}.status{display:inline-block;font-size:12px;font-weight:bold;border-radius:7px;padding:5px 8px;background:#e6f4ff;color:#075a9b;margin-bottom:9px}.active .status{background:#ffdf69;color:#202020}.pname{font-size:17px;font-weight:800;margin-bottom:6px}.details{font-size:14px;line-height:1.5;margin:4px 0;opacity:.9}.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:11px}.links a{font-size:14px;font-weight:bold;color:#087dcc;text-decoration:none}.active .links a{color:#8bd0ff}.small{font-size:12px;color:#64798a;line-height:1.5;margin-top:14px}input{width:100%;padding:13px;border:1px solid #cbdce8;border-radius:11px;font-size:16px;margin:5px 0 12px}nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}nav a{background:#087dcc;color:white;text-decoration:none;padding:11px 13px;border-radius:10px;font-size:14px;font-weight:bold}.count{font-size:13px;color:#60778a;margin-bottom:10px}
 </style></head><body><header><div class="brand">TEMO</div><h1>რეთიმნოს ყველა აფთიაქი</h1><p>სრული სია • მორიგე აფთიაქი მუქ ბლოკში</p></header><main>
-<div class="notice">მონაცემები გადატანილია რეთიმნოს მუნიციპალიტეტის ოფიციალური კატალოგიდან — სახელები, მისამართები და ტელეფონები ახლა ჩვენს საიტზეა. მუქი ბლოკით აღინიშნება ამჟამინდელი მორიგე აფთიაქი. მორიგეობის გრაფიკი შეიძლება შეიცვალოს, ამიტომ გადაამოწმე ოფიციალურ ბმულზე.</div>
 <div class="section-title">🌙 ახლა მორიგეა</div><div id="date" class="small"></div><div id="duty" class="cards"></div>
-<nav><a href="https://www.rethymno.gr/information-services/pharmacies/pharmacies.html" target="_blank" rel="noopener">ოფიციალური მორიგეობის გრაფიკი</a><a href="https://www.rethymno.gr/guide/pharmacies" target="_blank" rel="noopener">წყაროს კატალოგი</a></nav>
-<div class="section-title">📋 აფთიაქების სრული კატალოგი</div><input id="search" type="search" placeholder="მოძებნე აფთიაქი, მისამართი ან ტელეფონი…" aria-label="აფთიაქების ძებნა"><div id="count" class="count"></div><div id="all" class="cards"></div>
-<div class="small">წყარო: Δήμος Ρεθύμνου — ოფიციალური აფთიაქების კატალოგი. სრული სია ამ გვერდის მონაცემებშია შენახული და აღარ არის ჩასმული iframe-ით.</div></main>
+</main>
 <script>
 let pharmacies = [
 ["Αγγελάκης Παναγιώτης","Ζωνιανά",["2834061450"]],
@@ -99,8 +96,7 @@ const athensParts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Athens',hour
 const hour=Number(athensParts.find(p=>p.type==='hour')?.value||0)+Number(athensParts.find(p=>p.type==='minute')?.value||0)/60;
 document.getElementById('date').textContent='Ημερομηνία: '+new Intl.DateTimeFormat('el-GR',{timeZone:'Europe/Athens',weekday:'long',day:'2-digit',month:'long',year:'numeric'}).format(now);
 function card(p,active){const phones=p.phones||[];const phoneLinks=phones.map(n=>'<a href="tel:'+String(n).replace(/[^0-9+]/g,'')+'">☎ '+n+'</a>').join(' ');const map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.name+' '+p.address+' Rethymno Crete');return '<article class="pharmacy '+(active?'active':'')+'"><div class="status">'+(active?'● ახლა მორიგეა':'აფთიაქი')+'</div><div class="pname">'+p.name+'</div><div class="details">📍 '+(p.address||'')+'</div><div class="details">☎ '+phones.join(' · ')+'</div><div class="links">'+phoneLinks+'<a target="_blank" rel="noopener" href="'+map+'">რუკაზე ნახვა</a></div></article>'}
-function renderAll(){const q=document.getElementById('search').value.trim().toLocaleLowerCase();const filtered=pharmacies.filter(p=>(p.name+' '+p.address+' '+(p.phones||[]).join(' ')).toLocaleLowerCase().includes(q));document.getElementById('count').textContent='ნაპოვნია '+filtered.length+' აფთიაქი';document.getElementById('all').innerHTML=filtered.map(p=>card(p,activeNames.includes(p.name))).join('')}
-document.getElementById('search').addEventListener('input',renderAll);
+
 async function loadOfficialData(){
  try{
   const [pharmacyResponse,dutyResponse]=await Promise.all([fetch('./pharmacies.json?v='+Date.now(),{cache:'no-store'}),fetch('./duty.json?v='+Date.now(),{cache:'no-store'})]);
@@ -115,7 +111,6 @@ async function loadOfficialData(){
   activeNames=currentDuty.map(p=>typeof p==='string'?p:p.name);
   const duty=document.getElementById('duty');
   duty.innerHTML=currentDuty.length?currentDuty.map(p=>{const found=pharmacies.find(x=>x.name===(typeof p==='string'?p:p.name));return card(found|| (typeof p==='string'?{name:p,address:'',phones:[]}:p),true)}).join(''):'<article class="pharmacy">ოფიციალური განრიგის მონაცემები ჯერ არ ჩაიტვირთა. სცადე მოგვიანებით ან გახსენი ოფიციალური გრაფიკი.</article>';
-  renderAll();
   const stamp=dutyData.updatedAt||pharmacyData.updatedAt;
   if(stamp)document.querySelector('.small:last-child').textContent='ოფიციალური მონაცემების ბოლო სინქრონიზაცია: '+new Date(stamp).toLocaleString('el-GR')+'. წყარო: რეთიმნოს მუნიციპალიტეტი.';
  }catch(e){
@@ -124,8 +119,7 @@ async function loadOfficialData(){
   currentDuty = fallbackDuty ? (fallbackNight ? (fallbackDuty.night||[]) : (fallbackDuty.day||[])) : [];
   activeNames = currentDuty.map(p=>typeof p==='string'?p:p.name);
   document.getElementById('duty').innerHTML=currentDuty.length?currentDuty.map(p=>{const found=pharmacies.find(x=>x.name===(typeof p==='string'?p:p.name));return card(found|| (typeof p==='string'?{name:p,address:'',phones:[]}:p),true)}).join(''):'<article class="pharmacy">მორიგეობის ახალი გრაფიკი ჯერ არ ჩაიტვირთა. იხილე ოფიციალური გრაფიკი.</article>';
-  renderAll();
-  document.getElementById('count').textContent='აფთიაქების სია: '+pharmacies.length+' (ბოლო შენახული სია; განახლება მიმდინარეობს).';
+  
  }
 }
 loadOfficialData();
