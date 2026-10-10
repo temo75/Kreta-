@@ -163,11 +163,20 @@ def scrape_duty():
 
 def main():
     catalog=scrape_catalog()
-    duty=scrape_duty()
-    if len(catalog)<20: raise RuntimeError(f"Catalog parse returned only {len(catalog)} pharmacies; refusing to overwrite good data")
-    if not duty: raise RuntimeError("No duty schedules parsed; refusing to overwrite good data")
-    Path("pharmacies.json").write_text(json.dumps({"updatedAt":__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),"source":"municipality official catalog (primary/fallback)","pharmacies":catalog},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    Path("duty.json").write_text(json.dumps({"updatedAt":__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),"source":DUTY_SOURCE_USED,"schedule":duty},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(f"Saved {len(catalog)} pharmacies and {len(duty)} duty dates")
+    if len(catalog)<20:
+        raise RuntimeError(f"Catalog parse returned only {len(catalog)} pharmacies; refusing to overwrite good data")
+    now=__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()
+    Path("pharmacies.json").write_text(json.dumps({"updatedAt":now,"source":"municipality official catalog (primary/fallback)","pharmacies":catalog},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(f"Saved {len(catalog)} pharmacies", flush=True)
+    try:
+        duty=scrape_duty()
+        if not duty:
+            raise RuntimeError("No duty schedules parsed")
+        Path("duty.json").write_text(json.dumps({"updatedAt":now,"source":DUTY_SOURCE_USED,"schedule":duty},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+        print(f"Saved {len(duty)} duty dates", flush=True)
+    except Exception as exc:
+        print(f"WARNING: duty schedule refresh failed; preserving any existing duty.json: {exc}", flush=True)
+        if not Path("duty.json").exists():
+            print("WARNING: no previous duty.json exists; website fallback data will be used", flush=True)
 
 if __name__=="__main__": main()
