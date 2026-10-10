@@ -5,9 +5,7 @@
 </style></head><body><header><div class="brand">TEMO</div><h1>რეთიმნოს ყველა აფთიაქი</h1><p>სრული სია • მორიგე აფთიაქი მუქ ბლოკში</p></header><main>
 <div class="notice">მონაცემები გადატანილია რეთიმნოს მუნიციპალიტეტის ოფიციალური კატალოგიდან — სახელები, მისამართები და ტელეფონები ახლა ჩვენს საიტზეა. მუქი ბლოკით აღინიშნება ამჟამინდელი მორიგე აფთიაქი. მორიგეობის გრაფიკი შეიძლება შეიცვალოს, ამიტომ გადაამოწმე ოფიციალურ ბმულზე.</div>
 <div class="section-title">🌙 ახლა მორიგეა</div><div id="date" class="small"></div><div id="duty" class="cards"></div>
-<nav><a href="https://www.rethymno.gr/information-services/pharmacies/pharmacies.html" target="_blank" rel="noopener">ოფიციალური მორიგეობის გრაფიკი</a><a href="https://www.rethymno.gr/guide/pharmacies" target="_blank" rel="noopener">წყაროს კატალოგი</a></nav>
-<div class="section-title">📋 აფთიაქების სრული კატალოგი</div><input id="search" type="search" placeholder="მოძებნე აფთიაქი, მისამართი ან ტელეფონი…" aria-label="აფთიაქების ძებნა"><div id="count" class="count"></div><div id="all" class="cards"></div>
-<div class="small">წყარო: Δήμος Ρεθύμνου — ოფიციალური აფთიაქების კატალოგი. სრული სია ამ გვერდის მონაცემებშია შენახული და აღარ არის ჩასმული iframe-ით.</div></main>
+</main>
 <script>
 const pharmacies = [
 ["Αγγελάκης Παναγιώτης","Ζωνιανά",["2834061450"]],
@@ -95,8 +93,5 @@ document.getElementById('date').textContent='Ημερομηღე: '+new Intl.Da
 let data=schedule[key];if(hour<8){const prev=new Date(now);prev.setDate(prev.getDate()-1);const pk=prev.getFullYear()+'-'+String(prev.getMonth()+1).padStart(2,'0')+'-'+String(prev.getDate()).padStart(2,'0');if(schedule[pk])data=schedule[pk]}
 const isNight=hour>=21||hour<8, activeNames=data?(isNight?data.night:data.day):[];
 function card(p,active){const phoneLinks=p.phones.map(n=>'<a href="tel:'+n+'">☎ '+n+'</a>').join(' ');const map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.name+' '+p.address+' Rethymno Crete');return '<article class="pharmacy '+(active?'active':'')+'"><div class="status">'+(active?'● ახლა მორიგეა':'აფთიაქი')+'</div><div class="pname">'+p.name+'</div><div class="details">📍 '+p.address+'</div><div class="details">☎ '+p.phones.join(' · ')+'</div><div class="links">'+phoneLinks+'<a target="_blank" rel="noopener" href="'+map+'">რუკაზე ნახვა</a></div></article>'}
-function renderAll(){const q=document.getElementById('search').value.trim().toLocaleLowerCase();const filtered=pharmacies.filter(p=>(p.name+' '+p.address+' '+p.phones.join(' ')).toLocaleLowerCase().includes(q));document.getElementById('count').textContent='ნაპოვნია '+filtered.length+' აფთიაქი';document.getElementById('all').innerHTML=filtered.map(p=>card(p,activeNames.includes(p.name))).join('')}
-document.getElementById('search').addEventListener('input',renderAll);
 const duty=document.getElementById('duty');duty.innerHTML=activeNames.length?pharmacies.filter(p=>activeNames.includes(p.name)).map(p=>card(p,true)).join(''):'<article class="pharmacy">ამ თარიღის მორიგეობის მონაცემი გვერდზე არ გვაქვს. გამოიყენე ოფიციალური გრაფიკის ბმული.</article>';
-renderAll();
 </script></body></html>
