@@ -7,12 +7,12 @@
 #page{position:fixed;inset:0;background:#fff;z-index:2000;transform:translateX(100%);transition:transform .28s ease;overflow-y:auto}#page.show{transform:translateX(0)}.head{position:sticky;top:0;z-index:2;padding:14px;background:#eef8ff;border-bottom:1px solid #cdeaff;display:flex;align-items:center;gap:10px}.head h2{margin:0;color:#087dcc;flex:1;font-size:20px}#info{text-align:center;padding:10px;color:#567;font-size:14px}.radius{text-align:center;padding-bottom:10px;color:#456}.radius select{padding:7px;border:1px solid #cdeaff;border-radius:9px}#results{padding:0 14px 20px}.loading{text-align:center;padding:30px;color:#567}
 </style></head><body>
 <header><h1>📍 ახლოს რა არის ღია?</h1><p>იპოვე შენთან ახლოს ღია ადგილები — კრეტა</p></header>
-<div class="controls"><button class="secondary" id="open">🟢 ახლა ღიაა</button><button class="secondary" id="all">ყველა</button><button class="secondary" id="locBtn" onclick="getLocation()">📍 ლოკაციის ჩართვა</button></div>
-<div id="status">📍 ვამოწმებ მდებარეობას…</div><div id="categories"></div><div id="map"></div><div class="cards" id="cards"></div>
+<div class="controls"><button class="secondary" id="open">🟢 ახლა ღიაა</button><button class="secondary" id="all">ყველა</button><button class="secondary" id="refresh">🔄 განახლება</button></div>
+<div id="status">🌐 ინტერნეტთან დაკავშირება…</div><div id="categories"></div><div id="map"></div><div class="cards" id="cards"></div>
 <section id="page"><div class="head"><button class="back" id="back">← უკან</button><h2 id="title"></h2></div><div id="info"></div><div class="radius">მანძილი: <select id="radius"><option value="2000">2 კმ</option><option value="5000" selected>5 კმ</option><option value="10000">10 კმ</option></select></div><div id="results"></div></section>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>
 const map=L.map('map').setView([35.3656,24.4823],14);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);
-let lat=null,lon=null,catNow=null,marker,circle;const status=document.getElementById('status'),page=document.getElementById('page'),results=document.getElementById('results');
+let lat=35.3656,lon=24.4823,catNow=null,marker,circle;const status=document.getElementById('status'),page=document.getElementById('page'),results=document.getElementById('results');
 const cats=[['pharmacy','💊','აფთიაქები'],['supermarket','🛒','სუპერმარკეტები'],['cafe','☕','კაფეები'],['bar','🍺','ბარები'],['restaurant','🍽️','რესტორნები'],['bakery','🥖','საცხობები'],['butcher','🥩','ხორცის მაღაზიები'],['fuel','⛽','ბენზინგასამართი'],['shop','🛍️','მაღაზიები'],['taxi','🚕','ტაქსი'],['clinic','🏥','კლინიკები'],['service','🔧','სერვისები']];
 document.getElementById('categories').innerHTML=cats.map(c=>'<button class="category" onclick="openCat(\''+c[0]+'\')"><span>'+c[1]+'</span>'+c[2]+'<small>ახლოს მდებარეები</small></button>').join('');
 function esc(x){return String(x??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
@@ -242,8 +242,7 @@ function cacheIsFresh(key){
   const m=categoryMeta[key];
   return Array.isArray(categoryCache[key])&&!!m&&Date.now()-m.fetchedAt<CATEGORY_CACHE_TTL&&
     m.radius===document.getElementById('radius').value&&
-    Number.isFinite(m.lat)&&Number.isFinite(m.lon)&&Number.isFinite(lat)&&Number.isFinite(lon)&&
-    dist(m.lat,m.lon,lat,lon)<=1;
+    Number.isFinite(m.lat)&&Number.isFinite(m.lon)&&dist(m.lat,m.lon,lat,lon)<=1;
 }
 function persistCategoryCache(){
   try{
@@ -264,8 +263,7 @@ function restoreCategoryCache(){
       if(!m||!Array.isArray(items)||!Number.isFinite(m.fetchedAt)||
          Date.now()-m.fetchedAt>=CATEGORY_CACHE_TTL||
          m.radius!==document.getElementById('radius').value||
-         !Number.isFinite(m.lat)||!Number.isFinite(m.lon)||!Number.isFinite(lat)||!Number.isFinite(lon)||
-         dist(m.lat,m.lon,lat,lon)>1)return;
+         !Number.isFinite(m.lat)||!Number.isFinite(m.lon)||dist(m.lat,m.lon,lat,lon)>1)return;
       categoryCache[key]=items.map(function(p){
         if(p&&Number.isFinite(p.lat)&&Number.isFinite(p.lon))p.d=dist(lat,lon,p.lat,p.lon);
         return p;
@@ -294,7 +292,7 @@ function restoreCategoryCache(){
       localStorage.removeItem(CATEGORY_CACHE_KEY);
       return false;
     }
-    if(!Number.isFinite(saved.lat)||!Number.isFinite(saved.lon)||!Number.isFinite(lat)||!Number.isFinite(lon))return false;
+    if(!Number.isFinite(saved.lat)||!Number.isFinite(saved.lon))return false;
     if(saved.radius!==document.getElementById('radius').value||dist(saved.lat,saved.lon,lat,lon)>1)return false;
     Object.keys(saved.items).forEach(function(k){categoryCache[k]=saved.items[k]});
     preloadLat=lat;preloadLon=lon;preloadRadius=saved.radius;
@@ -360,17 +358,17 @@ function renderGeneralCategory(arr){
 }
 
 async function preloadAllCategories(){
-  if(!Number.isFinite(lat)||!Number.isFinite(lon)||preloadRunning)return;
+  if(preloadRunning)return;
   preloadRunning=true;
   const runRadius=document.getElementById('radius').value;
   const ids=cats.map(function(cat){return cat[0]}).filter(function(id){return !cacheIsFresh(categoryCacheKey(id))});
   if(!ids.length){
     preloadRunning=false;
     preloadLat=lat;preloadLon=lon;preloadRadius=runRadius;
-    status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
+    status.textContent='🌐 ინტერნეტიდან მონაცემები მზადაა';
     return;
   }
-  status.textContent='📍 მდებარეობა ჩართულია • კატეგორიებს ვამზადებ…';
+  status.textContent='🌐 კატეგორიების მონაცემები იტვირთება…';
   let done=cats.length-ids.length;
   const failed=[];
   const worker=async function(){
@@ -378,7 +376,7 @@ async function preloadAllCategories(){
       const id=ids.shift();
       try{await prepareCategory(id,true)}catch(_){failed.push(id)}
       done++;
-      status.textContent='📍 მდებარეობა ჩართულია • კატეგორიები მზადდება '+done+'/'+cats.length+'…';
+      status.textContent='🌐 იტვირთება '+done+'/'+cats.length+' კატეგორია…';
     }
   };
   await Promise.all([worker(),worker()]);
@@ -390,7 +388,7 @@ async function preloadAllCategories(){
   if(ready){
     status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
   }else{
-    status.textContent='⚠️ ზოგი კატეგორია ვერ ჩაიტვირთა. შენახული შედეგები დარჩა; ხელახლა სცადე ან შეცვალე რადიუსი.';
+    status.textContent='⚠️ ზოგი მონაცემი ვერ ჩაიტვირთა. სცადე განახლება.';
   }
 }
 
@@ -399,11 +397,7 @@ async function openCat(id){
   const c=cats.find(x=>x[0]===id);
   document.getElementById('title').textContent=c[1]+' '+c[2];
   page.classList.add('show');
-  if(!lat){
-    document.getElementById('info').textContent='📍 ჯერ ჩართე ტელეფონის მდებარეობა.';
-    results.innerHTML='<div class="card">მდებარეობის მიღების შემდეგ აქ გამოჩნდება ახლომდებარე ობიექტები.</div>';
-    return;
-  }
+  document.getElementById('info').textContent='🌐 ვეძებ რეთიმნოს გარშემო ინტერნეტში…';
   load();
 }
 
@@ -469,7 +463,6 @@ async function load(){
 }
 
 document.getElementById('radius').onchange=async function(){
-  if(!lat)return;
   for(const k of Object.keys(categoryCache))delete categoryCache[k];
   for(const k of Object.keys(categoryMeta))delete categoryMeta[k];
   for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
@@ -481,127 +474,28 @@ document.getElementById('back').onclick=()=>page.classList.remove('show');
 function showMap(a,b){page.classList.remove('show');map.setView([a,b],17);L.popup().setLatLng([a,b]).setContent('📍 ობიექტი').openOn(map)}
 function route(a,b){window.open('https://www.google.com/maps/dir/?api=1&destination='+a+','+b,'_blank')}
 
-let locationWatchId=null;
-let locationBusy=false;
-const LOCATION_KEY='temo_last_location_v2';
 
-function saveLocation(){
-  try{
-    localStorage.setItem(LOCATION_KEY,JSON.stringify({
-      lat,lon,ts:Date.now()
-    }));
-  }catch(_){}
+function refreshOnline(){
+  for(const k of Object.keys(categoryCache))delete categoryCache[k];
+  for(const k of Object.keys(categoryMeta))delete categoryMeta[k];
+  for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
+  try{localStorage.removeItem(CATEGORY_CACHE_KEY)}catch(_){}
+  status.textContent='🌐 ინტერნეტიდან მონაცემები ახლდება…';
+  preloadRunning=false;
+  if(catNow)load();
+  preloadAllCategories();
 }
-
-function restoreLocation(){
-  try{
-    const x=JSON.parse(localStorage.getItem(LOCATION_KEY)||'null');
-    if(x&&Number.isFinite(x.lat)&&Number.isFinite(x.lon)){
-      lat=x.lat; lon=x.lon;
-      applyLocation({coords:{latitude:lat,longitude:lon,accuracy:100}});
-      status.textContent='📍 ბოლო შენახული მდებარეობა გამოიყენება';
-      return true;
-    }
-  }catch(_){}
-  return false;
-}
-
-function applyLocation(p){
-  const oldLat=lat,oldLon=lon;
-  lat=p.coords.latitude;
-  lon=p.coords.longitude;
-  saveLocation();
-  if(marker)map.removeLayer(marker);
-  if(circle)map.removeLayer(circle);
-  marker=L.marker([lat,lon]).addTo(map).bindPopup('📍 შენი მდებარეობა');
-  circle=L.circle([lat,lon],{radius:p.coords.accuracy||50}).addTo(map);
-  map.setView([lat,lon],16);
-  cards.innerHTML='<div class="card"><h3>კატეგორია აირჩიე 👇</h3><div class="meta">აირჩიე სასურველი კატეგორია და გაიხსნება ცალკე გვერდი.</div></div>';
-  if(oldLat===null){
-    restoreCategoryCache();
-    const allFresh=cats.every(function(cat){return cacheIsFresh(categoryCacheKey(cat[0]))});
-    if(allFresh){
-      preloadLat=lat;preloadLon=lon;preloadRadius=document.getElementById('radius').value;
-      status.textContent='📍 მდებარეობა ჩართულია • შენახული კატეგორიები მზადაა';
-      return;
-    }
-    preloadAllCategories();
-    return;
-  }
-  const moved=!Number.isFinite(preloadLat)||!Number.isFinite(preloadLon)||dist(preloadLat,preloadLon,lat,lon)>1||preloadRadius!==document.getElementById('radius').value;
-  if(moved&&!preloadRunning){
-    for(const k of Object.keys(categoryCache))delete categoryCache[k];
-    for(const k of Object.keys(categoryMeta))delete categoryMeta[k];
-    for(const k of Object.keys(categoryLoading))delete categoryLoading[k];
-    try{localStorage.removeItem(CATEGORY_CACHE_KEY)}catch(_){}
-    preloadAllCategories();
-  }else if(!preloadRunning){
-    const allFresh=cats.every(function(cat){return cacheIsFresh(categoryCacheKey(cat[0]))});
-    if(allFresh)status.textContent='📍 მდებარეობა ჩართულია • ყველა კატეგორია მზადაა';
-    else preloadAllCategories();
-  }
-}
-
-function locationError(e){
-  locationBusy=false;
-  if(e.code===1){
-    if(lat!==null&&lon!==null){
-      status.textContent='📍 შენახული მდებარეობა გამოიყენება — ბრაუზერის ნებართვა ამჟამად შეზღუდულია.';
-    }else{
-      status.innerHTML='📍 მდებარეობის ნებართვა საჭიროა.<br><button class="secondary" style="margin-top:8px" onclick="getLocation()">📍 მდებარეობის ჩართვა</button>';
-    }
-  }else if(e.code===2){
-    status.innerHTML='📍 ტელეფონის Location ვერ მოიძებნა.<br><button class="secondary" style="margin-top:8px" onclick="getLocation()">📍 ხელახლა ცდა</button>';
-  }else if(e.code===3){
-    status.innerHTML='📍 მდებარეობის მიღებას დრო დასჭირდა.<br><button class="secondary" style="margin-top:8px" onclick="getLocation()">📍 ხელახლა ცდა</button>';
-  }else{
-    status.innerHTML='📍 მდებარეობის მიღება ვერ მოხერხდა.<br><button class="secondary" style="margin-top:8px" onclick="getLocation()">📍 ხელახლა ცდა</button>';
-  }
-}
-
-function startLocationWatch(){
-  if(locationWatchId!==null)return;
-  locationWatchId=navigator.geolocation.watchPosition(applyLocation,locationError,{
-    enableHighAccuracy:true,
-    timeout:20000,
-    maximumAge:5000
-  });
-}
-
-function getLocation(){
-  if(!navigator.geolocation){
-    status.textContent='ამ ბრაუზერს მდებარეობის ფუნქცია არ აქვს.';
-    return;
-  }
-  if(locationBusy)return;
-  locationBusy=true;
-  status.textContent='📍 ტელეფონიდან მდებარეობას ვიღებ…';
-
-  navigator.geolocation.getCurrentPosition(p=>{
-    locationBusy=false;
-    applyLocation(p);
-    startLocationWatch();
-  },e=>{
-    locationBusy=false;
-    if(e.code===1){
-      locationError(e);
-      return;
-    }
-    const restored=restoreLocation();
-    if(restored){
-      startLocationWatch();
-      return;
-    }
-    locationError(e);
-  },{
-    enableHighAccuracy:true,
-    timeout:12000,
-    maximumAge:0
-  });
-}
-
-const restoredAtStart=restoreLocation();
-getLocation();
-document.getElementById('open').onclick=()=>status.textContent=lat?'🟢 აირჩიე კატეგორია — შემდეგ გვერდზე გამოჩნდება ობიექტების სტატუსი.':'📍 ჯერ ჩართე ჩემი მდებარეობა';document.getElementById('all').onclick=()=>status.textContent=lat?'აირჩიე სასურველი კატეგორია ზემოთ.':'📍 ჯერ ჩართე ჩემი მდებარეობა';
-document.getElementById('open').onclick=()=>status.textContent=lat?'🟢 აირჩიე კატეგორია — შემდეგ გვერდზე გამოჩნდება ობიექტების სტატუსი.':'📍 ჯერ ჩართე ჩემი მდებარეობა';document.getElementById('all').onclick=()=>status.textContent=lat?'აირჩიე სასურველი კატეგორია ზემოთ.':'📍 ჯერ ჩართე ჩემი მდებარეობა';
+document.getElementById('refresh').onclick=refreshOnline;
+document.getElementById('open').onclick=()=>{
+  if(catNow)load();
+  status.textContent='🟢 აირჩიე კატეგორია — მონაცემები ინტერნეტიდან იტვირთება.';
+};
+document.getElementById('all').onclick=()=>{
+  if(catNow)load();
+  status.textContent='🌐 აირჩიე კატეგორია რეთიმნოში არსებული ადგილების სანახავად.';
+};
+map.setView([lat,lon],13);
+cards.innerHTML='<div class="card"><h3>🌐 აირჩიე კატეგორია</h3><div class="meta">ადგილები იტვირთება ინტერნეტიდან რეთიმნოს გარშემო. ტელეფონის ლოკაცია საჭირო არ არის.</div></div>';
+status.textContent='🌐 რეთიმნოს მონაცემებს ინტერნეტიდან ვამზადებ…';
+preloadAllCategories();
 </script></body></html>
