@@ -4,10 +4,12 @@ from pathlib import Path
 
 CATALOG_URLS = [
     "https://www.rethymno.gr/guide/pharmacies",
+    "https://rethymno.gr/guide/pharmacies",
     "https://www.dreth.gr/%CF%86%CE%B1%CF%81%CE%BC%CE%B1%CE%BA%CE%B5%CE%AF%CE%B1/",
 ]
 DUTY_URLS = [
     "https://www.rethymno.gr/information-services/pharmacies/pharmacies.html",
+    "https://rethymno.gr/information-services/pharmacies/pharmacies.html",
     "https://rethymno.efhmeries.gr/Nearby/",
 ]
 DUTY_URL = DUTY_URLS[0]
