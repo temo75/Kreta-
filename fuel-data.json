@@ -1,0 +1,6854 @@
+{
+  "source_name": "FuelGR / Deixto",
+  "source_url": "https://deixto.gr/",
+  "fetched_at": "2026-10-11T06:02:18.097933+00:00",
+  "regions": [
+    {
+      "region": "Ρέθυμνο",
+      "source": "FuelGR / Deixto",
+      "stations": [
+        {
+          "name": "AVIN",
+          "address": "19ο ΧΛΜ ΡΕΘΥΜΝΟΥ ΣΠΗΛΙΟΥ ΤΗΛ 2832051247  ΑΥΤΟΜΑΤΟΣ ΠΩΛΗΤΗΣ 24 ΩΡΕΣ ΑΝΟΙΚΤΑ",
+          "latitude": 35.2460465,
+          "longitude": 24.4998243,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.258
+            },
+            {
+              "type": "100",
+              "price": 2.487
+            },
+            {
+              "type": "diesel",
+              "price": 1.892
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "3ΧΙΛ ΝΕΟ ΡΕΘΥΜΝΟΥ-ΧΑΝΙΩΝ",
+          "latitude": 35.3682557,
+          "longitude": 24.454103,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.31
+            },
+            {
+              "type": "100",
+              "price": 2.464
+            },
+            {
+              "type": "diesel",
+              "price": 1.971
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "MACHIS KRITIS 110",
+          "latitude": 35.3696069,
+          "longitude": 24.550334,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.247
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.882
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΑΔΕΛΕ ΡΕΘΥΜΝΟΥ",
+          "latitude": 35.363488,
+          "longitude": 24.5889402,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.207
+            },
+            {
+              "type": "diesel",
+              "price": 1.811
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΑΚΟΥΜΙΑ ΑΓΙΟΥ ΒΑΣΙΛΕΙΟΥ ΡΕΘΥΜΝΟ",
+          "latitude": 35.1740286,
+          "longitude": 24.6025177,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.311
+            },
+            {
+              "type": "diesel",
+              "price": 1.893
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΑΛΕΞΑΝΔΡΟΥ ΧΑΝΙ ΠΕΡΑΜΑ ΜΥΛΟΠΟΤΑΜΟΥ",
+          "latitude": 35.3760701,
+          "longitude": 24.7086507,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.312
+            },
+            {
+              "type": "100",
+              "price": 2.543
+            },
+            {
+              "type": "diesel",
+              "price": 1.903
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΑΡΓΥΡΟΥΠΟΛΗ ΔΗΜΟΥ ΡΕΘΥΜΝΗΣ ΤΚ 75055 ΤΗΛ,2831026110",
+          "latitude": 35.2999672,
+          "longitude": 24.3657192,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.331
+            },
+            {
+              "type": "diesel",
+              "price": 2.065
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΑΣΚΥΦΟΥ ΣΦΑΚΙΩΝ ΧΑΝΙΩΝ",
+          "latitude": 35.2944252,
+          "longitude": 24.2065709,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.31
+            },
+            {
+              "type": "diesel",
+              "price": 1.883
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΒΑΜΟΣ ΔΗΜΟΣ ΑΠΟΚΟΡΩΝΟΥ ΧΑΝΙΑ ΚΡΗΤΗ",
+          "latitude": 35.4136966,
+          "longitude": 24.2256185,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.327
+            },
+            {
+              "type": "100",
+              "price": 2.614
+            },
+            {
+              "type": "diesel",
+              "price": 1.884
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΔΗΜΟΤΙΚΗ ΟΔΟΣ Λευκογείων-Πλακιά-ΔΑΜΝΟΝΙ ΡΕΘΥΜΝΟ",
+          "latitude": 35.1835459,
+          "longitude": 24.4491488,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "diesel",
+              "price": 1.892
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 172 - ΡΕΘΥΜΝΟ ΚΡΗΤΗΣ",
+          "latitude": 35.3732784,
+          "longitude": 24.7277864,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.373
+            },
+            {
+              "type": "100",
+              "price": 2.496
+            },
+            {
+              "type": "diesel",
+              "price": 1.963
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΕΠΙΣΚΟΠΗ ΡΕΘΥΜΝΗΣ",
+          "latitude": 35.3331437,
+          "longitude": 24.3666418,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.359
+            },
+            {
+              "type": "100",
+              "price": 2.568
+            },
+            {
+              "type": "diesel",
+              "price": 1.946
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΖΥΜΒΡΑΚΑΚΗΔΩΝ 108",
+          "latitude": 35.5045977,
+          "longitude": 24.0473856,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.289
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΚΑΒΡΟΣ ΑΠΟΚΟΡΩΝΟΥ",
+          "latitude": 35.3533408,
+          "longitude": 24.3305896,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.285
+            },
+            {
+              "type": "100",
+              "price": 2.481
+            },
+            {
+              "type": "diesel",
+              "price": 1.894
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΛΕΩΦ. ΚΑΡΑΜΑΝΛΗ (ΣΟΥΔΑΣ) 68",
+          "latitude": 35.50179,
+          "longitude": 24.060152,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.282
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΟΙΚΙΣΜΟΣ ΜΑΚΡΥΣ ΤΟΙΧΟΣ - ΔΗΜΟΣ ΧΑΝΙΩΝ",
+          "latitude": 35.5093252,
+          "longitude": 24.013214,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.289
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΑΓΚΟΥΣΕΛΙΑΝΑ ΡΕΘΥΜΝΟΥ",
+          "latitude": 35.2387892,
+          "longitude": 24.456501,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.436
+            },
+            {
+              "type": "diesel",
+              "price": 1.955
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΑΛ.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 184 ΧΑΝΙΑ",
+          "latitude": 35.509424,
+          "longitude": 24.0778284,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.245
+            },
+            {
+              "type": "100",
+              "price": 2.512
+            },
+            {
+              "type": "diesel",
+              "price": 1.853
+            },
+            {
+              "type": "autogas",
+              "price": 1.282
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΑΛΕΞΑΝΔΡΟΥ ΠΑΠΑΝΑΣΤΑΣΙΟΥ 12",
+          "latitude": 35.4891816,
+          "longitude": 24.0905591,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.245
+            },
+            {
+              "type": "100",
+              "price": 2.502
+            },
+            {
+              "type": "diesel",
+              "price": 1.853
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "Λ. ΠΟΡΤΑΛΙΟΥ 29 ΤΗΛ.2831022715",
+          "latitude": 35.3668313,
+          "longitude": 24.5157823,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.276
+            },
+            {
+              "type": "100",
+              "price": 2.451
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "Λ.ΣΤΑΜΑΘΙΟΥΔΑΚΗ 61, ΡΕΘΥΜΝΟ ΤΗΛ.2831028050",
+          "latitude": 35.3665113,
+          "longitude": 24.4881362,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.27
+            },
+            {
+              "type": "100",
+              "price": 2.378
+            },
+            {
+              "type": "diesel",
+              "price": 1.846
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΛΕΩΦ.ΣΤΑΜΑΘΙΟΥΔΑΚΗ 74 ΡΕΘΥΜΝΟ",
+          "latitude": 35.3670513,
+          "longitude": 24.4912704,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.28
+            },
+            {
+              "type": "100",
+              "price": 2.465
+            },
+            {
+              "type": "diesel",
+              "price": 1.865
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΛΕΩΦΟΡΟΣ ΦΡΑΓΚΙΑΣ ΠΕΡΙΟΧΗ ΑΡΩΝΙ",
+          "latitude": 35.5196715,
+          "longitude": 24.1397994,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.358
+            },
+            {
+              "type": "100",
+              "price": 2.644
+            },
+            {
+              "type": "diesel",
+              "price": 1.998
+            },
+            {
+              "type": "autogas",
+              "price": 1.289
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΜΑΧΗΣ ΚΡΗΤΗΣ 154, ΡΕΘΥΜΝΟ",
+          "latitude": 35.3704791,
+          "longitude": 24.558906,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.291
+            },
+            {
+              "type": "100",
+              "price": 2.466
+            },
+            {
+              "type": "diesel",
+              "price": 1.93
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΠΑΤ.ΑΘΗΝΑΓΟΡΑ 31 ΜΙΣΙΡΙΑ ΡΕΘΥΜΝΟ",
+          "latitude": 35.3669441,
+          "longitude": 24.5390247,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.342
+            },
+            {
+              "type": "diesel",
+              "price": 1.893
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΠΕΡΑΜΑ ΡΕΘΥΜΝΗΣ",
+          "latitude": 35.3780628,
+          "longitude": 24.7351341,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.321
+            },
+            {
+              "type": "diesel",
+              "price": 1.908
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΧΩΡΑ ΣΦΑΚΙΩΝ",
+          "latitude": 35.2004749,
+          "longitude": 24.1714059,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.337
+            },
+            {
+              "type": "100",
+              "price": 2.669
+            },
+            {
+              "type": "diesel",
+              "price": 1.927
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "CYCLON",
+          "address": "ΕΠΙΣΚΟΠΗ ΡΕΘΥΜΝΟΥ",
+          "latitude": 35.3296747,
+          "longitude": 24.3646692,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.353
+            },
+            {
+              "type": "diesel",
+              "price": 1.934
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "15ο ΧΛΜ ΝΕΟ ΡΕΘΥΜΝΟΥ-ΗΡΑΚΛΕΙΟΥ , ΛΑΤΖΙΜΑΣ",
+          "latitude": 35.4075431,
+          "longitude": 24.6649222,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.279
+            },
+            {
+              "type": "100",
+              "price": 2.357
+            },
+            {
+              "type": "diesel",
+              "price": 1.944
+            },
+            {
+              "type": "autogas",
+              "price": 1.292
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "4ο ΧΛΜ ΡΕΘΥΜΝΟΥ-ΣΠΗΛΙΟΥ.ΤΗΛ,2831036160",
+          "latitude": 35.3487001,
+          "longitude": 24.4948059,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.289
+            },
+            {
+              "type": "100",
+              "price": 2.465
+            },
+            {
+              "type": "diesel",
+              "price": 1.892
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΒΛΗΤΕΣ ΣΟΥΔΑΣ - ΧΑΝΙΑ",
+          "latitude": 35.5018861,
+          "longitude": 24.084463,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.276
+            },
+            {
+              "type": "100",
+              "price": 2.496
+            },
+            {
+              "type": "diesel",
+              "price": 1.893
+            },
+            {
+              "type": "autogas",
+              "price": 1.315
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΓΕΩΡΓΙΟΥΠΟΛΗ ΑΠΟΚΟΡΩΝΟΥ ΧΑΝΙΩΝ",
+          "latitude": 35.3611228,
+          "longitude": 24.2911573,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.353
+            },
+            {
+              "type": "diesel",
+              "price": 1.984
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΚΑΛΥΒΕΣ ΑΠΟΚΟΡΩΝΟΥ",
+          "latitude": 35.4512595,
+          "longitude": 24.2026371,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.276
+            },
+            {
+              "type": "diesel",
+              "price": 1.898
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΜΑΡΟΥΛΑΣ",
+          "latitude": 35.3634393,
+          "longitude": 24.5754816,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "100",
+              "price": 2.355
+            },
+            {
+              "type": "diesel",
+              "price": 1.865
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΑΖΙΝΟΣ ΑΚΡΩΤΗΡΙΟΥ",
+          "latitude": 35.5202708,
+          "longitude": 24.1506313,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.362
+            },
+            {
+              "type": "100",
+              "price": 2.492
+            },
+            {
+              "type": "diesel",
+              "price": 1.944
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΦΟΥΡΦΟΥΡΑΣ ΔΗΜΟΥ ΑΜΑΡΙΟΥ - ΡΕΘΥΜΝΟ",
+          "latitude": 35.2169023,
+          "longitude": 24.7427256,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.286
+            },
+            {
+              "type": "diesel",
+              "price": 1.925
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "REVOIL",
+          "address": "0 ΚΙΣΣΟΥ ΚΑΜΠΟΣ ΣΠΗΛΙ",
+          "latitude": 35.1924104,
+          "longitude": 24.5824465,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.249
+            },
+            {
+              "type": "100",
+              "price": 2.456
+            },
+            {
+              "type": "diesel",
+              "price": 1.829
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "REVOIL",
+          "address": "Πατσιανός Σφακίων Χανίων",
+          "latitude": 35.2031231,
+          "longitude": 24.2551288,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.331
+            },
+            {
+              "type": "diesel",
+              "price": 1.901
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "3 ΚΜ ΡΕΘΥΜΝΟΥ-ΣΠΗΛΙΟΥ ΡΕΘΥΜΝΟ",
+          "latitude": 35.3558148,
+          "longitude": 24.4907604,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.25
+            },
+            {
+              "type": "100",
+              "price": 2.426
+            },
+            {
+              "type": "diesel",
+              "price": 1.884
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Α.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 129",
+          "latitude": 35.5113322,
+          "longitude": 24.0749304,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.282
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΑΓΙΟΙ ΠΑΝΤΕΣ - ΧΑΝΙΑ",
+          "latitude": 35.4019938,
+          "longitude": 24.1817591,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.309
+            },
+            {
+              "type": "100",
+              "price": 2.425
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΑΚΡΩΤΗΡΙΟΥ 6 -ΣΟΥΔΑ - ΧΑΝΙΑ",
+          "latitude": 35.4969111,
+          "longitude": 24.087697,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΑΡΜΕΝΟΙ, ΡΕΘΥΜΝΟ",
+          "latitude": 35.289627,
+          "longitude": 24.4994788,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΒΡΥΣΕΣ ΑΠΟΚΟΡΩΝΟΥ ΧΑΝΙΩΝ",
+          "latitude": 35.3867199,
+          "longitude": 24.2211327,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.367
+            },
+            {
+              "type": "100",
+              "price": 2.445
+            },
+            {
+              "type": "diesel",
+              "price": 1.939
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΒΡΥΣΣΕΣ ΑΠΟΚΟΡΩΝΟΥ-ΧΑΝΙΑ",
+          "latitude": 35.3731263,
+          "longitude": 24.231447,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.36
+            },
+            {
+              "type": "100",
+              "price": 2.414
+            },
+            {
+              "type": "diesel",
+              "price": 1.894
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΕΘΝΑΡΧΟΥ ΒΕΝΙΖΕΛΟΥ 205 ΣΟΥΔΑ",
+          "latitude": 35.4928269,
+          "longitude": 24.0812477,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΕΙΣΟΔΟΣ ΑΕΡΟΛΙΜΕΝΑ ΧΑΝΙΩΝ , ΑΚΡΩΤΗΡΙ ΧΑΝΙΩΝ",
+          "latitude": 35.544165,
+          "longitude": 24.1650353,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.321
+            },
+            {
+              "type": "diesel",
+              "price": 1.92
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΗΛ.ΔΕΛΗΓΙΑΝΝΑΚΗ 108-ΛΕΙΒΑΔΙΑ, ΧΑΝΙΑ",
+          "latitude": 35.5032564,
+          "longitude": 24.0717722,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΚΑΛΥΒΕΣ ΑΠΟΚΟΡΩΝΟΥ ΧΑΝΙΑ",
+          "latitude": 35.4621665,
+          "longitude": 24.1899351,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.273
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.857
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Μουρνιες βενζινάδικο shell",
+          "latitude": 35.4935593,
+          "longitude": 24.0470218,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.287
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Ν.Ε.Ο ΡΕΘΥΜΝΟΥ-ΗΡΑΚΛΕΙΟΥ, ΧΘ 74+00, ΘΕΣΗ ΛΑΤΖΙΜΑΣ",
+          "latitude": 35.4056206,
+          "longitude": 24.6607107,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "100",
+              "price": 2.445
+            },
+            {
+              "type": "diesel",
+              "price": 1.943
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΠΕΡΑΜΑ ΡΕΘΥΜΝΟΥ, ΠΕΡΑΜΑ",
+          "latitude": 35.3734951,
+          "longitude": 24.7257545,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.3
+            },
+            {
+              "type": "100",
+              "price": 2.425
+            },
+            {
+              "type": "diesel",
+              "price": 1.947
+            },
+            {
+              "type": "autogas",
+              "price": 1.249
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΣΤΑΥΡΩΜΕΝΟΣ ΡΕΘΥΜΝΟΥ",
+          "latitude": 35.3862848,
+          "longitude": 24.6217881,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.29
+            },
+            {
+              "type": "diesel",
+              "price": 1.901
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΧΩΡΑΦΑΚΙΑ ΑΚΡΩΤΗΡΙΟΥ",
+          "latitude": 35.5671387,
+          "longitude": 24.1214862,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.292
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΑΓΙΟΣ ΑΝΔΡΕΑΣ ΡΕΘΥΜΝΟ",
+          "latitude": 35.3208563,
+          "longitude": 24.444628,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.27
+            },
+            {
+              "type": "diesel",
+              "price": 1.93
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΑΔΕΛΙΑΝΟΣ ΚΑΜΠΟΣ",
+          "latitude": 35.3743074,
+          "longitude": 24.5699948,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.28
+            },
+            {
+              "type": "diesel",
+              "price": 1.92
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΑΔΕΛΙΑΝΟΣ ΚΑΜΠΟΣ ΡΕΘΥΜΝΟΥ",
+          "latitude": 35.3738023,
+          "longitude": 24.5728108,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.32
+            },
+            {
+              "type": "100",
+              "price": 2.535
+            },
+            {
+              "type": "diesel",
+              "price": 1.892
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΜΑΧΗΣ ΚΡΗΤΗΣ 91 - ΡΕΘΥΜΝΟ",
+          "latitude": 35.3694237,
+          "longitude": 24.5502798,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.292
+            },
+            {
+              "type": "diesel",
+              "price": 2.003
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΤΡΙΑ ΜΟΝΑΣΤΗΡΙΑ",
+          "latitude": 35.3574266,
+          "longitude": 24.4905397,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.307
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΑΓ.ΦΩΤΕΙΝΗ, Δ.ΑΜΑΡΙΟΥ, ΡΕΘΥΜΝΟ",
+          "latitude": 35.2568996,
+          "longitude": 24.6637902,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.32
+            },
+            {
+              "type": "diesel",
+              "price": 1.944
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΑΡΜΕΝΟΙ-ΡΕΘΥΜΝΗΣ ΤΗΛ.2831041025 ΑΥΤΟΜΑΤΟΣ ΠΩΛΗΤΗΣ 24 ΩΡΕΣ ΑΝΟΙΚΤΑ",
+          "latitude": 35.3129376,
+          "longitude": 24.4901486,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.312
+            },
+            {
+              "type": "100",
+              "price": 2.514
+            },
+            {
+              "type": "diesel",
+              "price": 1.907
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΜΙΞΟΡΡΟΥΜΑ ΡΕΘΥΜΝΟ",
+          "latitude": 35.2209545,
+          "longitude": 24.5311222,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.296
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΑΝΑΓΝΩΣΤΟΥ ΓΟΓΟΝΗ 155, ΧΑΝΙΑ",
+          "latitude": 35.5066354,
+          "longitude": 24.0403284,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.278
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΣΤΕΡΝΕΣ ΓΙΑΝΝΟΥΔΙΟΥ ΠΛΑΤΑΝΙΑΣ ΡΕΘΥΜΝΟΥ",
+          "latitude": 35.3542369,
+          "longitude": 24.5585301,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.278
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΠΛΑΚΙΑΣ",
+          "latitude": 35.1869588,
+          "longitude": 24.4392028,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.373
+            },
+            {
+              "type": "diesel",
+              "price": 2.028
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        }
+      ]
+    },
+    {
+      "region": "Ηράκλειο",
+      "source": "FuelGR / Deixto",
+      "stations": [
+        {
+          "name": "AVIN",
+          "address": "15ΧΛΜ ΗΡΑΚΛΕΙΟΥ ΜΟΙΡΩΝ",
+          "latitude": 35.219535,
+          "longitude": 25.0711741,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.311
+            },
+            {
+              "type": "diesel",
+              "price": 1.947
+            },
+            {
+              "type": "autogas",
+              "price": 1.282
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΕΠΑΡΧΙΑΚΗ ΟΔΟΣ ΧΕΡΣΟΝΗΣΟΥ ΚΑΣΤΕΛΙΟΥ",
+          "latitude": 35.3269648,
+          "longitude": 25.3940602,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.251
+            },
+            {
+              "type": "100",
+              "price": 2.539
+            },
+            {
+              "type": "diesel",
+              "price": 1.906
+            },
+            {
+              "type": "autogas",
+              "price": 1.278
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "Καστελλι πεδιαδος Ηρακλειο κρητης",
+          "latitude": 35.2116322,
+          "longitude": 25.3613774,
+          "prices": [
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΚΡΟΥΣΩΝΑΣ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.2361406,
+          "longitude": 25.0122272,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.321
+            },
+            {
+              "type": "diesel",
+              "price": 2.042
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "Λ. ΚΝΩΣΣΟΥ 106 - ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3266156,
+          "longitude": 25.16953,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.249
+            },
+            {
+              "type": "100",
+              "price": 2.536
+            },
+            {
+              "type": "diesel",
+              "price": 1.947
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΛΕΩΦΟΡΟΣ 62 ΜΑΡΤΥΡΩΝ 56 - ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3386723,
+          "longitude": 25.1501515,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.249
+            },
+            {
+              "type": "100",
+              "price": 2.536
+            },
+            {
+              "type": "diesel",
+              "price": 1.916
+            },
+            {
+              "type": "autogas",
+              "price": 1.267
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΠΕΟ Ηρακελίου - Αγίου Νικολάου,Καρτερός Ηράκλειο Κρήτης",
+          "latitude": 35.3303133,
+          "longitude": 25.2263234,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "100",
+              "price": 2.557
+            },
+            {
+              "type": "diesel",
+              "price": 1.974
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΣΚΟΥΛΑ & ΕΡΥΘΡΑΙΑΣ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.3120233,
+          "longitude": 25.1784712,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.267
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΤΥΜΠΑΚΙ ΔΗΜΟΣ ΦΑΙΣΤΟΥ",
+          "latitude": 35.0705852,
+          "longitude": 24.8104667,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.307
+            },
+            {
+              "type": "100",
+              "price": 2.535
+            },
+            {
+              "type": "diesel",
+              "price": 2.043
+            },
+            {
+              "type": "autogas",
+              "price": 1.249
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "15 XΛΜ ΗΡΑΚΛΕΙΟΥ-ΠΕΖΩΝ",
+          "latitude": 35.2273664,
+          "longitude": 25.2132693,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.415
+            },
+            {
+              "type": "diesel",
+              "price": 1.898
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "16ο ΧΛΜ ΗΡΑΚΛΕΙΟΥ ΡΕΘΥΜΝΟΥ",
+          "latitude": 35.4009822,
+          "longitude": 25.0433516,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.342
+            },
+            {
+              "type": "100",
+              "price": 2.506
+            },
+            {
+              "type": "diesel",
+              "price": 1.992
+            },
+            {
+              "type": "autogas",
+              "price": 1.37
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "1ο ΧΛΜ ΗΡΑΚΛΕΙΟΥ-ΠΑΓΝΗ , ΗΡΑΚΛΕΙΟ 2810-542208",
+          "latitude": 35.3247668,
+          "longitude": 25.1264023,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.37
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "21ο ΧΛΜ ΗΡΑΚΛΕΙΟΥ ΜΟΙΡΩΝ",
+          "latitude": 35.1587301,
+          "longitude": 25.0414935,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.247
+            },
+            {
+              "type": "100",
+              "price": 2.425
+            },
+            {
+              "type": "diesel",
+              "price": 1.898
+            },
+            {
+              "type": "autogas",
+              "price": 1.282
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΑΣΗΜΙ ΜΟΝΟΦΑΤΣΙΟΥ",
+          "latitude": 35.0447746,
+          "longitude": 25.1187356,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.362
+            },
+            {
+              "type": "diesel",
+              "price": 1.947
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΓΕΡΓΕΡΗ",
+          "latitude": 35.1330437,
+          "longitude": 24.975882,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.342
+            },
+            {
+              "type": "100",
+              "price": 2.333
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΕΙΡΗΝΗΣ Κ ΦΙΛΙΑΣ 84 ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3091661,
+          "longitude": 25.1452912,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.217
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΕΛ ΒΕΝΙΖΕΛΟΥ-ΜΙΝΩΟΣ-ΜΙΑΟΥΛΗ ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.1409302,
+          "longitude": 25.2935688,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.329
+            },
+            {
+              "type": "100",
+              "price": 2.433
+            },
+            {
+              "type": "diesel",
+              "price": 2.036
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 160, ΓΑΖΙ 2810-823843",
+          "latitude": 35.3297298,
+          "longitude": 25.1031317,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.293
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "Θ. Σκουλά και Φ. Κλεάνθη",
+          "latitude": 35.3113403,
+          "longitude": 25.1767223,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.267
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΚΑΜΙΝΙ -  ΝΕΑ ΑΛΙΚΑΡΝΑΣΣΟΣ",
+          "latitude": 35.3247508,
+          "longitude": 25.1929537,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.472
+            },
+            {
+              "type": "diesel",
+              "price": 1.9
+            },
+            {
+              "type": "autogas",
+              "price": 1.257
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "Λ. ΙΚΑΡΟΥ 15 ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.3411838,
+          "longitude": 25.1728588,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.31
+            },
+            {
+              "type": "100",
+              "price": 2.464
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΛΕΩΦΟΡΟΣ 62 ΜΑΡΤΥΡΩΝ 176",
+          "latitude": 35.3339422,
+          "longitude": 25.1411842,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.526
+            },
+            {
+              "type": "diesel",
+              "price": 1.925
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΛΕΩΦΟΡΟΣ ΙΚΑΡΟΥ 115 ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3400099,
+          "longitude": 25.1957472,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.472
+            },
+            {
+              "type": "diesel",
+              "price": 1.915
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΜΙΝΩΟΣ & ΣΤΡΑΒΩΝΟΣ ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3348487,
+          "longitude": 25.151555,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.244
+            },
+            {
+              "type": "100",
+              "price": 2.333
+            },
+            {
+              "type": "diesel",
+              "price": 1.981
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΠΑΛΑΙΑ ΕΘΝΙΚΗ ΟΔΟΣ ΓΟΥΒΩΝ ΑΝΩΠΟΛΗΣ 0",
+          "latitude": 35.3314734,
+          "longitude": 25.2995375,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.4
+            },
+            {
+              "type": "diesel",
+              "price": 1.945
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΠΛΑΚΟΥΡΙΑ ΧΕΡΣΟΝΗΣΟΥ",
+          "latitude": 35.3275087,
+          "longitude": 25.3942467,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.32
+            },
+            {
+              "type": "100",
+              "price": 2.491
+            },
+            {
+              "type": "diesel",
+              "price": 2.025
+            },
+            {
+              "type": "autogas",
+              "price": 1.294
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "CYCLON",
+          "address": "ΑΓΙΟΣ ΜΥΡΩΝΑΣ",
+          "latitude": 35.2329193,
+          "longitude": 25.0563396,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.321
+            },
+            {
+              "type": "diesel",
+              "price": 1.983
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "CYCLON",
+          "address": "ΛΟΧΡΙΑ ΑΜΑΡΙΟΥ, ΡΕΘΥΜΝΟ",
+          "latitude": 35.1579757,
+          "longitude": 24.8142117,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.31
+            },
+            {
+              "type": "diesel",
+              "price": 1.928
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "17ο χλμ. παλαιάς ΕΟ Ηρακλείου - Αγίου Νικολάου",
+          "latitude": 35.3279038,
+          "longitude": 25.31071,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.4
+            },
+            {
+              "type": "diesel",
+              "price": 1.945
+            },
+            {
+              "type": "autogas",
+              "price": 1.257
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "3ο ΧΛΜ ΗΡΑΚΛΕΙΟΥ - ΜΑΛΑΔΩΝ",
+          "latitude": 35.3048763,
+          "longitude": 25.1457838,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.215
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "4 ΧΙΛ ΜΟΙΡΕΣ - ΤΥΜΠΑΚΙ",
+          "latitude": 35.0518005,
+          "longitude": 24.8585655,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.303
+            },
+            {
+              "type": "100",
+              "price": 2.423
+            },
+            {
+              "type": "diesel",
+              "price": 1.981
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "62 ΜΑΡΤΥΡΩΝ 144 - ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3369468,
+          "longitude": 25.1451409,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.265
+            },
+            {
+              "type": "100",
+              "price": 2.456
+            },
+            {
+              "type": "diesel",
+              "price": 1.961
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΒΡΑΚΟΝΤΕ ΛΑΣΙΘΙΟΥ ΚΡΗΤΗΣ",
+          "latitude": 35.1623914,
+          "longitude": 25.5050455,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.348
+            },
+            {
+              "type": "diesel",
+              "price": 2.043
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΓΙΑ ΒΑΡΒΑΡΑ - ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.1417412,
+          "longitude": 25.0344306,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.247
+            },
+            {
+              "type": "100",
+              "price": 2.435
+            },
+            {
+              "type": "diesel",
+              "price": 1.898
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΓΙΟΥ ΤΡΥΦΟΝΟΣ ΚΑΙ ΗΡΟΔΟΤΟΥ",
+          "latitude": 35.3401387,
+          "longitude": 25.187973,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.286
+            },
+            {
+              "type": "100",
+              "price": 2.445
+            },
+            {
+              "type": "diesel",
+              "price": 1.944
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΓΟΙ ΔΕΚΑ ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ",
+          "latitude": 35.0606565,
+          "longitude": 25.0049611,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.343
+            },
+            {
+              "type": "diesel",
+              "price": 2.039
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΝΩΓΕΙΑ, ΡΕΘΥΜΝΟ",
+          "latitude": 35.2914591,
+          "longitude": 24.9160231,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.465
+            },
+            {
+              "type": "diesel",
+              "price": 1.974
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΡΚΑΛΟΧΩΡΙ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.1445326,
+          "longitude": 25.2989386,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.327
+            },
+            {
+              "type": "100",
+              "price": 2.421
+            },
+            {
+              "type": "diesel",
+              "price": 2.002
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΡΚΑΛΟΧΩΡΙ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.1412676,
+          "longitude": 25.2923477,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.32
+            },
+            {
+              "type": "diesel",
+              "price": 2.038
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΒΑΓΙΟΝΙΑ ΜΟΝΟΦΑΤΣΙΟΥ",
+          "latitude": 35.0181287,
+          "longitude": 25.0209501,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.362
+            },
+            {
+              "type": "diesel",
+              "price": 2.019
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΓΑΖΕΠΙ ΜΥΛΟΣ",
+          "latitude": 35.1468267,
+          "longitude": 25.3442286,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.312
+            },
+            {
+              "type": "diesel",
+              "price": 1.907
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΓΕΡΓΕΡΗ-ΗΡΑΚΛΕΙΟΥ-ΚΡΗΤΗ",
+          "latitude": 35.1353733,
+          "longitude": 24.9802838,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.372
+            },
+            {
+              "type": "diesel",
+              "price": 2.038
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Ε.ΑΝΤΙΣΤΑΣΗΣ 91 - ΒΑΣΙΛΕΙΕΣ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗ",
+          "latitude": 35.2753276,
+          "longitude": 25.1683145,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.248
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 95",
+          "latitude": 35.3379485,
+          "longitude": 25.1710226,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.307
+            },
+            {
+              "type": "100",
+              "price": 2.444
+            },
+            {
+              "type": "diesel",
+              "price": 1.992
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Ελ. Βενιζέλου 15",
+          "latitude": 35.3348298,
+          "longitude": 25.1208279,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.252
+            },
+            {
+              "type": "100",
+              "price": 2.26
+            },
+            {
+              "type": "diesel",
+              "price": 1.964
+            },
+            {
+              "type": "autogas",
+              "price": 1.293
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 270 -ΑΡΚΑΛΟΧΩΡΙ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.1409682,
+          "longitude": 25.2936329,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.33
+            },
+            {
+              "type": "100",
+              "price": 2.424
+            },
+            {
+              "type": "diesel",
+              "price": 2.036
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Ελευθερίου Βενιζέλου  και Καποδιστρίου",
+          "latitude": 35.3199429,
+          "longitude": 25.4200926,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.251
+            },
+            {
+              "type": "100",
+              "price": 2.264
+            },
+            {
+              "type": "diesel",
+              "price": 1.915
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 143 - ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.3292509,
+          "longitude": 25.1009566,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.293
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΘΕΡΙΣΣΟΥ 56 - ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3357456,
+          "longitude": 25.1511895,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.265
+            },
+            {
+              "type": "diesel",
+              "price": 1.974
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Καρτερού 4, Νέα Αλικαρνασσός",
+          "latitude": 35.3397426,
+          "longitude": 25.1937935,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.324
+            },
+            {
+              "type": "diesel",
+              "price": 1.945
+            },
+            {
+              "type": "autogas",
+              "price": 1.257
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΚΑΣΤΕΛΛΙ ΠΕΔΙΑΔΟΣ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.2235854,
+          "longitude": 25.3744039,
+          "prices": [
+            {
+              "type": "diesel",
+              "price": 1.866
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΚΑΤΩ ΓΟΥΒΕΣ  ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.3304206,
+          "longitude": 25.3297374,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.329
+            },
+            {
+              "type": "diesel",
+              "price": 1.944
+            },
+            {
+              "type": "autogas",
+              "price": 1.257
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΚΡΑΣΑΔΑΚΗ & ΑΪΔΙΝΙΟΥ",
+          "latitude": 35.3252225,
+          "longitude": 25.1791183,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.268
+            },
+            {
+              "type": "diesel",
+              "price": 1.956
+            },
+            {
+              "type": "autogas",
+              "price": 1.3
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΚΡΟΥΣΩΝΑΣ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.2408963,
+          "longitude": 25.0153671,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.341
+            },
+            {
+              "type": "diesel",
+              "price": 1.991
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Λ. ΙΩΝΙΑΣ 255",
+          "latitude": 35.3216777,
+          "longitude": 25.162373,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.28
+            },
+            {
+              "type": "100",
+              "price": 2.435
+            },
+            {
+              "type": "diesel",
+              "price": 1.956
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Λ.ΚΝΩΣΟΥ 78 ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.3294347,
+          "longitude": 25.1674674,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.268
+            },
+            {
+              "type": "100",
+              "price": 2.505
+            },
+            {
+              "type": "diesel",
+              "price": 1.982
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Λ.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 136, ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3175915,
+          "longitude": 25.170164,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.244
+            },
+            {
+              "type": "100",
+              "price": 2.527
+            },
+            {
+              "type": "diesel",
+              "price": 1.943
+            },
+            {
+              "type": "autogas",
+              "price": 1.314
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Λ.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 165 - ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.3147221,
+          "longitude": 25.1721632,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.327
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΛΕΩΦ. ΙΚΑΡΟΥ 76, ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.340661,
+          "longitude": 25.1902284,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.472
+            },
+            {
+              "type": "diesel",
+              "price": 1.9
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΛΕΩΦΟΡΟΣ ΚΟΚΚΙΝΟΥ ΠΥΡΓΟΥ 2",
+          "latitude": 35.0719578,
+          "longitude": 24.8033244,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.368
+            },
+            {
+              "type": "diesel",
+              "price": 1.989
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΜΑΥΣΩΛΟΥ & ΔΙΔΟΥΣ",
+          "latitude": 35.338467,
+          "longitude": 25.1873431,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.472
+            },
+            {
+              "type": "diesel",
+              "price": 1.938
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΜΑΧΗΣ ΚΡΗΤΗΣ 136 ΚΑΠΑΡΙΑΝΑ, ΜΟΙΡΕΣ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.0526975,
+          "longitude": 24.9233455,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.373
+            },
+            {
+              "type": "diesel",
+              "price": 2.021
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΜΕΣΣΑΡΑΣ 2 ΓΙΟΦΥΡΟΣ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.3309192,
+          "longitude": 25.1366048,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.265
+            },
+            {
+              "type": "100",
+              "price": 2.422
+            },
+            {
+              "type": "diesel",
+              "price": 1.982
+            },
+            {
+              "type": "autogas",
+              "price": 1.293
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΜΗΛΛΙΑΡΑΔΩΝ - ΔΗΜΟΣ ΒΙΑΝΝΟΥ",
+          "latitude": 35.0936888,
+          "longitude": 25.4242939,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.366
+            },
+            {
+              "type": "diesel",
+              "price": 2.021
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΝΙΚ. ΚΡΑΣΑΔΑΚΗ ΚΑΙ ΕΥΑΓΓΕΛΟΥ ΧΑΤΖΑΚΗ",
+          "latitude": 35.3180089,
+          "longitude": 25.1772563,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.268
+            },
+            {
+              "type": "diesel",
+              "price": 1.956
+            },
+            {
+              "type": "autogas",
+              "price": 1.3
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΟΥΛΑΦ ΠΑΛΜΕ 49, ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.317106,
+          "longitude": 25.1634401,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.29
+            },
+            {
+              "type": "100",
+              "price": 2.374
+            },
+            {
+              "type": "diesel",
+              "price": 1.942
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΕΤΡΟΚΕΦΑΛΙ",
+          "latitude": 35.0339143,
+          "longitude": 24.8647324,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.331
+            },
+            {
+              "type": "diesel",
+              "price": 1.863
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΣΜΠΩΚΟΥ ΚΑΙ ΠΑΤΕΛΑΡΟΥ - ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3294872,
+          "longitude": 25.1613891,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "100",
+              "price": 2.425
+            },
+            {
+              "type": "diesel",
+              "price": 1.945
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΣΠΥΡΟΥ ΜΟΥΣΤΑΚΛΗ 26 - ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.3370486,
+          "longitude": 25.133207,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.316
+            },
+            {
+              "type": "diesel",
+              "price": 1.981
+            },
+            {
+              "type": "autogas",
+              "price": 1.293
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΣΤΑΛΙΔΑ ΠΕΔΙΑΔΟΣ",
+          "latitude": 35.2921665,
+          "longitude": 25.4635287,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.394
+            },
+            {
+              "type": "100",
+              "price": 2.436
+            },
+            {
+              "type": "diesel",
+              "price": 1.966
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΣΤΡΥΜΩΝΟΣ 5",
+          "latitude": 35.3316511,
+          "longitude": 25.1471332,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.394
+            },
+            {
+              "type": "diesel",
+              "price": 1.915
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Τζερμιαδο Λασιθιου",
+          "latitude": 35.1987104,
+          "longitude": 25.5183141,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.352
+            },
+            {
+              "type": "diesel",
+              "price": 1.947
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΥΠ.: ΠΑΥΛΟΥ ΖΩΓΡΑΦΙΣΤΟΥ 5 ΚΟΡΩΝΗ ΜΑΓΑΡΑ",
+          "latitude": 35.3242865,
+          "longitude": 25.1461432,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.293
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΦΟΥΡΦΟΥΡΑΣ ΔΗΜΟΥ ΑΜΑΡΙΟΥ - ΡΕΘΥΜΝΟ",
+          "latitude": 35.2169023,
+          "longitude": 24.7427256,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.286
+            },
+            {
+              "type": "diesel",
+              "price": 1.925
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "12o ΧΛΜ ΗΡΑΚΛΕΙΟΥ-ΒΙΑΝΝΟΥ (ΚΟΥΝΑΒΟΙ)",
+          "latitude": 35.2395229,
+          "longitude": 25.2099403,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.435
+            },
+            {
+              "type": "diesel",
+              "price": 1.898
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "13ο χλμ Ηρακλείου - Μοιρών",
+          "latitude": 35.2556525,
+          "longitude": 25.0984523,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "100",
+              "price": 2.445
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Α. Παπανδρέου 32, Αμμουδάρα Γαζίου",
+          "latitude": 35.3376402,
+          "longitude": 25.1208745,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.435
+            },
+            {
+              "type": "diesel",
+              "price": 1.92
+            },
+            {
+              "type": "autogas",
+              "price": 1.315
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΑΓ.ΚΩΝ/ΝΟΣ, ΛΑΣΙΘΙ",
+          "latitude": 35.1857994,
+          "longitude": 25.5298388,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.299
+            },
+            {
+              "type": "100",
+              "price": 2.393
+            },
+            {
+              "type": "diesel",
+              "price": 1.901
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΑΓΙΑ ΓΑΛΗΝΗ - ΡΕΘΥΜΝΟ",
+          "latitude": 35.1074671,
+          "longitude": 24.7250061,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "100",
+              "price": 2.445
+            },
+            {
+              "type": "diesel",
+              "price": 1.989
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΑΡΚΑΛΟΧΩΡΙ",
+          "latitude": 35.1505099,
+          "longitude": 25.3012456,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.321
+            },
+            {
+              "type": "100",
+              "price": 2.487
+            },
+            {
+              "type": "diesel",
+              "price": 1.903
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΕΠΙΣΚΟΠΗ ΠΕΔΙΑΔΟΣ  ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.2607178,
+          "longitude": 25.2671656,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.312
+            },
+            {
+              "type": "100",
+              "price": 2.395
+            },
+            {
+              "type": "diesel",
+              "price": 1.966
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΖΑΡΟΣ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.1316793,
+          "longitude": 24.9342831,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.311
+            },
+            {
+              "type": "diesel",
+              "price": 1.947
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΙΚΑΡΟΥ 42, ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3411963,
+          "longitude": 25.17056,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.31
+            },
+            {
+              "type": "100",
+              "price": 2.485
+            },
+            {
+              "type": "diesel",
+              "price": 1.965
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΚΑΠΑΡΙΑΝΑ ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ",
+          "latitude": 35.0517077,
+          "longitude": 24.9180046,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.358
+            },
+            {
+              "type": "100",
+              "price": 2.37
+            },
+            {
+              "type": "diesel",
+              "price": 1.926
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΚΑΣΤΕΛΛΙ ΠΕΔΙΑΔΟΣ ΗΡΑΚΛΕΙΟ ΚΤΗΤΗΣ",
+          "latitude": 35.2117137,
+          "longitude": 25.3606037,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.25
+            },
+            {
+              "type": "100",
+              "price": 2.345
+            },
+            {
+              "type": "diesel",
+              "price": 1.984
+            },
+            {
+              "type": "autogas",
+              "price": 1.207
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΚΛΕΑΝΘΟΥΣ & ΚΩΝ/ΝΟΥ ΑΣΤΡΙΝΑΚΗ (Ο.Τ 45)",
+          "latitude": 35.3269904,
+          "longitude": 25.1731192,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.435
+            },
+            {
+              "type": "diesel",
+              "price": 1.956
+            },
+            {
+              "type": "autogas",
+              "price": 1.3
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Λ.ΔΗΜΟΚΡΑΤΙΑΣ 36 ΗΡΑΚΛΕΙΟ 2810361880",
+          "latitude": 35.3327274,
+          "longitude": 25.1673394,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "100",
+              "price": 2.445
+            },
+            {
+              "type": "diesel",
+              "price": 1.983
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Λ.ΙΚΑΡΟΥ 30 - ΑΛΙΚΑΡΝΑΣΣΟΣ",
+          "latitude": 35.3411517,
+          "longitude": 25.1859795,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.311
+            },
+            {
+              "type": "100",
+              "price": 2.486
+            },
+            {
+              "type": "diesel",
+              "price": 2.029
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Λ.ΚΝΩΣΟΥ 134 ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3235021,
+          "longitude": 25.1725608,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.435
+            },
+            {
+              "type": "diesel",
+              "price": 1.956
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Λ.ΧΕΡΣΟΝΗΣΟΥ",
+          "latitude": 35.3247554,
+          "longitude": 25.40778,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.492
+            },
+            {
+              "type": "diesel",
+              "price": 1.975
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΛΕΒΗΝΟΥ 10",
+          "latitude": 35.3364682,
+          "longitude": 25.1463878,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.435
+            },
+            {
+              "type": "diesel",
+              "price": 1.92
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Μάχης Κρήτης και Καντάνου",
+          "latitude": 35.341993,
+          "longitude": 25.1432508,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.435
+            },
+            {
+              "type": "diesel",
+              "price": 1.929
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΠΕΡΑΜΑ ΡΕΘΥΜΝΟΥ, ΠΕΡΑΜΑ",
+          "latitude": 35.3734951,
+          "longitude": 24.7257545,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.249
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΠΡΟΦΗΤΗΣ ΗΛΙΑΣ",
+          "latitude": 35.2131594,
+          "longitude": 25.1304617,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.38
+            },
+            {
+              "type": "diesel",
+              "price": 1.981
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΣΙΒΑΣ ΠΥΡΓΙΟΤΙΣΗΣ ΗΡΑΚΛΕΙΟΝ ΚΡΗΤΗΣ",
+          "latitude": 35.0281083,
+          "longitude": 24.8406908,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.291
+            },
+            {
+              "type": "100",
+              "price": 2.639
+            },
+            {
+              "type": "diesel",
+              "price": 2.029
+            },
+            {
+              "type": "autogas",
+              "price": 1.24
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΑΓ.ΒΑΡΒΑΡΑ, ΔΕΞΙΑ ΕΠΙ ΤΗΣ Δ.Ε.Ο.Δ., ΑΓΙΑ ΒΑΡΒΑΡΑ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.1333556,
+          "longitude": 25.0263794,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.342
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΑΓΙΟΙ ΔΕΚΑ",
+          "latitude": 35.0620253,
+          "longitude": 24.996028,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.396
+            },
+            {
+              "type": "diesel",
+              "price": 2.062
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΓΑΛΙΑ",
+          "latitude": 35.0638061,
+          "longitude": 24.8940938,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.373
+            },
+            {
+              "type": "diesel",
+              "price": 1.947
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "Μεγαλη Βρυση",
+          "latitude": 35.1384335,
+          "longitude": 25.0527832,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.456
+            },
+            {
+              "type": "diesel",
+              "price": 2.093
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΣΤΑΒΙΕΣ",
+          "latitude": 35.0091368,
+          "longitude": 25.0646148,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.363
+            },
+            {
+              "type": "diesel",
+              "price": 1.939
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΤΥΛΙΣΟΣ ΜΑΛΕΒΙΖΙΟΥ",
+          "latitude": 35.2995967,
+          "longitude": 25.0464888,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.29
+            },
+            {
+              "type": "diesel",
+              "price": 1.992
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "WIN",
+          "address": "ΧΡΙΣΤΟΜΙΧΑΛΗ ΞΥΛΟΥΡΗ 65, ΗΡΑΚΛΕΙΟ, 2810-313344",
+          "latitude": 35.3284953,
+          "longitude": 25.1436779,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.244
+            },
+            {
+              "type": "100",
+              "price": 2.383
+            },
+            {
+              "type": "diesel",
+              "price": 1.964
+            },
+            {
+              "type": "autogas",
+              "price": 1.281
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΑΝΩΓΕΙΑ ΝΟΜΟΥ ΡΕΘΥΜΝΗΣ",
+          "latitude": 35.288044,
+          "longitude": 24.9208947,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.36
+            },
+            {
+              "type": "diesel",
+              "price": 1.954
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΑΣΤΡΙΤΣΙ ΝΟΜΟΥ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.1849252,
+          "longitude": 25.2572754,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.28
+            },
+            {
+              "type": "diesel",
+              "price": 1.947
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΒΟΝΗ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.1997235,
+          "longitude": 25.2769369,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.27
+            },
+            {
+              "type": "diesel",
+              "price": 1.984
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΖΑΡΟΣ-ΗΡΑΚΛΕΙΟΥ-ΚΡΗΤΗΣ",
+          "latitude": 35.128783,
+          "longitude": 24.9355612,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.312
+            },
+            {
+              "type": "diesel",
+              "price": 1.948
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΚΛΕΑΝΘΗΣ 45 - ΗΡΑΚΛΕΙΟ",
+          "latitude": 35.3259773,
+          "longitude": 25.1770948,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.248
+            },
+            {
+              "type": "100",
+              "price": 2.405
+            },
+            {
+              "type": "diesel",
+              "price": 1.965
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΜΟΧΟΣ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.2714813,
+          "longitude": 25.4534898,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.399
+            },
+            {
+              "type": "diesel",
+              "price": 2.079
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "Συνοικισμός Αγίου Ιωάννου επάνω βαθειά",
+          "latitude": 35.2901026,
+          "longitude": 25.261611,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.29
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΤΥΜΠΑΚΙ ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ",
+          "latitude": 35.0765112,
+          "longitude": 24.7900263,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.459
+            },
+            {
+              "type": "diesel",
+              "price": 2.053
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΧΕΡΣΟΝΗΣΣΟΣ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.3186956,
+          "longitude": 25.3940603,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.32
+            },
+            {
+              "type": "100",
+              "price": 2.535
+            },
+            {
+              "type": "diesel",
+              "price": 2.036
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "25ης  ΜΑΡΤΙΟΥ 325 ΜΟΙΡΕΣ",
+          "latitude": 35.0527241,
+          "longitude": 24.8994534,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.331
+            },
+            {
+              "type": "100",
+              "price": 2.536
+            },
+            {
+              "type": "diesel",
+              "price": 1.938
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΑΓ.ΓΑΛΗΝΗ ΡΕΘΥΜΝΟΥ, ΑΓΙΑ ΓΑΛΗΝΗ",
+          "latitude": 35.1049757,
+          "longitude": 24.7190523,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.276
+            },
+            {
+              "type": "diesel",
+              "price": 1.989
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΑΓΙΟΙ ΔΕΚΑ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.0610179,
+          "longitude": 24.9919212,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.332
+            },
+            {
+              "type": "diesel",
+              "price": 1.984
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "Επαρ.Οδ. Κνωσσού - Χάρακας 190, Χουδέτσι",
+          "latitude": 35.1953513,
+          "longitude": 25.1978045,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.257
+            },
+            {
+              "type": "diesel",
+              "price": 1.889
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΚΑΣΤΕΛΙ ΜΟΙΡΩΝ (ΕΘΝΙΚ ΟΔ. ΜΟΙΡΩΝ ΗΡΑΚΛΕΙΟΥ)",
+          "latitude": 35.0547309,
+          "longitude": 24.9435567,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.373
+            },
+            {
+              "type": "diesel",
+              "price": 1.983
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΠΡΟΦΗΤΗΣ ΗΛΙΑΣ, ΤΕΜΕΝΟΥΣ ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ",
+          "latitude": 35.1946821,
+          "longitude": 25.1264139,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "diesel",
+              "price": 1.983
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΤΖΕΡΜΙΑΔΟ ΟΡΟΠΕΔΙΟ ΛΑΣΙΘΙΟΥ",
+          "latitude": 35.1990312,
+          "longitude": 25.5184424,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.309
+            },
+            {
+              "type": "diesel",
+              "price": 1.981
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΧΟΥΔΕΤΣΙ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.1905366,
+          "longitude": 25.2002112,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.257
+            },
+            {
+              "type": "diesel",
+              "price": 1.889
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "25 ΜΑΡΤΙΟΥ 41 - ΜΟΙΡΕΣ ΗΡΑΚΛΕΊΟΥ ΚΡΗΤΗΣ",
+          "latitude": 35.0521673,
+          "longitude": 24.9102498,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.392
+            },
+            {
+              "type": "diesel",
+              "price": 2.046
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΑΓΙΑ ΠΕΛΑΓΙΑ ΜΑΛΕΒΙΖΙΟΥ",
+          "latitude": 35.4168099,
+          "longitude": 25.0354636,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.383
+            },
+            {
+              "type": "diesel",
+              "price": 1.974
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "Αντισκάρι Δήμου Φαιστού",
+          "latitude": 34.9609058,
+          "longitude": 24.9027762,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.415
+            },
+            {
+              "type": "diesel",
+              "price": 2.066
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΑΡΚΑΛΟΧΩΡΙ ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ",
+          "latitude": 35.1528977,
+          "longitude": 25.2932081,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.32
+            },
+            {
+              "type": "diesel",
+              "price": 1.919
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΓΟΥΡΝΕΣ ΧΕΡΣΟΝΗΣΟΥ",
+          "latitude": 35.3294857,
+          "longitude": 25.3042545,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.327
+            },
+            {
+              "type": "diesel",
+              "price": 1.991
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΘΡΑΨΑΝΟ ΠΕΔΙΑΔΟΣ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.1890312,
+          "longitude": 25.3171598,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.332
+            },
+            {
+              "type": "diesel",
+              "price": 1.948
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΚΑΡΔΑΜΟΥΤΣΑ - ΠΙΝΑΚΙΑΝΟ",
+          "latitude": 35.2020242,
+          "longitude": 25.4902758,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.372
+            },
+            {
+              "type": "diesel",
+              "price": 1.901
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΚΑΤΩ ΑΣΙΤΕΣ -ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ 2810861322",
+          "latitude": 35.2170811,
+          "longitude": 25.0391133,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.36
+            },
+            {
+              "type": "diesel",
+              "price": 1.983
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "Κουνάβοι ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.2412475,
+          "longitude": 25.213419,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.352
+            },
+            {
+              "type": "diesel",
+              "price": 1.992
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΛΕΩΦΟΡΟ ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 133",
+          "latitude": 35.3404918,
+          "longitude": 25.1711776,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.311
+            },
+            {
+              "type": "diesel",
+              "price": 1.974
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΛΕΩΦΟΡΟΣ 62 ΜΑΡΤΥΡΩΝ 200 ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.332678,
+          "longitude": 25.1382578,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.3
+            },
+            {
+              "type": "diesel",
+              "price": 2.039
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΜΟΡΟΝΙ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.0967191,
+          "longitude": 24.9440481,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.3
+            },
+            {
+              "type": "diesel",
+              "price": 1.929
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 60, ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.3244018,
+          "longitude": 25.1689438,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "diesel",
+              "price": 1.925
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΣΟΚΑΡΑΣ ΜΟΝΟΦΑΤΣΙΟΥ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.0537763,
+          "longitude": 25.1404058,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.314
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΤΕΚΑ",
+          "address": "ΑΣΗΜΙ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.0443952,
+          "longitude": 25.116229,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.355
+            },
+            {
+              "type": "100",
+              "price": 2.418
+            },
+            {
+              "type": "diesel",
+              "price": 1.944
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΤΕΚΑ",
+          "address": "ΑΥΓΕΝΙΚΗ",
+          "latitude": 35.1939286,
+          "longitude": 25.0628336,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.336
+            },
+            {
+              "type": "diesel",
+              "price": 2.047
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΤΕΚΑ",
+          "address": "Βονη πεδιαδος",
+          "latitude": 35.1973223,
+          "longitude": 25.2757996,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.25
+            },
+            {
+              "type": "diesel",
+              "price": 0.997
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΤΕΚΑ",
+          "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 66 ΜΑΛΙΑ",
+          "latitude": 35.2874938,
+          "longitude": 25.4858095,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.476
+            },
+            {
+              "type": "100",
+              "price": 2.638
+            },
+            {
+              "type": "diesel",
+              "price": 2.137
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΤΕΚΑ",
+          "address": "ΚΟΜΝΗΝΩΝ 18, ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.33847,
+          "longitude": 25.175785,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.29
+            },
+            {
+              "type": "100",
+              "price": 2.463
+            },
+            {
+              "type": "diesel",
+              "price": 1.954
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΤΕΚΑ",
+          "address": "ΛΑΓΚΑΔΑ 3 ΠΑΤΕΛΕΣ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+          "latitude": 35.3343181,
+          "longitude": 25.1758156,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.29
+            },
+            {
+              "type": "100",
+              "price": 2.317
+            },
+            {
+              "type": "diesel",
+              "price": 1.954
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        }
+      ]
+    },
+    {
+      "region": "Χανιά",
+      "source": "FuelGR / Deixto",
+      "stations": [
+        {
+          "name": "AVIN",
+          "address": "ΑΡΓΥΡΟΥΠΟΛΗ ΔΗΜΟΥ ΡΕΘΥΜΝΗΣ ΤΚ 75055 ΤΗΛ,2831026110",
+          "latitude": 35.2999672,
+          "longitude": 24.3657192,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.331
+            },
+            {
+              "type": "diesel",
+              "price": 2.065
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΑΣΚΥΦΟΥ ΣΦΑΚΙΩΝ ΧΑΝΙΩΝ",
+          "latitude": 35.2944252,
+          "longitude": 24.2065709,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.31
+            },
+            {
+              "type": "diesel",
+              "price": 1.883
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΒΑΜΟΣ ΔΗΜΟΣ ΑΠΟΚΟΡΩΝΟΥ ΧΑΝΙΑ ΚΡΗΤΗ",
+          "latitude": 35.4136966,
+          "longitude": 24.2256185,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.327
+            },
+            {
+              "type": "100",
+              "price": 2.614
+            },
+            {
+              "type": "diesel",
+              "price": 1.884
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΕΠΙΣΚΟΠΗ ΡΕΘΥΜΝΗΣ",
+          "latitude": 35.3331437,
+          "longitude": 24.3666418,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.359
+            },
+            {
+              "type": "100",
+              "price": 2.568
+            },
+            {
+              "type": "diesel",
+              "price": 1.946
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΖΥΜΒΡΑΚΑΚΗΔΩΝ 108",
+          "latitude": 35.5045977,
+          "longitude": 24.0473856,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.238
+            },
+            {
+              "type": "100",
+              "price": 2.526
+            },
+            {
+              "type": "diesel",
+              "price": 1.847
+            },
+            {
+              "type": "autogas",
+              "price": 1.289
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΚΑΒΡΟΣ ΑΠΟΚΟΡΩΝΟΥ",
+          "latitude": 35.3533408,
+          "longitude": 24.3305896,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.285
+            },
+            {
+              "type": "100",
+              "price": 2.481
+            },
+            {
+              "type": "diesel",
+              "price": 1.894
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΚΟΥΝΟΥΠΙΔΙΑΝΑ",
+          "latitude": 35.5331602,
+          "longitude": 24.1049015,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.526
+            },
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΛΕΩΦ. ΚΑΡΑΜΑΝΛΗ (ΣΟΥΔΑΣ) 68",
+          "latitude": 35.50179,
+          "longitude": 24.060152,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.245
+            },
+            {
+              "type": "100",
+              "price": 2.532
+            },
+            {
+              "type": "diesel",
+              "price": 1.862
+            },
+            {
+              "type": "autogas",
+              "price": 1.282
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΛΕΩΦ. ΝΙΚ. ΚΑΖΑΝΤΖΑΚΗ 120, ΒΑΜΒΑΚΟΠΟΥΛΟ",
+          "latitude": 35.4955861,
+          "longitude": 24.0104896,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.245
+            },
+            {
+              "type": "100",
+              "price": 2.532
+            },
+            {
+              "type": "diesel",
+              "price": 1.866
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΟΑΣΗ ΒΑΡΥΠΕΤΡΟΥ",
+          "latitude": 35.48458,
+          "longitude": 23.9868863,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.243
+            },
+            {
+              "type": "100",
+              "price": 2.522
+            },
+            {
+              "type": "diesel",
+              "price": 1.87
+            },
+            {
+              "type": "autogas",
+              "price": 1.289
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΟΙΚΙΣΜΟΣ ΜΑΚΡΥΣ ΤΟΙΧΟΣ - ΔΗΜΟΣ ΧΑΝΙΩΝ",
+          "latitude": 35.5093252,
+          "longitude": 24.013214,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.245
+            },
+            {
+              "type": "100",
+              "price": 2.532
+            },
+            {
+              "type": "diesel",
+              "price": 1.862
+            },
+            {
+              "type": "autogas",
+              "price": 1.289
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΠΥΡΓΟΣ ΨΗΛΟΝΕΡΟΥ ΠΛΑΤΑΝΙΑΣ",
+          "latitude": 35.5223166,
+          "longitude": 23.8887475,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.268
+            },
+            {
+              "type": "diesel",
+              "price": 1.887
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΧΑΝΙΑ ΚΟΛΥΜΒΑΡΙ",
+          "latitude": 35.5414715,
+          "longitude": 23.8106428,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.268
+            },
+            {
+              "type": "100",
+              "price": 2.492
+            },
+            {
+              "type": "diesel",
+              "price": 1.923
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΑΚΡΩΤΗΡΙΟΥ 110, ΧΑΝΙΑ",
+          "latitude": 35.5164281,
+          "longitude": 24.0757863,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.253
+            },
+            {
+              "type": "diesel",
+              "price": 1.864
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΑΛ.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 184 ΧΑΝΙΑ",
+          "latitude": 35.509424,
+          "longitude": 24.0778284,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.245
+            },
+            {
+              "type": "100",
+              "price": 2.512
+            },
+            {
+              "type": "diesel",
+              "price": 1.853
+            },
+            {
+              "type": "autogas",
+              "price": 1.282
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΑΛΕΞΑΝΔΡΟΥ ΠΑΠΑΝΑΣΤΑΣΙΟΥ 12",
+          "latitude": 35.4891816,
+          "longitude": 24.0905591,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.245
+            },
+            {
+              "type": "100",
+              "price": 2.502
+            },
+            {
+              "type": "diesel",
+              "price": 1.853
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΑΝΑΓΝΩΣΤΟΥ ΓΟΓΩΝΗ 153",
+          "latitude": 35.5065682,
+          "longitude": 24.0392934,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.411
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΕΠΑΡΧΙΑΚΗ ΟΔΟΣ ΧΑΝΙΩΝ ΜΟΥΡΝΙΩΝ",
+          "latitude": 35.4956708,
+          "longitude": 24.0469044,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.249
+            },
+            {
+              "type": "100",
+              "price": 2.405
+            },
+            {
+              "type": "diesel",
+              "price": 1.856
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΖΥΜΒΡΑΚΑΚΗΔΩΝ 54",
+          "latitude": 35.5099663,
+          "longitude": 24.0469586,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.372
+            },
+            {
+              "type": "100",
+              "price": 2.637
+            },
+            {
+              "type": "diesel",
+              "price": 2.037
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "Κ.ΜΑΝΟΥ 36 ΠΕΛΕΚΑΠΙΝΑ ΧΑΝΙΑ",
+          "latitude": 35.4980647,
+          "longitude": 24.0288861,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΚΑΜΙΣΙΑΝΑ ΧΑΝΙΩΝ",
+          "latitude": 35.5335828,
+          "longitude": 23.837443,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.29
+            },
+            {
+              "type": "diesel",
+              "price": 2.065
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΚΑΤΩ ΔΑΡΑΤΣΟ - ΚΑΛΑΜΑΚΙ - ΧΑΝΙΑ",
+          "latitude": 35.5133184,
+          "longitude": 24.0014845,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.372
+            },
+            {
+              "type": "100",
+              "price": 2.698
+            },
+            {
+              "type": "diesel",
+              "price": 2.067
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "Λ ΚΑΖΑΝΤΖΑΚΗ 116",
+          "latitude": 35.496316,
+          "longitude": 24.0128743,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.254
+            },
+            {
+              "type": "diesel",
+              "price": 1.945
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "Λ.ΚΑΖΑΝΤΖΑΚΗ 38Β",
+          "latitude": 35.5038716,
+          "longitude": 24.0281286,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.411
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΛΕΩΦΟΡΟΣ ΗΡΑΚΛΕΙΟΥ 8",
+          "latitude": 35.5089852,
+          "longitude": 24.0543341,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.411
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΛΕΩΦΟΡΟΣ ΦΡΑΓΚΙΑΣ ΠΕΡΙΟΧΗ ΑΡΩΝΙ",
+          "latitude": 35.5196715,
+          "longitude": 24.1397994,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.358
+            },
+            {
+              "type": "100",
+              "price": 2.644
+            },
+            {
+              "type": "diesel",
+              "price": 1.998
+            },
+            {
+              "type": "autogas",
+              "price": 1.289
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "CYCLON",
+          "address": "ΑΓ. ΓΕΩΡΓΙΟΣ ΓΡΑΜΒΟΥΣΑΣ, ΚΙΣΣΑΜΟΣ",
+          "latitude": 35.5012525,
+          "longitude": 23.6420383,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "diesel",
+              "price": 1.934
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "CYCLON",
+          "address": "ΕΠΙΣΚΟΠΗ ΡΕΘΥΜΝΟΥ",
+          "latitude": 35.3296747,
+          "longitude": 24.3646692,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.353
+            },
+            {
+              "type": "diesel",
+              "price": 1.934
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "CYCLON",
+          "address": "ΚΛΑΔΙΣΣΟΣ Ν.ΚΥΔΩΝΙΑΣ ΧΑΝΙΩΝ",
+          "latitude": 35.5091802,
+          "longitude": 24.032345,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.549
+            },
+            {
+              "type": "diesel",
+              "price": 1.862
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "2 χλμ. ΚΙΣΣΑΜΟΥ - ΧΑΝΙΩΝ",
+          "latitude": 35.4978425,
+          "longitude": 23.7102964,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.288
+            },
+            {
+              "type": "100",
+              "price": 2.385
+            },
+            {
+              "type": "diesel",
+              "price": 1.948
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΛΕΞΑΝΔΡΟΥ ΠΑΝΑΓΟΥΛΗ & Κ. ΜΑΝΟΥ",
+          "latitude": 35.5068374,
+          "longitude": 24.0614405,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.411
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΒΛΗΤΕΣ ΣΟΥΔΑΣ - ΧΑΝΙΑ",
+          "latitude": 35.5018861,
+          "longitude": 24.084463,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.276
+            },
+            {
+              "type": "100",
+              "price": 2.496
+            },
+            {
+              "type": "diesel",
+              "price": 1.893
+            },
+            {
+              "type": "autogas",
+              "price": 1.315
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΒΟΥΛΓΑΡΩ, ΚΙΣΣΑΜΟΣ ΧΑΝΙΑ",
+          "latitude": 35.4573261,
+          "longitude": 23.7286794,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.3
+            },
+            {
+              "type": "100",
+              "price": 2.384
+            },
+            {
+              "type": "diesel",
+              "price": 1.889
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΓΕΩΡΓΙΟΥΠΟΛΗ ΑΠΟΚΟΡΩΝΟΥ ΧΑΝΙΩΝ",
+          "latitude": 35.3611228,
+          "longitude": 24.2911573,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.353
+            },
+            {
+              "type": "diesel",
+              "price": 1.984
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΕΠΙΣΚΟΠΗ ΑΓΙΑΣ ΧΑΝΙΩΝ",
+          "latitude": 35.4712974,
+          "longitude": 23.9547513,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "diesel",
+              "price": 1.874
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΚΑΛΥΒΕΣ ΑΠΟΚΟΡΩΝΟΥ",
+          "latitude": 35.4512595,
+          "longitude": 24.2026371,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.276
+            },
+            {
+              "type": "diesel",
+              "price": 1.898
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΚΙΣΣΑΜΟΣ ΧΑΝΙΩΝ",
+          "latitude": 35.4963456,
+          "longitude": 23.6864719,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.285
+            },
+            {
+              "type": "diesel",
+              "price": 1.938
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Λ. ΚΑΡΑΜΑΝΛΗ 86, ΚΟΥΜΠΕΣ",
+          "latitude": 35.5045798,
+          "longitude": 24.0570026,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.258
+            },
+            {
+              "type": "100",
+              "price": 2.492
+            },
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΜΑΛΕΜΕ ΠΛΑΤΑΝΙΑ ΧΑΝΙΑ",
+          "latitude": 35.5272593,
+          "longitude": 23.8690744,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.268
+            },
+            {
+              "type": "100",
+              "price": 2.434
+            },
+            {
+              "type": "diesel",
+              "price": 1.887
+            },
+            {
+              "type": "autogas",
+              "price": 1.289
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΜΟΥΡΝΙΩΝ 38 (ΕΝΑΝΤΙ LIDLE), ΧΑΝΙΑ",
+          "latitude": 35.5000076,
+          "longitude": 24.0475596,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.258
+            },
+            {
+              "type": "100",
+              "price": 2.492
+            },
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΑΖΙΝΟΣ ΑΚΡΩΤΗΡΙΟΥ",
+          "latitude": 35.5202708,
+          "longitude": 24.1506313,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.362
+            },
+            {
+              "type": "100",
+              "price": 2.492
+            },
+            {
+              "type": "diesel",
+              "price": 1.944
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΑΛΑΙΑ ΕΟ ΧΑΝΙΩΝ ΚΟΛΥΜΒΑΡΙΟΥ ΣΤΟ ΜΑΚΡΥ ΤΟΙΧΟ",
+          "latitude": 35.5099451,
+          "longitude": 24.0173278,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.245
+            },
+            {
+              "type": "100",
+              "price": 2.4
+            },
+            {
+              "type": "diesel",
+              "price": 1.862
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΛΑΚΑΛΩΝΑ ΚΙΣΣΑΜΟΥ, 6ο ΧΙΛΙΟΜΕΤΡΟ ΝΕΑΣ ΕΘΝ.ΟΔΟΥ ΚΙΣΣΑΜΟΥ-ΧΑΝΙΩΝ",
+          "latitude": 35.5109861,
+          "longitude": 23.7591379,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.239
+            },
+            {
+              "type": "diesel",
+              "price": 1.866
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΛΑΤΑΝΟΣ ΚΙΣΣΑΜΟΥ",
+          "latitude": 35.4771796,
+          "longitude": 23.6320564,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.335
+            },
+            {
+              "type": "diesel",
+              "price": 1.963
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΣΚΙΝΕΣ ΧΑΝΙΑ",
+          "latitude": 35.4433205,
+          "longitude": 23.9486058,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "diesel",
+              "price": 1.893
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "26χλμ Ν.Ε.Ο ΧΑΝΙΩΝ ΚΙΣΑΜΟΥ",
+          "latitude": 35.5308999,
+          "longitude": 23.7819679,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "diesel",
+              "price": 1.846
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Α.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 129",
+          "latitude": 35.5113322,
+          "longitude": 24.0749304,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.853
+            },
+            {
+              "type": "autogas",
+              "price": 1.282
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΑΓΙΟΙ ΠΑΝΤΕΣ - ΧΑΝΙΑ",
+          "latitude": 35.4019938,
+          "longitude": 24.1817591,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.309
+            },
+            {
+              "type": "100",
+              "price": 2.425
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΑΚΡΩΤΗΡΙΟΥ 6 -ΣΟΥΔΑ - ΧΑΝΙΑ",
+          "latitude": 35.4969111,
+          "longitude": 24.087697,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΑΛΙΚΙΑΝΟΣ ΧΑΝΙΩΝ",
+          "latitude": 35.4568226,
+          "longitude": 23.9452726,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.296
+            },
+            {
+              "type": "diesel",
+              "price": 1.928
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΒΡΥΣΕΣ ΑΠΟΚΟΡΩΝΟΥ ΧΑΝΙΩΝ",
+          "latitude": 35.3867199,
+          "longitude": 24.2211327,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.367
+            },
+            {
+              "type": "100",
+              "price": 2.445
+            },
+            {
+              "type": "diesel",
+              "price": 1.939
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΒΡΥΣΣΕΣ ΑΠΟΚΟΡΩΝΟΥ-ΧΑΝΙΑ",
+          "latitude": 35.3731263,
+          "longitude": 24.231447,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.36
+            },
+            {
+              "type": "100",
+              "price": 2.414
+            },
+            {
+              "type": "diesel",
+              "price": 1.894
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΓΕΡΑΝΙ, ΠΛΑΤΑΝΙΑΣ",
+          "latitude": 35.5196982,
+          "longitude": 23.9135963,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.3
+            },
+            {
+              "type": "100",
+              "price": 2.476
+            },
+            {
+              "type": "diesel",
+              "price": 1.874
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΕΘΝΑΡΧΟΥ ΒΕΝΙΖΕΛΟΥ 205 ΣΟΥΔΑ",
+          "latitude": 35.4928269,
+          "longitude": 24.0812477,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΕΙΣΟΔΟΣ ΑΕΡΟΛΙΜΕΝΑ ΧΑΝΙΩΝ , ΑΚΡΩΤΗΡΙ ΧΑΝΙΩΝ",
+          "latitude": 35.544165,
+          "longitude": 24.1650353,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.321
+            },
+            {
+              "type": "diesel",
+              "price": 1.92
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΗΛ.ΔΕΛΗΓΙΑΝΝΑΚΗ 108-ΛΕΙΒΑΔΙΑ, ΧΑΝΙΑ",
+          "latitude": 35.5032564,
+          "longitude": 24.0717722,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 57 - ΚΙΣΑΜΟΣ ΧΑΝΙΩΝ",
+          "latitude": 35.4957748,
+          "longitude": 23.6884073,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.285
+            },
+            {
+              "type": "diesel",
+              "price": 1.938
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΚΑΛΥΒΕΣ ΑΠΟΚΟΡΩΝΟΥ ΧΑΝΙΑ",
+          "latitude": 35.4621665,
+          "longitude": 24.1899351,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.273
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.857
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΚΙΣΣΑΜΟΣ ΧΑΝΙΩΝ",
+          "latitude": 35.4940874,
+          "longitude": 23.6988022,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "100",
+              "price": 2.212
+            },
+            {
+              "type": "diesel",
+              "price": 1.865
+            },
+            {
+              "type": "autogas",
+              "price": 1.315
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΚΙΣΣΑΜΟΥ 124 & ΜΠΟΤΣΑΡΗ, ΧΑΝΙΑ",
+          "latitude": 35.5126243,
+          "longitude": 24.0389353,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΧΑΝΙΑ",
+          "latitude": 35.5346419,
+          "longitude": 24.1055561,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.281
+            },
+            {
+              "type": "100",
+              "price": 2.365
+            },
+            {
+              "type": "diesel",
+              "price": 1.992
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΚΩΝ/ΝΟΥ ΜΗΤΣΟΤΑΚΗ 120",
+          "latitude": 35.5161956,
+          "longitude": 24.0764367,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Λ.ΚΑΖΑΝΤΖΑΚΗ 91",
+          "latitude": 35.5019027,
+          "longitude": 24.0265305,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.255
+            },
+            {
+              "type": "100",
+              "price": 2.431
+            },
+            {
+              "type": "diesel",
+              "price": 1.871
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΜΕΛΙΔΟΝΙΟΥ 2 ΧΑΛΕΠΑ 2821040004",
+          "latitude": 35.5212907,
+          "longitude": 24.0695989,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.224
+            },
+            {
+              "type": "diesel",
+              "price": 1.835
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Μουρνιες βενζινάδικο shell",
+          "latitude": 35.4935593,
+          "longitude": 24.0470218,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.249
+            },
+            {
+              "type": "100",
+              "price": 2.354
+            },
+            {
+              "type": "diesel",
+              "price": 1.873
+            },
+            {
+              "type": "autogas",
+              "price": 1.287
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΜΟΥΡΝΙΩΝ 25 ΧΑΝΙΑ",
+          "latitude": 35.5042033,
+          "longitude": 24.0485101,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.249
+            },
+            {
+              "type": "100",
+              "price": 2.353
+            },
+            {
+              "type": "diesel",
+              "price": 1.855
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΟΙΚΙΣΜΟΣ ΚΟΥΛΟΥΚΟΥΘΙΑΝΑ, ΒΟΥΚΟΛΙΕΣ ΧΑΝΙΩΝ",
+          "latitude": 35.4817415,
+          "longitude": 23.8340491,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.268
+            },
+            {
+              "type": "100",
+              "price": 2.388
+            },
+            {
+              "type": "diesel",
+              "price": 1.9
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΧΩΡΑΦΑΚΙΑ ΑΚΡΩΤΗΡΙΟΥ",
+          "latitude": 35.5671387,
+          "longitude": 24.1214862,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.292
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "Αγία Μαρίνα",
+          "latitude": 35.5217939,
+          "longitude": 23.9564717,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.319
+            },
+            {
+              "type": "100",
+              "price": 2.527
+            },
+            {
+              "type": "diesel",
+              "price": 2.058
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΑΓΙΑ ΕΙΡΗΝΗ ΣΕΛΙΝΟΥ",
+          "latitude": 35.3390253,
+          "longitude": 23.8615948,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.312
+            },
+            {
+              "type": "diesel",
+              "price": 1.939
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΓΡΑΜΒΟΥΣΣΑ ΚΙΣΣΜΟΥ",
+          "latitude": 35.5057116,
+          "longitude": 23.6478214,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.285
+            },
+            {
+              "type": "diesel",
+              "price": 1.938
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΗΡΑΚΛΕΙΟΥ 40&ΑΝ.ΓΟΓΟΝΗ 2",
+          "latitude": 35.5069284,
+          "longitude": 24.0553619,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.228
+            },
+            {
+              "type": "diesel",
+              "price": 1.847
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΜΥΛΟΙ ΒΛΑΤΟΥΣ ΚΙΣΣΑΜΟΥ",
+          "latitude": 35.3879463,
+          "longitude": 23.6954733,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.312
+            },
+            {
+              "type": "diesel",
+              "price": 2.024
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΣΥΚΟΛΙΑ ΛΕΩΦ. ΚΑΖΑΝΤΖΑΚΗ 132 - ΧΑΝΙΑ",
+          "latitude": 35.4925018,
+          "longitude": 24.0029415,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.237
+            },
+            {
+              "type": "100",
+              "price": 2.486
+            },
+            {
+              "type": "diesel",
+              "price": 1.855
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΑΝ. ΓΟΓΟΝΗ 82 - ΧΑΝΙΑ",
+          "latitude": 35.5066873,
+          "longitude": 24.0465426,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.228
+            },
+            {
+              "type": "diesel",
+              "price": 1.847
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΑΝΑΠΑΥΣΕΩΣ 1 - ΧΑΝΙΑ",
+          "latitude": 35.5127506,
+          "longitude": 24.0495064,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.249
+            },
+            {
+              "type": "diesel",
+              "price": 1.865
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΒΟΥΛΓΑΡΩ ΜΗΘΥΜΝΗΣ ΧΑΝΙΩΝ",
+          "latitude": 35.4531917,
+          "longitude": 23.7262929,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.264
+            },
+            {
+              "type": "diesel",
+              "price": 1.898
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΜΑΚΡΥΣ ΤΟΙΧΟΣ",
+          "latitude": 35.5095305,
+          "longitude": 24.0154954,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.244
+            },
+            {
+              "type": "diesel",
+              "price": 1.889
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΑΝΑΓΝΩΣΤΟΥ ΓΟΓΟΝΗ 155, ΧΑΝΙΑ",
+          "latitude": 35.5066354,
+          "longitude": 24.0403284,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.278
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "Γερανι Κυδωνίας Χανια - Δήμος Πλατανιά",
+          "latitude": 35.5189631,
+          "longitude": 23.9084756,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "diesel",
+              "price": 1.895
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΛΕΩΦΟΡΟΣ ΚΑΡΑΜΑΝΛΗ 73  & ΔΙΚΩΝΥΜΟΥ 36",
+          "latitude": 35.5027368,
+          "longitude": 24.0592502,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.223
+            },
+            {
+              "type": "diesel",
+              "price": 1.846
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΟΑΣΗ ΒΑΡΥΠΕΤΡΟΥ - ΧΑΝΙΑ",
+          "latitude": 35.4888782,
+          "longitude": 23.9904961,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.259
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        },
+        {
+          "name": "ΕΤΕΚΑ",
+          "address": "ΠΟΛΕΜΑΡΧΙ ΒΟΥΚΟΛΙΩΝ 0 ΒΟΥΚΟΛΙΕΣ",
+          "latitude": 35.5168836,
+          "longitude": 23.8476211,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.267
+            },
+            {
+              "type": "100",
+              "price": 2.514
+            },
+            {
+              "type": "diesel",
+              "price": 1.9
+            },
+            {
+              "type": "autogas",
+              "price": 1.265
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:02 UTC"
+        }
+      ]
+    },
+    {
+      "region": "Λασίθι",
+      "source": "FuelGR / Deixto",
+      "stations": [
+        {
+          "name": "AVIN",
+          "address": "1ο ΧΛΜ ΠΑΛΑΙΟΚΑΣΤΡΟΥ - ΒΑΪ - ΣΗΤΕΙΑ",
+          "latitude": 35.2062667,
+          "longitude": 26.2880327,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.372
+            },
+            {
+              "type": "diesel",
+              "price": 2.088
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΕΠΑΡΧΙΑΚΗ ΟΔΟΣ ΧΕΡΣΟΝΗΣΟΥ ΚΑΣΤΕΛΙΟΥ",
+          "latitude": 35.3269648,
+          "longitude": 25.3940602,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.278
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΚΑΛΟΓΕΡΑΔΕΣ",
+          "latitude": 35.0162513,
+          "longitude": 25.7313914,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "100",
+              "price": 2.536
+            },
+            {
+              "type": "diesel",
+              "price": 1.875
+            },
+            {
+              "type": "autogas",
+              "price": 1.234
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "Καστελλι πεδιαδος Ηρακλειο κρητης",
+          "latitude": 35.2116322,
+          "longitude": 25.3613774,
+          "prices": [
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "AVIN",
+          "address": "ΠΑΥΛΟΥ ΚΟΥΠΕΡ 1 ΙΕΡΑΠΕΤΡΑ ΚΡΗΤΗΣ",
+          "latitude": 35.0114757,
+          "longitude": 25.762069,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "diesel",
+              "price": 1.952
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΘΕΡΙΣΣΟΥ 41 - ΣΗΤΕΙΑ ΛΑΣΙΘΙΟΥ",
+          "latitude": 35.209295,
+          "longitude": 26.1312964,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.423
+            },
+            {
+              "type": "100",
+              "price": 2.698
+            },
+            {
+              "type": "diesel",
+              "price": 2.082
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "Κ.ΚΑΡΑΜΑΝΛΗ 50 ΘΕΣΗ ΣΤΑΥΡΟΣ  ΑΓΙΟΣ ΝΙΚΟΛΑΟΣ ΛΑΣΙΘΙΟΥ",
+          "latitude": 35.1885286,
+          "longitude": 25.7367655,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.216
+            },
+            {
+              "type": "100",
+              "price": 2.484
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΚΑΤΩ ΧΩΡΙΟ ΙΕΡΑΠΕΤΡΑΣ",
+          "latitude": 35.0374178,
+          "longitude": 25.7963753,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.281
+            },
+            {
+              "type": "diesel",
+              "price": 1.966
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΜΕΛΕΤΙΟΥ ΜΕΤΑΞΑΚΗ ΚΑΙ ΔΡΗΡΟΥ 2",
+          "latitude": 35.2601322,
+          "longitude": 25.6374416,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.265
+            },
+            {
+              "type": "diesel",
+              "price": 1.956
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΞΗΡΟΚΑΜΠΟΣ",
+          "latitude": 35.2078186,
+          "longitude": 25.7372004,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.238
+            },
+            {
+              "type": "100",
+              "price": 2.435
+            },
+            {
+              "type": "diesel",
+              "price": 1.956
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "BP",
+          "address": "ΠΛΑΚΟΥΡΙΑ ΧΕΡΣΟΝΗΣΟΥ",
+          "latitude": 35.3275087,
+          "longitude": 25.3942467,
+          "prices": [
+            {
+              "type": "autogas",
+              "price": 1.294
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "1 ΧΛΜ ΣΗΤΕΙΑΣ ΠΙΣΚΟΚΕΦΑΛΟΥ -ΛΑΣΙΘΙ",
+          "latitude": 35.2013276,
+          "longitude": 26.1326929,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.393
+            },
+            {
+              "type": "diesel",
+              "price": 2.092
+            },
+            {
+              "type": "autogas",
+              "price": 1.27
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "196ο ΧΛΜ Ε.Ο. ΧΑΝΙΩΝ - ΑΓΙΟΥ ΝΙΚΟΛΑΟΥ",
+          "latitude": 35.207631,
+          "longitude": 25.7245814,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.238
+            },
+            {
+              "type": "100",
+              "price": 2.394
+            },
+            {
+              "type": "diesel",
+              "price": 1.915
+            },
+            {
+              "type": "autogas",
+              "price": 1.177
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "1ο ΧΛΜ ΣΗΤΕΙΑΣ-ΙΕΡΑΠΕΤΡΑΣ,τηλ 2843022020",
+          "latitude": 35.1976059,
+          "longitude": 26.1332217,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.359
+            },
+            {
+              "type": "100",
+              "price": 2.473
+            },
+            {
+              "type": "diesel",
+              "price": 2.036
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΒΡΑΚΟΝΤΕ ΛΑΣΙΘΙΟΥ ΚΡΗΤΗΣ",
+          "latitude": 35.1623914,
+          "longitude": 25.5050455,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.348
+            },
+            {
+              "type": "diesel",
+              "price": 2.043
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΓΙΑΣΜΕΝΟΣ ΙΕΡΑΠΕΤΡΑΣ - ΛΑΣΙΘΙ",
+          "latitude": 35.0297203,
+          "longitude": 25.7860129,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.291
+            },
+            {
+              "type": "100",
+              "price": 2.558
+            },
+            {
+              "type": "diesel",
+              "price": 1.884
+            },
+            {
+              "type": "autogas",
+              "price": 1.315
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΑΡΧΑΓΓΕΛΟΣ ΚΡΙΤΣΑΣ",
+          "latitude": 35.1591785,
+          "longitude": 25.6940498,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.268
+            },
+            {
+              "type": "100",
+              "price": 2.476
+            },
+            {
+              "type": "diesel",
+              "price": 1.974
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Β' ΥΠΟΚΑΤΑΣΤΗΜΑ ΣΤΟΜΙΟ",
+          "latitude": 35.0157704,
+          "longitude": 25.7048173,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.286
+            },
+            {
+              "type": "diesel",
+              "price": 1.88
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΓΑΛΗΝΗ-ΜΑΚΡΥ ΓΙΑΛΟΣ",
+          "latitude": 35.0273006,
+          "longitude": 25.9117123,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.296
+            },
+            {
+              "type": "100",
+              "price": 2.436
+            },
+            {
+              "type": "diesel",
+              "price": 1.989
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Ι.ΣΕΡΓΑΚΗ 29 ΝΕΑΠΟΛΗ ΚΡΗΤΗΣ",
+          "latitude": 35.2603255,
+          "longitude": 25.6309199,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.265
+            },
+            {
+              "type": "100",
+              "price": 2.319
+            },
+            {
+              "type": "diesel",
+              "price": 1.956
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Κ ΚΑΡΑΜΑΝΛΗ",
+          "latitude": 35.0178848,
+          "longitude": 25.7701182,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.27
+            },
+            {
+              "type": "100",
+              "price": 2.456
+            },
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΚΑΣΤΕΛΛΙ ΠΕΔΙΑΔΟΣ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.2235854,
+          "longitude": 25.3744039,
+          "prices": [
+            {
+              "type": "diesel",
+              "price": 1.866
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΚΟΜΒΟΣ ΞΗΡΟΚΑΜΠΟΥ 2841028150",
+          "latitude": 35.2050712,
+          "longitude": 25.7357648,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.205
+            },
+            {
+              "type": "100",
+              "price": 2.414
+            },
+            {
+              "type": "diesel",
+              "price": 1.929
+            },
+            {
+              "type": "autogas",
+              "price": 1.126
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Κωνσταντίνου Καραμανλή 9 - ’γιος Νικόλαος - ΛΑΣΙΘΙ",
+          "latitude": 35.1891307,
+          "longitude": 25.7398297,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.216
+            },
+            {
+              "type": "100",
+              "price": 2.372
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΜΑΚΡΥ ΓΙΑΛΟΣ",
+          "latitude": 35.0407967,
+          "longitude": 26.0204809,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.307
+            },
+            {
+              "type": "100",
+              "price": 2.598
+            },
+            {
+              "type": "diesel",
+              "price": 1.889
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΜΕΣΑ ΜΟΥΛΙΑΝΑ - ΣΗΤΕΙΑ",
+          "latitude": 35.1635105,
+          "longitude": 25.9999962,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.321
+            },
+            {
+              "type": "100",
+              "price": 2.424
+            },
+            {
+              "type": "diesel",
+              "price": 2.016
+            },
+            {
+              "type": "autogas",
+              "price": 1.239
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΜΗΛΛΙΑΡΑΔΩΝ - ΔΗΜΟΣ ΒΙΑΝΝΟΥ",
+          "latitude": 35.0936888,
+          "longitude": 25.4242939,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.366
+            },
+            {
+              "type": "diesel",
+              "price": 2.021
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΑΛΑΙΚΑΣΤΡΟ-ΣΗΤΕΙΑΣ",
+          "latitude": 35.2011062,
+          "longitude": 26.2811159,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.372
+            },
+            {
+              "type": "100",
+              "price": 2.526
+            },
+            {
+              "type": "diesel",
+              "price": 2.073
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΑΠΑΓΙΑΝΝΑΔΕΣ ΛΑΣΙΘΙΟΥ",
+          "latitude": 35.1033746,
+          "longitude": 26.0981807,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.296
+            },
+            {
+              "type": "100",
+              "price": 2.436
+            },
+            {
+              "type": "diesel",
+              "price": 2.002
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΑΧΕΙΑ ΑΜΜΟΣ  ΙΕΡΑΠΕΤΡΑΣ  -  2842093390",
+          "latitude": 35.1089781,
+          "longitude": 25.8439012,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.29
+            },
+            {
+              "type": "100",
+              "price": 2.298
+            },
+            {
+              "type": "diesel",
+              "price": 1.884
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΕΡΙΣΤΕΡΑΣ ΙΕΡΑΠΕΤΡΑ",
+          "latitude": 35.0038198,
+          "longitude": 25.8092145,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.286
+            },
+            {
+              "type": "100",
+              "price": 2.538
+            },
+            {
+              "type": "diesel",
+              "price": 1.884
+            },
+            {
+              "type": "autogas",
+              "price": 1.315
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΠΙΣΚΟΚΕΦΑΛΟ",
+          "latitude": 35.1823943,
+          "longitude": 26.1258046,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.389
+            },
+            {
+              "type": "100",
+              "price": 2.532
+            },
+            {
+              "type": "diesel",
+              "price": 2.052
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΡΟΥΣΣΑ ΛΙΜΝΗ ΚΡΙΤΣΑΣ",
+          "latitude": 35.1742785,
+          "longitude": 25.7214754,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "diesel",
+              "price": 1.969
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΣΤΑΛΙΔΑ ΠΕΔΙΑΔΟΣ",
+          "latitude": 35.2921665,
+          "longitude": 25.4635287,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.394
+            },
+            {
+              "type": "100",
+              "price": 2.436
+            },
+            {
+              "type": "diesel",
+              "price": 1.966
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "ΣΤΟΜΙΟ ΝΕΑΣ -ΑΝΑΤΟΛΗΣ",
+          "latitude": 35.0146973,
+          "longitude": 25.6922543,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.36
+            },
+            {
+              "type": "100",
+              "price": 2.582
+            },
+            {
+              "type": "diesel",
+              "price": 1.955
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "EKO",
+          "address": "Τζερμιαδο Λασιθιου",
+          "latitude": 35.1987104,
+          "longitude": 25.5183141,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.352
+            },
+            {
+              "type": "diesel",
+              "price": 1.947
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "REVOIL",
+          "address": "ΓΩΝΙΑ  ΜΙΛΑΤΟΥ",
+          "latitude": 35.3019139,
+          "longitude": 25.573892,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.456
+            },
+            {
+              "type": "diesel",
+              "price": 2.048
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "1o ΧΛΜ ΣΗΤΕΙΑΣ-ΙΕΡΑΠΕΤΡΑΣ",
+          "latitude": 35.2024334,
+          "longitude": 26.1334892,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.368
+            },
+            {
+              "type": "100",
+              "price": 2.543
+            },
+            {
+              "type": "diesel",
+              "price": 2.038
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "2 ΧΙΛ.ΑΓ.ΝΙΚΟΛΑΟΥ ΛΑΣΙΘΙΟΥ, ΑΓ ΝΙΚΟΛΑΟΣ",
+          "latitude": 35.2072877,
+          "longitude": 25.7263578,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.238
+            },
+            {
+              "type": "100",
+              "price": 2.415
+            },
+            {
+              "type": "diesel",
+              "price": 1.92
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "4 ΧΙΛ.ΑΓ.ΝΙΚΟΛΑΟΥ ΛΑΣΙΘΙΟΥ, ΑΓ ΝΙΚΟΛΑΟΣ",
+          "latitude": 35.2167388,
+          "longitude": 25.6982868,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.249
+            },
+            {
+              "type": "100",
+              "price": 2.425
+            },
+            {
+              "type": "diesel",
+              "price": 1.965
+            },
+            {
+              "type": "autogas",
+              "price": 1.177
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΑΓ.ΚΩΝ/ΝΟΣ, ΛΑΣΙΘΙ",
+          "latitude": 35.1857994,
+          "longitude": 25.5298388,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.299
+            },
+            {
+              "type": "100",
+              "price": 2.393
+            },
+            {
+              "type": "diesel",
+              "price": 1.901
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "Ελουντα",
+          "latitude": 35.2479059,
+          "longitude": 25.7545044,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.317
+            },
+            {
+              "type": "100",
+              "price": 2.424
+            },
+            {
+              "type": "diesel",
+              "price": 1.902
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΕΠΑΡΧ.ΟΔΟΣ ΙΕΡΑΠΕΤΡΑΣ-ΓΡΑ ΛΥΓΙΑΣ",
+          "latitude": 35.0151821,
+          "longitude": 25.7404238,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.269
+            },
+            {
+              "type": "100",
+              "price": 2.445
+            },
+            {
+              "type": "diesel",
+              "price": 1.955
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΘΕΣΗ ΠΕΛΕΓΡΙΝΕΣ ΠΑΛΑΙΟΚΑΣΤΡΟΥ",
+          "latitude": 35.2031634,
+          "longitude": 26.277812,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.372
+            },
+            {
+              "type": "100",
+              "price": 2.546
+            },
+            {
+              "type": "diesel",
+              "price": 2.083
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΚΑΣΤΕΛΛΙ ΠΕΔΙΑΔΟΣ ΗΡΑΚΛΕΙΟ ΚΤΗΤΗΣ",
+          "latitude": 35.2117137,
+          "longitude": 25.3606037,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.25
+            },
+            {
+              "type": "100",
+              "price": 2.345
+            },
+            {
+              "type": "diesel",
+              "price": 1.984
+            },
+            {
+              "type": "autogas",
+              "price": 1.207
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SHELL",
+          "address": "ΣΗΤΕΙΑ, ΣΗΤΕΙΑ",
+          "latitude": 35.2024942,
+          "longitude": 26.1113339,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.368
+            },
+            {
+              "type": "100",
+              "price": 2.475
+            },
+            {
+              "type": "diesel",
+              "price": 2.052
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "1χιλ. ΙΕΡΑΠΕΤΡΑΣ -ΑΓ. ΝΙΚΟΛΑΟΥ",
+          "latitude": 35.0255277,
+          "longitude": 25.7806916,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.26
+            },
+            {
+              "type": "100",
+              "price": 2.426
+            },
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΚΟΥΤΣΟΥΝΑΡΙ ΙΕΡΑΠΕΤΡΑΣ",
+          "latitude": 35.0117411,
+          "longitude": 25.8526425,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.301
+            },
+            {
+              "type": "diesel",
+              "price": 1.984
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "SILKOIL",
+          "address": "ΠΟΛΙΤΕΧΝΕΙΟΥ",
+          "latitude": 35.2612224,
+          "longitude": 25.6353873,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.314
+            },
+            {
+              "type": "diesel",
+              "price": 1.965
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΔΙΑΒΑΤΑ ΓΡΑ ΛΥΓΙΑΣ",
+          "latitude": 35.014874,
+          "longitude": 25.7202275,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.301
+            },
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΕΠΙΣΚΟΠΗ ΚΑΤΩ ΧΩΡΙΟ ΙΕΡΑΠΕΤΡΑΣ",
+          "latitude": 35.0726282,
+          "longitude": 25.833298,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.26
+            },
+            {
+              "type": "100",
+              "price": 2.434
+            },
+            {
+              "type": "diesel",
+              "price": 1.875
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΛΑΣΘΕΝΟΥΣ 95 ,ΙΕΡΑΠΕΤΡΑ",
+          "latitude": 35.0178033,
+          "longitude": 25.774694,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.301
+            },
+            {
+              "type": "diesel",
+              "price": 1.966
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΜΑΚΡΥΓΙΑΛΟΣ - ΙΕΡΑΠΕΤΡΑ",
+          "latitude": 35.0416022,
+          "longitude": 26.0038738,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.281
+            },
+            {
+              "type": "100",
+              "price": 2.416
+            },
+            {
+              "type": "diesel",
+              "price": 1.884
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΜΙΝΩΟΣ ΠΕΡΙΟΧΗ ΦΡΑΜΑ",
+          "latitude": 35.2061224,
+          "longitude": 25.7396064,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.218
+            },
+            {
+              "type": "100",
+              "price": 2.384
+            },
+            {
+              "type": "diesel",
+              "price": 1.947
+            },
+            {
+              "type": "autogas",
+              "price": 1.138
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΑΙΓΑΙΟ (AEGEAN)",
+          "address": "ΜΟΧΟΣ ΗΡΑΚΛΕΙΟΥ",
+          "latitude": 35.2714813,
+          "longitude": 25.4534898,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.399
+            },
+            {
+              "type": "diesel",
+              "price": 2.079
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΣΤΟΜΙΟ ΙΕΡΑΠΕΤΡΑΣ 2842041649",
+          "latitude": 35.0154898,
+          "longitude": 25.7038606,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.276
+            },
+            {
+              "type": "diesel",
+              "price": 1.992
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+          "address": "ΤΖΕΡΜΙΑΔΟ ΟΡΟΠΕΔΙΟ ΛΑΣΙΘΙΟΥ",
+          "latitude": 35.1990312,
+          "longitude": 25.5184424,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.309
+            },
+            {
+              "type": "diesel",
+              "price": 1.981
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "2* ΧΛΜ ΙΕΡΑΠΕΤΡΑΣ - ΓΡΑ ΛΥΓΙΑΣ",
+          "latitude": 35.0150656,
+          "longitude": 25.7427269,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.311
+            },
+            {
+              "type": "diesel",
+              "price": 2.083
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "Ανάλουκας -ΣΗΤΕΙΑ - ΛΑΣΙΘΙ",
+          "latitude": 35.2156916,
+          "longitude": 26.2360566,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.341
+            },
+            {
+              "type": "diesel",
+              "price": 2.0
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "Ζάκρος",
+          "latitude": 35.1131042,
+          "longitude": 26.2473198,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.362
+            },
+            {
+              "type": "diesel",
+              "price": 2.038
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΕΛΙΝΟΙΛ",
+          "address": "ΚΑΡΔΑΜΟΥΤΣΑ - ΠΙΝΑΚΙΑΝΟ",
+          "latitude": 35.2020242,
+          "longitude": 25.4902758,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.372
+            },
+            {
+              "type": "diesel",
+              "price": 1.901
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΕΤΕΚΑ",
+          "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 66 ΜΑΛΙΑ",
+          "latitude": 35.2874938,
+          "longitude": 25.4858095,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.476
+            },
+            {
+              "type": "100",
+              "price": 2.638
+            },
+            {
+              "type": "diesel",
+              "price": 2.137
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΕΤΕΚΑ",
+          "address": "ΤΑΡΜΑΡΟΣ ΒΡΑΧΑΣΙΟΥ",
+          "latitude": 35.2933572,
+          "longitude": 25.5398585,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.476
+            },
+            {
+              "type": "100",
+              "price": 2.638
+            },
+            {
+              "type": "diesel",
+              "price": 2.137
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        },
+        {
+          "name": "ΕΤΕΚΑ",
+          "address": "ΧΑΡΚΙΑΔΙΑΝΑ ΙΣΤΡΟΝ",
+          "latitude": 35.1225821,
+          "longitude": 25.7717099,
+          "prices": [
+            {
+              "type": "95",
+              "price": 2.434
+            },
+            {
+              "type": "100",
+              "price": 2.597
+            },
+            {
+              "type": "diesel",
+              "price": 2.083
+            }
+          ],
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:03 UTC"
+        }
+      ]
+    }
+  ]
+}
