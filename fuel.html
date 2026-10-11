@@ -7,7 +7,7 @@
 <main><a class="back" href="./">← მთავარი გვერდი</a><h2 class="section-title">📍 რეთიმნო პირველია</h2>
 <div class="regions" id="regions"><button class="region active" data-region="Ρέθυμνο">📍 რეთიმნო</button><button class="region" data-region="Ηράκλειο">ჰერაკლიონი</button><button class="region" data-region="Χανιά">ქანია</button><button class="region" data-region="Λασίθι">ლასითი</button></div>
 <div id="status" class="status"></div><section id="stations"></section>
-<div class="foot">მონაცემები ავტომატურად სინქრონდება ონლაინ წყაროდან დაახლოებით ყოველ 3 საათში. ფასები და ბოლო განახლების დრო წყაროს მიხედვით.</div></main>
+<div class="foot">ონლაინ წყაროდან მონაცემები ავტომატურად მოიძებნება დაახლოებით ყოველ 5 წუთში. გვერდი მონაცემებს ამოწმებს ყოველ 1 წუთში. ფასები და ბოლო განახლების დრო წყაროს მიხედვით.</div></main>
 <script>
 let data=null,selected='Ρέθυμνο';
 const map={'Ρέθυμνο':'Ρέθυμνο','Ηράκλειο':'Ηράκλειο','Χανιά':'Χανιά','Λασίθι':'Λασίθι'};
@@ -20,5 +20,5 @@ document.querySelectorAll('.region').forEach(b=>b.addEventListener('click',()=>{
 function showUnavailable(){document.getElementById('status').textContent='';document.getElementById('stations').innerHTML='<div style="padding:8px 4px;color:#6b8192;font-size:13px">ამ რეგიონის ონლაინ ფასები ამჟამად მიუწვდომელია.</div>'}
 function loadFuelData(){fetch('./fuel-data.json?'+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('data unavailable');return r.json()}).then(d=>{data=d;render()}).catch(showUnavailable)}
 loadFuelData();
-setInterval(loadFuelData,15*60*1000);
+setInterval(loadFuelData,60*1000);
 </script></body></html>
