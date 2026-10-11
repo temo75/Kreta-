@@ -1,11 +1,11 @@
 {
   "source_name": "FuelGR / Deixto",
   "source_url": "https://deixto.gr/",
-  "fetched_at": "2026-10-11T08:55:07.470Z",
+  "fetched_at": "2026-10-11T12:42:31.559944+00:00",
   "regions": [
     {
       "region": "Ρέθυμνο",
-      "source": "4real.gr / vrisko.gr — station-level prices",
+      "source": "FuelGR / Deixto",
       "stations": [
         {
           "name": "AVIN",
@@ -16,23 +16,23 @@
             {
               "type": "95",
               "price": 2.258,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.487,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.892,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "AVIN",
@@ -42,24 +42,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.238,
+              "price": 2.31,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
               "price": 2.464,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
-              "price": 2.175,
+              "price": 1.971,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "AVIN",
@@ -70,23 +70,23 @@
             {
               "type": "95",
               "price": 2.247,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.431,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.882,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "AVIN",
@@ -96,18 +96,18 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.169,
+              "price": 2.207,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 1.999,
+              "price": 1.811,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "AVIN",
@@ -118,17 +118,17 @@
             {
               "type": "95",
               "price": 2.311,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.893,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "AVIN",
@@ -139,23 +139,23 @@
             {
               "type": "95",
               "price": 2.312,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.543,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.903,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "AVIN",
@@ -166,17 +166,17 @@
             {
               "type": "95",
               "price": 2.331,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 2.065,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "AVIN",
@@ -187,17 +187,17 @@
             {
               "type": "95",
               "price": 2.269,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.892,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "AVIN",
@@ -208,23 +208,23 @@
             {
               "type": "95",
               "price": 2.373,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.496,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.963,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "AVIN",
@@ -235,23 +235,23 @@
             {
               "type": "95",
               "price": 2.359,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.568,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.946,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "AVIN",
@@ -262,23 +262,23 @@
             {
               "type": "95",
               "price": 2.285,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.481,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.894,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "BP",
@@ -289,23 +289,23 @@
             {
               "type": "95",
               "price": 2.259,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.436,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.955,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "BP",
@@ -315,24 +315,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.195,
+              "price": 2.276,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
-              "price": 2.415,
+              "price": 2.451,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.015,
+              "price": 1.871,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "BP",
@@ -342,24 +342,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.2,
+              "price": 2.27,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
-              "price": 2.343,
+              "price": 2.378,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.038,
+              "price": 1.846,
               "stale": false,
-              "last_confirmed_at": "vrisko.gr — հրապարակված գին, վերջին թարմացում 2026-10-09"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "vrisko.gr — ფასების სია, ბოლო განახლება 2026-10-09"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "BP",
@@ -369,24 +369,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.199,
+              "price": 2.28,
               "stale": false,
-              "last_confirmed_at": "vrisko.gr — հրապարակված գին, վերջին թարմացում 2026-10-09"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
-              "price": 2.519,
+              "price": 2.465,
               "stale": false,
-              "last_confirmed_at": "vrisko.gr — հրապարակված գին, վերջին թարմացում 2026-10-09"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.019,
+              "price": 1.865,
               "stale": false,
-              "last_confirmed_at": "vrisko.gr — հրապարակված գին, վերջին թարմացում 2026-10-09"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "vrisko.gr — ფასების სია, ბოლო განახლება 2026-10-09"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "BP",
@@ -397,23 +397,23 @@
             {
               "type": "95",
               "price": 2.291,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.466,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.93,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "BP",
@@ -423,18 +423,18 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.269,
+              "price": 2.342,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.089,
+              "price": 1.893,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "BP",
@@ -445,17 +445,17 @@
             {
               "type": "95",
               "price": 2.321,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.908,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "CYCLON",
@@ -466,17 +466,17 @@
             {
               "type": "95",
               "price": 2.353,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.934,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "EKO",
@@ -487,29 +487,29 @@
             {
               "type": "95",
               "price": 2.279,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.357,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.944,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "autogas",
               "price": 1.292,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "EKO",
@@ -519,24 +519,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.218,
+              "price": 2.289,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
-              "price": 2.429,
+              "price": 2.465,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.088,
+              "price": 1.892,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "EKO",
@@ -547,23 +547,23 @@
             {
               "type": "95",
               "price": 2.269,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.355,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.865,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "EKO",
@@ -573,18 +573,18 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.215,
+              "price": 2.286,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.125,
+              "price": 1.925,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "REVOIL",
@@ -595,23 +595,23 @@
             {
               "type": "95",
               "price": 2.249,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.456,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.829,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "SHELL",
@@ -621,24 +621,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.18,
+              "price": 2.25,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
-              "price": 2.39,
+              "price": 2.426,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.08,
+              "price": 1.884,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "SHELL",
@@ -648,24 +648,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.185,
+              "price": 2.255,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
-              "price": 2.395,
+              "price": 2.431,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.069,
+              "price": 1.875,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "SHELL",
@@ -676,23 +676,23 @@
             {
               "type": "95",
               "price": 2.269,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.445,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.943,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "SHELL",
@@ -702,30 +702,30 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.229,
+              "price": 2.3,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
-              "price": 2.389,
+              "price": 2.425,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.149,
+              "price": 1.947,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "autogas",
-              "price": 1.139,
+              "price": 1.249,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "SHELL",
@@ -736,17 +736,17 @@
             {
               "type": "95",
               "price": 2.29,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.901,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "SILKOIL",
@@ -757,17 +757,17 @@
             {
               "type": "95",
               "price": 2.27,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.93,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "SILKOIL",
@@ -778,17 +778,17 @@
             {
               "type": "95",
               "price": 2.28,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.92,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "SILKOIL",
@@ -799,23 +799,23 @@
             {
               "type": "95",
               "price": 2.32,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.535,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.892,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "SILKOIL",
@@ -826,17 +826,17 @@
             {
               "type": "95",
               "price": 2.292,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 2.003,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "SILKOIL",
@@ -847,17 +847,17 @@
             {
               "type": "95",
               "price": 2.307,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.902,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -867,18 +867,18 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.248,
+              "price": 2.32,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.146,
+              "price": 1.944,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -888,24 +888,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.24,
+              "price": 2.312,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
-              "price": 2.477,
+              "price": 2.514,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
-              "price": 2.105,
+              "price": 1.907,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -916,17 +916,17 @@
             {
               "type": "95",
               "price": 2.296,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.902,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
@@ -937,11 +937,11 @@
             {
               "type": "autogas",
               "price": 1.278,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -952,21 +952,19 @@
             {
               "type": "95",
               "price": 2.373,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 2.028,
-              "stale": true,
+              "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:42 UTC"
         }
-      ],
-      "verification_source_url": "https://www.vrisko.gr/en/fuel-prices/rethymno/",
-      "verified_at": "2026-10-11T08:55:07.470Z"
+      ]
     },
     {
       "region": "Ηράκλειο",
@@ -997,7 +995,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -1007,15 +1005,15 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.251,
+              "price": 2.259,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
-              "price": 2.539,
+              "price": 2.547,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
@@ -1030,7 +1028,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -1045,7 +1043,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -1066,7 +1064,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -1093,7 +1091,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -1126,7 +1124,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -1153,7 +1151,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -1168,7 +1166,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -1201,7 +1199,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1228,7 +1226,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1261,7 +1259,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1276,7 +1274,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1309,7 +1307,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1330,7 +1328,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1357,7 +1355,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1372,7 +1370,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1399,7 +1397,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1414,7 +1412,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1429,7 +1427,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1462,7 +1460,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1484,12 +1482,12 @@
             },
             {
               "type": "diesel",
-              "price": 1.902,
+              "price": 1.893,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1516,7 +1514,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1543,7 +1541,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1570,7 +1568,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1597,7 +1595,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -1630,7 +1628,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "CYCLON",
@@ -1651,7 +1649,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "CYCLON",
@@ -1672,7 +1670,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1705,7 +1703,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1720,7 +1718,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1747,7 +1745,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1774,7 +1772,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1801,7 +1799,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1828,7 +1826,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1849,7 +1847,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1870,7 +1868,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1882,7 +1880,7 @@
               "type": "95",
               "price": 2.327,
               "stale": false,
-              "last_confirmed_at": "2026-10-11T07:14:49.430198+00:00"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
@@ -1892,10 +1890,10 @@
               "type": "diesel",
               "price": 2.002,
               "stale": false,
-              "last_confirmed_at": "2026-10-11T07:14:49.430198+00:00"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1916,7 +1914,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1937,7 +1935,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1958,7 +1956,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1979,7 +1977,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -1994,7 +1992,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2021,7 +2019,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2037,9 +2035,9 @@
             },
             {
               "type": "100",
-              "price": 2.26,
+              "price": 2.337,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
@@ -2054,7 +2052,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2081,7 +2079,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2091,15 +2089,15 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.251,
+              "price": 2.271,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "100",
-              "price": 2.264,
+              "price": 2.427,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
@@ -2108,7 +2106,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2123,7 +2121,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2144,7 +2142,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2160,9 +2158,9 @@
             },
             {
               "type": "100",
-              "price": 2.324,
+              "price": 2.4,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
@@ -2177,7 +2175,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2192,7 +2190,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2208,9 +2206,9 @@
             },
             {
               "type": "100",
-              "price": 2.329,
+              "price": 2.4,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
@@ -2225,7 +2223,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2241,9 +2239,9 @@
             },
             {
               "type": "100",
-              "price": 2.268,
+              "price": 2.344,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
@@ -2258,7 +2256,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2279,7 +2277,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2306,7 +2304,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2333,7 +2331,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2366,7 +2364,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2381,7 +2379,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2408,7 +2406,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2429,7 +2427,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2456,7 +2454,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2477,7 +2475,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2510,7 +2508,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2531,7 +2529,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2547,9 +2545,9 @@
             },
             {
               "type": "100",
-              "price": 2.268,
+              "price": 2.344,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
@@ -2564,7 +2562,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2591,7 +2589,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2612,7 +2610,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2639,7 +2637,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2672,7 +2670,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2699,7 +2697,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2715,9 +2713,9 @@
             },
             {
               "type": "100",
-              "price": 2.394,
+              "price": 2.415,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             },
             {
               "type": "diesel",
@@ -2726,7 +2724,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -2741,7 +2739,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -2768,7 +2766,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -2795,7 +2793,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -2828,7 +2826,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -2855,7 +2853,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -2882,7 +2880,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -2903,7 +2901,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -2930,7 +2928,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -2957,7 +2955,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -2990,7 +2988,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -3023,7 +3021,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -3050,7 +3048,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -3077,7 +3075,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -3104,7 +3102,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -3131,7 +3129,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -3158,7 +3156,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -3185,7 +3183,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -3212,7 +3210,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -3245,7 +3243,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -3266,7 +3264,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -3287,7 +3285,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -3308,7 +3306,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -3329,7 +3327,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -3350,7 +3348,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -3371,7 +3369,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "WIN",
@@ -3404,7 +3402,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -3425,7 +3423,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -3446,7 +3444,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -3467,7 +3465,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -3488,7 +3486,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -3515,7 +3513,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -3536,7 +3534,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -3557,7 +3555,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -3584,7 +3582,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -3611,7 +3609,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
@@ -3638,7 +3636,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
@@ -3659,7 +3657,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
@@ -3680,7 +3678,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
@@ -3701,7 +3699,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
@@ -3722,7 +3720,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
@@ -3743,7 +3741,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3764,7 +3762,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3785,7 +3783,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3806,7 +3804,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3827,7 +3825,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3848,7 +3846,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3869,7 +3867,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3890,7 +3888,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3911,7 +3909,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3932,7 +3930,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3953,7 +3951,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3974,7 +3972,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -3989,7 +3987,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΤΕΚΑ",
@@ -4016,7 +4014,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΤΕΚΑ",
@@ -4037,7 +4035,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΤΕΚΑ",
@@ -4058,7 +4056,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΤΕΚΑ",
@@ -4085,7 +4083,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΤΕΚΑ",
@@ -4112,7 +4110,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΤΕΚΑ",
@@ -4139,7 +4137,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         }
       ]
     },
@@ -4166,7 +4164,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -4193,7 +4191,7 @@
               "last_confirmed_at": "2026-10-11T07:14:49.430198+00:00"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -4226,7 +4224,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -4253,7 +4251,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -4286,7 +4284,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -4313,7 +4311,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -4346,7 +4344,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -4379,7 +4377,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -4400,7 +4398,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -4427,7 +4425,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4448,7 +4446,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4481,7 +4479,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4508,7 +4506,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4535,7 +4533,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4562,7 +4560,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4589,7 +4587,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4610,7 +4608,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4631,7 +4629,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4658,7 +4656,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4679,7 +4677,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4706,7 +4704,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4733,7 +4731,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -4766,7 +4764,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "CYCLON",
@@ -4787,7 +4785,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "CYCLON",
@@ -4814,7 +4812,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -4841,7 +4839,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -4868,7 +4866,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -4901,7 +4899,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -4928,7 +4926,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -4949,7 +4947,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -4970,7 +4968,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -4991,7 +4989,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -5012,7 +5010,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -5039,7 +5037,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -5072,7 +5070,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -5099,7 +5097,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -5126,7 +5124,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -5153,7 +5151,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -5174,7 +5172,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -5195,7 +5193,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -5216,7 +5214,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5237,7 +5235,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5270,7 +5268,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5297,7 +5295,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5324,7 +5322,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5345,7 +5343,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5372,7 +5370,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5399,7 +5397,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5426,7 +5424,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5453,7 +5451,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5474,7 +5472,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5501,7 +5499,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5522,7 +5520,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5549,7 +5547,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5582,7 +5580,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5609,7 +5607,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5636,7 +5634,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5663,7 +5661,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5690,7 +5688,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5711,7 +5709,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5744,7 +5742,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5771,7 +5769,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5798,7 +5796,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -5813,7 +5811,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -5840,7 +5838,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -5861,7 +5859,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -5882,7 +5880,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -5903,7 +5901,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -5924,7 +5922,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -5951,7 +5949,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -5972,7 +5970,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -5993,7 +5991,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -6014,7 +6012,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -6035,7 +6033,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
@@ -6050,7 +6048,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -6071,7 +6069,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -6092,7 +6090,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -6113,7 +6111,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΤΕΚΑ",
@@ -6146,7 +6144,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         }
       ]
     },
@@ -6185,7 +6183,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "AVIN",
@@ -6206,7 +6204,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -6233,7 +6231,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -6260,7 +6258,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -6281,7 +6279,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -6302,7 +6300,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "BP",
@@ -6329,7 +6327,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6356,7 +6354,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6389,7 +6387,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6416,7 +6414,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6437,7 +6435,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6470,7 +6468,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6497,7 +6495,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6518,7 +6516,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6545,7 +6543,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6572,7 +6570,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6599,7 +6597,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6632,7 +6630,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6659,7 +6657,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6686,7 +6684,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6719,7 +6717,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6746,7 +6744,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6773,7 +6771,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6806,7 +6804,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6833,7 +6831,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6854,7 +6852,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6881,7 +6879,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6908,7 +6906,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "EKO",
@@ -6929,7 +6927,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -6956,7 +6954,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -6983,7 +6981,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -7016,7 +7014,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -7043,7 +7041,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -7070,7 +7068,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -7097,7 +7095,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SHELL",
@@ -7124,7 +7122,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -7151,7 +7149,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -7172,7 +7170,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "SILKOIL",
@@ -7193,7 +7191,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -7214,7 +7212,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -7241,7 +7239,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -7262,7 +7260,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -7289,7 +7287,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -7322,7 +7320,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
@@ -7343,7 +7341,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
@@ -7364,7 +7362,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -7385,7 +7383,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -7401,12 +7399,12 @@
             },
             {
               "type": "diesel",
-              "price": 2,
+              "price": 2.0,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
+              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -7427,7 +7425,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΛΙΝΟΙΛ",
@@ -7448,7 +7446,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΤΕΚΑ",
@@ -7475,7 +7473,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΤΕΚΑ",
@@ -7502,7 +7500,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         },
         {
           "name": "ΕΤΕΚΑ",
@@ -7529,7 +7527,7 @@
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:15 UTC"
+          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 12:43 UTC"
         }
       ]
     }
