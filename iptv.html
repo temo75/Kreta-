@@ -7,60 +7,46 @@
 <title>TEMO • IPTV</title>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f7f7f8;color:#17171b;font-family:Arial,sans-serif;padding-bottom:100px}
-main{max-width:760px;margin:auto;padding:18px 16px}
-header{display:flex;align-items:center;gap:12px;margin:4px 0 25px}
+main{max-width:760px;margin:auto;padding:18px 16px}header{display:flex;align-items:center;gap:12px;margin:4px 0 25px}
 .logo{width:48px;height:48px;border-radius:15px;background:#ef476f;color:white;display:grid;place-items:center;font-size:22px;font-weight:800}
-.brand{font-size:19px;font-weight:900}.sub{font-size:12px;color:#777984;margin-top:3px}
-.back{display:inline-block;color:#087dcc;text-decoration:none;font-weight:700;margin-bottom:18px}
-h1{font-size:clamp(26px,5vw,34px);margin:0 0 8px}.lead{color:#777984;margin:0 0 20px}
-.tiles{display:grid;gap:12px}.tile{width:100%;display:flex;align-items:center;gap:13px;padding:16px;border:1px solid #ececf0;border-radius:19px;background:#fff;color:inherit;text-decoration:none;text-align:left;box-shadow:0 4px 14px #11110805}
+.brand{font-size:19px;font-weight:900}.sub{font-size:12px;color:#777984;margin-top:3px}.back{display:inline-block;color:#087dcc;text-decoration:none;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(26px,5vw,34px);margin:0 0 8px}.lead{color:#777984;margin:0 0 20px}.tiles{display:grid;gap:12px}
+.tile{width:100%;display:flex;align-items:center;gap:13px;padding:16px;border:1px solid #ececf0;border-radius:19px;background:#fff;color:inherit;text-decoration:none;text-align:left;box-shadow:0 4px 14px #11110805}
 .ico{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;border-radius:15px;background:#ffe8ee;color:#ef476f;font-size:22px}
 .title{font-weight:800;font-size:16px}.desc{font-size:12px;color:#777984;margin-top:4px}.arrow{margin-left:auto;color:#ef476f;font-size:26px}
 .panel{background:#fff;border:1px solid #ececf0;border-radius:19px;padding:16px;margin-top:18px}.panel h2{font-size:18px;margin:0 0 8px}.muted{color:#777984;font-size:13px;line-height:1.5}
 .action{border:0;border-radius:12px;background:#ef476f;color:white;padding:12px 15px;font-weight:700;font-size:14px;cursor:pointer;width:100%;margin:8px 0}
-#channels{display:grid;gap:8px;margin-top:12px}.channel{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:12px;border:1px solid #eee;border-radius:12px;background:#fff;font-size:15px;font-weight:700}.channel small{display:block;color:#777;font-weight:400;margin-top:4px}.channel .play{margin-left:auto;color:#ef476f;font-size:20px}
-video{display:block;width:100%;max-height:55vh;background:#111;border-radius:12px;margin:12px 0}
-input,select{display:block;width:100%;padding:12px;margin:7px 0;border:1px solid #ddd;border-radius:10px;background:#fff;font-size:15px}
+#channels,#greekChannels{display:grid;gap:8px;margin-top:12px}.channel{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:12px;border:1px solid #eee;border-radius:12px;background:#fff;font-size:15px;font-weight:700}.channel .play{margin-left:auto;color:#ef476f;font-size:20px}
+video{display:block;width:100%;max-height:55vh;background:#111;border-radius:12px;margin:12px 0}input{display:block;width:100%;padding:12px;margin:7px 0;border:1px solid #ddd;border-radius:10px;background:#fff;font-size:15px}
 .bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:9999;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid #d5e5ef;box-shadow:0 -5px 18px #173e5512;backdrop-filter:blur(12px)}
 .bottom-nav a,.bottom-nav button{min-width:0;min-height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:1px solid #d9e8f3;border-radius:12px;background:#f2f7fb;color:#35566d;text-decoration:none;font:700 12px Arial,sans-serif;padding:4px 2px}
 .bottom-nav .home{background:#e5f4ff;border-color:#087dcc;color:#075f9c}.bottom-nav .nav-number{font-size:17px;font-weight:800;line-height:1.1}.bottom-nav .nav-label{font-size:10px;font-weight:700}
 </style>
 </head>
-<body>
-<main>
+<body><main>
 <a class="back" href="./">← კრეტას მთავარი გვერდი</a>
 <header><div class="logo">▶</div><div><div class="brand">TEMO IPTV</div><div class="sub">Live TV • Web Edition</div></div></header>
-<h1>რას გახსნი დღეს?</h1>
-<p class="lead">ტელევიზია და ვებაპები ერთ სივრცეში.</p>
+<h1>რას გახსნი დღეს?</h1><p class="lead">ტელევიზია და ვებაპები ერთ სივრცეში.</p>
 <section class="tiles">
 <a class="tile" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><span class="ico">▶</span><span><span class="title">YouTube</span><div class="desc">YouTube-ის გახსნა</div></span><span class="arrow">›</span></a>
 <a class="tile" href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><span class="ico">🌐</span><span><span class="title">Google / Chrome</span><div class="desc">Google-ისა და ვებგვერდების გახსნა</div></span><span class="arrow">›</span></a>
-<button class="tile" id="addPlaylist"><span class="ico">🇬🇪</span><span><span class="title">ქართული არხები</span><div class="desc">საჯარო ქართული არხების სია</div></span><span class="arrow">›</span></button>
+<button class="tile" id="addGeorgia"><span class="ico">🇬🇪</span><span><span class="title">ქართული არხები</span><div class="desc">საჯარო ქართული არხების სია</div></span><span class="arrow">›</span></button>
+<button class="tile" id="addGreece"><span class="ico">🇬🇷</span><span><span class="title">ბერძნული არხები</span><div class="desc">საჯარო ბერძნული არხების სია</div></span><span class="arrow">›</span></button>
 </section>
-<section class="panel" id="georgian">
-<h2>🇬🇪 ქართული არხები</h2>
-<p class="muted">საჯარო M3U სიიდან ვცდილობთ არხების ჩატვირთვას. ზოგიერთი მაუწყებლის ნაკადი შეიძლება დროებით არ მუშაობდეს ან ბრაუზერში დაკვრა არ დაუშვას.</p>
-<button class="action" id="loadGeorgia">ქართული არხების ჩატვირთვა</button>
-<div id="status" class="muted" aria-live="polite">დააჭირე ღილაკს არხების სიის მისაღებად.</div>
-<video id="player" controls playsinline hidden></video>
-<div id="channels"></div>
-</section>
+<section class="panel" id="georgian"><h2>🇬🇪 ქართული არხები</h2><p class="muted">საჯარო M3U სიიდან ვცდილობთ არხების ჩატვირთვას. ზოგიერთი მაუწყებლის ნაკადი შეიძლება ბრაუზერში არ გაეშვას.</p><button class="action" id="loadGeorgia">ქართული არხების ჩატვირთვა</button><div id="status" class="muted" aria-live="polite">დააჭირე ღილაკს არხების სიის მისაღებად.</div><div id="channels"></div></section>
+<section class="panel" id="greek"><h2>🇬🇷 ბერძნული არხები</h2><p class="muted">საბერძნეთის საჯარო IPTV სიიდან. არხების ხელმისაწვდომობა და დაკვრა მაუწყებელზეა დამოკიდებული.</p><button class="action" id="loadGreece">ბერძნული არხების ჩატვირთვა</button><div id="greekStatus" class="muted" aria-live="polite">დააჭირე ღილაკს ბერძნული არხების სიის მისაღებად.</div><div id="greekChannels"></div><video id="player" controls playsinline hidden></video></section>
 <section class="panel"><h2>საკუთარი IPTV</h2><p class="muted">თუ გაქვს ლეგალური M3U ბმული, აქ ჩასვი და სცადე არხების ჩატვირთვა.</p><input id="customUrl" type="url" placeholder="M3U playlist URL"><button class="action" id="loadCustom">ჩემი M3U სიის ჩატვირთვა</button></section>
 </main>
-<nav class="bottom-nav" aria-label="მთავარი ნავიგაცია">
-<a class="home" href="./" aria-label="მთავარი"><span style="font-size:19px;line-height:1">⌂</span><span class="nav-label">მთავარი</span></a>
-<button type="button" aria-label="გვერდი 2"><span class="nav-number">2</span></button><button type="button" aria-label="გვერდი 3"><span class="nav-number">3</span></button><button type="button" aria-label="გვერდი 4"><span class="nav-number">4</span></button><button type="button" aria-label="გვერდი 5"><span class="nav-number">5</span></button>
-</nav>
-<script src="./bottom-nav.js?v=2"></script>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+<nav class="bottom-nav" aria-label="მთავარი ნავიგაცია"><a class="home" href="./" aria-label="მთავარი"><span style="font-size:19px;line-height:1">⌂</span><span class="nav-label">მთავარი</span></a><button type="button" aria-label="გვერდი 2"><span class="nav-number">2</span></button><button type="button" aria-label="გვერდი 3"><span class="nav-number">3</span></button><button type="button" aria-label="გვერდი 4"><span class="nav-number">4</span></button><button type="button" aria-label="გვერდი 5"><span class="nav-number">5</span></button></nav>
+<script src="./bottom-nav.js?v=2"></script><script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
 <script>
-const publicGeorgia='https://iptv-org.github.io/iptv/countries/ge.m3u';
-const statusEl=document.getElementById('status'),channelsEl=document.getElementById('channels'),video=document.getElementById('player');
-function parseM3U(text){const lines=text.split(/\r?\n/);const out=[];let name='ქართული არხი';for(const line0 of lines){const line=line0.trim();if(line.startsWith('#EXTINF')){const m=line.match(/,(.*)$/);name=m?m[1].trim():'ქართული არხი';}else if(line && !line.startsWith('#') && /^https?:\/\//i.test(line)){out.push({name,url:line});name='ქართული არხი';}}return out;}
-async function loadList(url){statusEl.textContent='იტვირთება…';channelsEl.replaceChildren();try{const response=await fetch(url);if(!response.ok)throw new Error('HTTP '+response.status);const text=await response.text();const list=parseM3U(text);if(!list.length)throw new Error('სია ცარიელია');list.forEach(ch=>{const b=document.createElement('button');b.className='channel';const t=document.createElement('span');t.textContent=ch.name;const p=document.createElement('span');p.className='play';p.textContent='▶';b.append(t,p);b.addEventListener('click',()=>playChannel(ch));channelsEl.append(b);});statusEl.textContent='ნაპოვნია '+list.length+' არხი. დააჭირე არხს ჩასართავად.';}catch(e){statusEl.textContent='სიის ჩატვირთვა ვერ მოხერხდა. სცადე მოგვიანებით ან ჩასვი სხვა M3U ბმული. ('+e.message+')';}}
-function playChannel(ch){video.hidden=false;video.pause();if(window.Hls&&Hls.isSupported()){if(window.playerHls)window.playerHls.destroy();window.playerHls=new Hls();window.playerHls.loadSource(ch.url);window.playerHls.attachMedia(video);window.playerHls.on(Hls.Events.MANIFEST_PARSED,()=>video.play().catch(()=>{}));window.playerHls.on(Hls.Events.ERROR,(e,data)=>{if(data.fatal)statusEl.textContent='ამ არხის ნაკადი ბრაუზერში ვერ გაეშვა. სცადე სხვა არხი.';});}else if(video.canPlayType('application/vnd.apple.mpegurl')){video.src=ch.url;video.play().catch(()=>{statusEl.textContent='დააჭირე ვიდეოს Play ღილაკს.';});}else{statusEl.textContent='ეს ბრაუზერი HLS ვიდეოს დაკვრას არ უჭერს მხარს.';}video.scrollIntoView({behavior:'smooth',block:'center'});}
-document.getElementById('loadGeorgia').onclick=()=>loadList(publicGeorgia);
-document.getElementById('addPlaylist').onclick=()=>{document.getElementById('georgian').scrollIntoView({behavior:'smooth',block:'start'});loadList(publicGeorgia);};
-document.getElementById('loadCustom').onclick=()=>{const url=document.getElementById('customUrl').value.trim();if(!url){statusEl.textContent='ჯერ ჩასვი M3U ბმული.';return;}loadList(url);};
-</script>
-</body></html>
+const publicGeorgia='https://iptv-org.github.io/iptv/countries/ge.m3u',publicGreece='https://iptv-org.github.io/iptv/countries/gr.m3u';
+const video=document.getElementById('player');
+function parseM3U(text){const lines=text.split(/\r?\n/),out=[];let name='არხი';for(const line0 of lines){const line=line0.trim();if(line.startsWith('#EXTINF')){const m=line.match(/,(.*)$/);name=m?m[1].trim():'არხი';}else if(line&&!line.startsWith('#')&&/^https?:\/\//i.test(line)){out.push({name,url:line});name='არხი';}}return out;}
+async function loadList(url,statusEl,channelsEl){statusEl.textContent='იტვირთება…';channelsEl.replaceChildren();try{const response=await fetch(url);if(!response.ok)throw new Error('HTTP '+response.status);const list=parseM3U(await response.text());if(!list.length)throw new Error('სია ცარიელია');list.forEach(ch=>{const b=document.createElement('button');b.className='channel';const t=document.createElement('span');t.textContent=ch.name;const p=document.createElement('span');p.className='play';p.textContent='▶';b.append(t,p);b.addEventListener('click',()=>playChannel(ch,statusEl));channelsEl.append(b);});statusEl.textContent='ნაპოვნია '+list.length+' არხი. დააჭირე არხს ჩასართავად.';}catch(e){statusEl.textContent='სიის ჩატვირთვა ვერ მოხერხდა. სცადე მოგვიანებით. ('+e.message+')';}}
+function playChannel(ch,statusEl){video.hidden=false;video.pause();if(window.Hls&&Hls.isSupported()){if(window.playerHls)window.playerHls.destroy();window.playerHls=new Hls();window.playerHls.loadSource(ch.url);window.playerHls.attachMedia(video);window.playerHls.on(Hls.Events.MANIFEST_PARSED,()=>video.play().catch(()=>{}));window.playerHls.on(Hls.Events.ERROR,(e,d)=>{if(d.fatal)statusEl.textContent='ამ არხის ნაკადი ბრაუზერში ვერ გაეშვა. სცადე სხვა არხი.';});}else if(video.canPlayType('application/vnd.apple.mpegurl')){video.src=ch.url;video.play().catch(()=>statusEl.textContent='დააჭირე ვიდეოს Play ღილაკს.');}else statusEl.textContent='ეს ბრაუზერი HLS ვიდეოს დაკვრას არ უჭერს მხარს.';video.scrollIntoView({behavior:'smooth',block:'center'});}
+const gs=document.getElementById('status'),gc=document.getElementById('channels'),grs=document.getElementById('greekStatus'),grc=document.getElementById('greekChannels');
+document.getElementById('loadGeorgia').onclick=()=>loadList(publicGeorgia,gs,gc);document.getElementById('addGeorgia').onclick=()=>{document.getElementById('georgian').scrollIntoView({behavior:'smooth'});loadList(publicGeorgia,gs,gc);};
+document.getElementById('loadGreece').onclick=()=>loadList(publicGreece,grs,grc);document.getElementById('addGreece').onclick=()=>{document.getElementById('greek').scrollIntoView({behavior:'smooth'});loadList(publicGreece,grs,grc);};
+document.getElementById('loadCustom').onclick=()=>{const url=document.getElementById('customUrl').value.trim();if(!url){gs.textContent='ჯერ ჩასვი M3U ბმული.';return;}loadList(url,gs,gc);};
+</script></body></html>
