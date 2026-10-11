@@ -231,7 +231,12 @@ def main():
                         station["prices"].append(carried)
                     else:
                         new_prices[fuel_key]["stale"] = False
-                        new_prices[fuel_key]["last_confirmed_at"] = result["fetched_at"]
+                        # Preserve confirmation time if the numeric price did not change.
+                        # This avoids implying a price changed just because the feed was polled.
+                        if old_price and str(old_price.get("price")) == str(new_prices[fuel_key].get("price")):
+                            new_prices[fuel_key]["last_confirmed_at"] = old_price.get("last_confirmed_at") or old.get("updated") or previous.get("fetched_at")
+                        else:
+                            new_prices[fuel_key]["last_confirmed_at"] = result["fetched_at"]
                 # Preserve previous station coordinates if source values are invalid/missing.
                 if old and (not station.get("latitude") or not station.get("longitude")):
                     station["latitude"] = old.get("latitude", station.get("latitude"))
