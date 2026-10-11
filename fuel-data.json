@@ -1,11 +1,11 @@
 {
   "source_name": "FuelGR / Deixto",
   "source_url": "https://deixto.gr/",
-  "fetched_at": "2026-10-11T07:14:49.430198+00:00",
+  "fetched_at": "2026-10-11T08:49:09.845Z",
   "regions": [
     {
       "region": "Ρέθυμνο",
-      "source": "FuelGR / Deixto",
+      "source": "4real.gr / Παρατηρητήριο Τιμών Υγρών Καυσίμων — verified subset",
       "stations": [
         {
           "name": "AVIN",
@@ -16,19 +16,19 @@
             {
               "type": "95",
               "price": 2.258,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.487,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.892,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -42,24 +42,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.31,
+              "price": 2.238,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "100",
               "price": 2.464,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
-              "price": 1.971,
+              "price": 2.175,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "AVIN",
@@ -70,19 +70,19 @@
             {
               "type": "95",
               "price": 2.247,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.431,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.882,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -96,18 +96,18 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.207,
+              "price": 2.169,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.811,
+              "price": 1.999,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "AVIN",
@@ -118,13 +118,13 @@
             {
               "type": "95",
               "price": 2.311,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.893,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -139,19 +139,19 @@
             {
               "type": "95",
               "price": 2.312,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.543,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.903,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -166,13 +166,13 @@
             {
               "type": "95",
               "price": 2.331,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 2.065,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -187,13 +187,13 @@
             {
               "type": "95",
               "price": 2.269,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.892,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -208,19 +208,19 @@
             {
               "type": "95",
               "price": 2.373,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.496,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.963,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -235,19 +235,19 @@
             {
               "type": "95",
               "price": 2.359,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.568,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.946,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -262,19 +262,19 @@
             {
               "type": "95",
               "price": 2.285,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.481,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.894,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -289,19 +289,19 @@
             {
               "type": "95",
               "price": 2.259,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.436,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.955,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -315,24 +315,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.276,
+              "price": 2.195,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "100",
-              "price": 2.451,
+              "price": 2.415,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.871,
+              "price": 2.015,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "BP",
@@ -342,24 +342,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.27,
+              "price": 2.2,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "100",
-              "price": 2.378,
+              "price": 2.343,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.846,
+              "price": 1.993,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "BP",
@@ -370,19 +370,19 @@
             {
               "type": "95",
               "price": 2.28,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.465,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.865,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -397,19 +397,19 @@
             {
               "type": "95",
               "price": 2.291,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.466,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.93,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -423,18 +423,18 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.342,
+              "price": 2.269,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.893,
+              "price": 2.089,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "BP",
@@ -445,13 +445,13 @@
             {
               "type": "95",
               "price": 2.321,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.908,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -466,13 +466,13 @@
             {
               "type": "95",
               "price": 2.353,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.934,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -487,25 +487,25 @@
             {
               "type": "95",
               "price": 2.279,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.357,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.944,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "autogas",
               "price": 1.292,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -519,24 +519,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.289,
+              "price": 2.218,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "100",
-              "price": 2.465,
+              "price": 2.429,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.892,
+              "price": 2.088,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "EKO",
@@ -547,19 +547,19 @@
             {
               "type": "95",
               "price": 2.269,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.355,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.865,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -573,18 +573,18 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.286,
+              "price": 2.215,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.925,
+              "price": 2.125,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "REVOIL",
@@ -595,19 +595,19 @@
             {
               "type": "95",
               "price": 2.249,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.456,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.829,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -621,24 +621,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.25,
+              "price": 2.18,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "100",
-              "price": 2.426,
+              "price": 2.39,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.884,
+              "price": 2.08,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "SHELL",
@@ -648,24 +648,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.255,
+              "price": 2.185,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "100",
-              "price": 2.431,
+              "price": 2.395,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.875,
+              "price": 2.069,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "SHELL",
@@ -676,19 +676,19 @@
             {
               "type": "95",
               "price": 2.269,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.445,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.943,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -702,30 +702,30 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.3,
+              "price": 2.229,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "100",
-              "price": 2.425,
+              "price": 2.389,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.947,
+              "price": 2.149,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "autogas",
-              "price": 1.249,
+              "price": 1.139,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "SHELL",
@@ -736,13 +736,13 @@
             {
               "type": "95",
               "price": 2.29,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.901,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -757,13 +757,13 @@
             {
               "type": "95",
               "price": 2.27,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.93,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -778,13 +778,13 @@
             {
               "type": "95",
               "price": 2.28,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.92,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -799,19 +799,19 @@
             {
               "type": "95",
               "price": 2.32,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "100",
               "price": 2.535,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.892,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -826,13 +826,13 @@
             {
               "type": "95",
               "price": 2.292,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 2.003,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -847,13 +847,13 @@
             {
               "type": "95",
               "price": 2.307,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.902,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -867,18 +867,18 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.32,
+              "price": 2.248,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.944,
+              "price": 2.146,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -888,24 +888,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.312,
+              "price": 2.24,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "100",
-              "price": 2.514,
+              "price": 2.477,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             },
             {
               "type": "diesel",
-              "price": 1.907,
+              "price": 2.105,
               "stale": false,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -916,13 +916,13 @@
             {
               "type": "95",
               "price": 2.296,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 1.902,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -937,7 +937,7 @@
             {
               "type": "autogas",
               "price": 1.278,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
@@ -952,19 +952,21 @@
             {
               "type": "95",
               "price": 2.373,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             },
             {
               "type": "diesel",
               "price": 2.028,
-              "stale": false,
+              "stale": true,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
             }
           ],
           "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
         }
-      ]
+      ],
+      "verification_source_url": "https://www.4real.gr/FuelPrices/public/times/rethymno/brand",
+      "verified_at": "2026-10-11T08:49:09.845Z"
     },
     {
       "region": "Ηράκλειο",
@@ -7399,7 +7401,7 @@
             },
             {
               "type": "diesel",
-              "price": 2.0,
+              "price": 2,
               "stale": false,
               "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:35 UTC"
             }
