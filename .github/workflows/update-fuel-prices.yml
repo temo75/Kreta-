@@ -9,6 +9,11 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+
+# Avoid simultaneous scraper runs racing to commit fuel-data.json.
+concurrency:
+  group: fuel-price-update-${{ github.ref }}
+  queue: max
 jobs:
   update:
     runs-on: ubuntu-latest
