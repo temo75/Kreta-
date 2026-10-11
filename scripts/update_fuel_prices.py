@@ -199,8 +199,60 @@ def main():
     if total < 5:
         raise RuntimeError(f"Only {total} stations returned; refusing to publish incomplete data.")
 
-    # Write only after all four regions returned valid real data.
+    # Preserve previously published station prices when the source temporarily omits them.
+    # New prices are stamped individually; carried-over prices are explicitly marked stale.
     target = Path("fuel-data.json")
+    if target.exists():
+        try:
+            previous = json.loads(target.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            previous = {}
+
+        previous_regions = {r.get("region"): r for r in previous.get("regions", [])}
+        for region in result["regions"]:
+            old_region = previous_regions.get(region["region"], {})
+            old_stations = old_region.get("stations", [])
+            old_by_key = {
+                (str(s.get("name", "")).strip().casefold(), str(s.get("address", "")).strip().casefold()): s
+                for s in old_stations
+            }
+            new_keys = set()
+            for station in region["stations"]:
+                key = (str(station.get("name", "")).strip().casefold(), str(station.get("address", "")).strip().casefold())
+                new_keys.add(key)
+                old = old_by_key.get(key)
+                old_prices = {p.get("type"): p for p in (old or {}).get("prices", [])}
+                new_prices = {p.get("type"): p for p in station.get("prices", [])}
+                for fuel_key, old_price in old_prices.items():
+                    if fuel_key not in new_prices:
+                        carried = dict(old_price)
+                        carried["stale"] = True
+                        carried["last_confirmed_at"] = old_price.get("last_confirmed_at") or old.get("updated") or previous.get("fetched_at")
+                        station["prices"].append(carried)
+                    else:
+                        new_prices[fuel_key]["stale"] = False
+                        new_prices[fuel_key]["last_confirmed_at"] = result["fetched_at"]
+                # Preserve previous station coordinates if source values are invalid/missing.
+                if old and (not station.get("latitude") or not station.get("longitude")):
+                    station["latitude"] = old.get("latitude", station.get("latitude"))
+                    station["longitude"] = old.get("longitude", station.get("longitude"))
+
+            # Keep stations omitted by a partial upstream response, with old prices clearly stale.
+            for old in old_stations:
+                key = (str(old.get("name", "")).strip().casefold(), str(old.get("address", "")).strip().casefold())
+                if key in new_keys or not old.get("prices"):
+                    continue
+                carried_station = dict(old)
+                carried_station["prices"] = []
+                for price in old.get("prices", []):
+                    carried = dict(price)
+                    carried["stale"] = True
+                    carried["last_confirmed_at"] = price.get("last_confirmed_at") or old.get("updated") or previous.get("fetched_at")
+                    carried_station["prices"].append(carried)
+                carried_station["stale_station"] = True
+                region["stations"].append(carried_station)
+
+    # Write only after all four regions returned valid real data.
     target.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Published {total} stations across {len(result['regions'])} regions.")
 
