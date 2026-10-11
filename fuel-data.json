@@ -1,11 +1,11 @@
 {
   "source_name": "FuelGR / Deixto",
   "source_url": "https://deixto.gr/",
-  "fetched_at": "2026-10-11T08:49:09.845Z",
+  "fetched_at": "2026-10-11T08:55:07.470Z",
   "regions": [
     {
       "region": "Ρέθυμνο",
-      "source": "4real.gr / Παρατηρητήριο Τιμών Υγρών Καυσίμων — verified subset",
+      "source": "4real.gr / vrisko.gr — station-level prices",
       "stations": [
         {
           "name": "AVIN",
@@ -354,12 +354,12 @@
             },
             {
               "type": "diesel",
-              "price": 1.993,
+              "price": 2.038,
               "stale": false,
-              "last_confirmed_at": "4real.gr — გადამოწმებულია 2026-10-11"
+              "last_confirmed_at": "vrisko.gr — հրապարակված գին, վերջին թարմացում 2026-10-09"
             }
           ],
-          "updated": "4real.gr — გადამოწმებულია 2026-10-11"
+          "updated": "vrisko.gr — ფასების სია, ბოლო განახლება 2026-10-09"
         },
         {
           "name": "BP",
@@ -369,24 +369,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.28,
-              "stale": true,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "price": 2.199,
+              "stale": false,
+              "last_confirmed_at": "vrisko.gr — հրապարակված գին, վերջին թարմացում 2026-10-09"
             },
             {
               "type": "100",
-              "price": 2.465,
-              "stale": true,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "price": 2.519,
+              "stale": false,
+              "last_confirmed_at": "vrisko.gr — հրապարակված գին, վերջին թարմացում 2026-10-09"
             },
             {
               "type": "diesel",
-              "price": 1.865,
-              "stale": true,
-              "last_confirmed_at": "ონლაინ წყაროდან მიღებულია 2026-10-11 06:34 UTC"
+              "price": 2.019,
+              "stale": false,
+              "last_confirmed_at": "vrisko.gr — հրապարակված գին, վերջին թարմացում 2026-10-09"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
+          "updated": "vrisko.gr — ფასების სია, ბოლო განახლება 2026-10-09"
         },
         {
           "name": "BP",
@@ -965,8 +965,8 @@
           "updated": "ონლაინ წყაროდან მიღებულია 2026-10-11 07:14 UTC"
         }
       ],
-      "verification_source_url": "https://www.4real.gr/FuelPrices/public/times/rethymno/brand",
-      "verified_at": "2026-10-11T08:49:09.845Z"
+      "verification_source_url": "https://www.vrisko.gr/en/fuel-prices/rethymno/",
+      "verified_at": "2026-10-11T08:55:07.470Z"
     },
     {
       "region": "Ηράκλειο",
