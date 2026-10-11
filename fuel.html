@@ -6,7 +6,7 @@
 <header><div class="brand">TEMO</div><h1>⛽ კრეტის საწვავის ფასები</h1><p>ონლაინ განახლებული სადგურები და ფასები</p></header>
 <main><a class="back" href="./">← მთავარი გვერდი</a><h2 class="section-title">📍 რეთიმნო პირველია</h2>
 <div class="regions" id="regions"><button class="region active" data-region="Ρέθυμνο">📍 რეთიმნო</button><button class="region" data-region="Ηράκλειο">ჰერაკლიონი</button><button class="region" data-region="Χανιά">ქანია</button><button class="region" data-region="Λασίθι">ლასითი</button></div>
-<div id="status" class="status">იტვირთება ონლაინ ფასები…</div><section id="stations"></section>
+<div id="status" class="status"></div><section id="stations"></section>
 <div class="foot">მონაცემები ავტომატურად სინქრონდება ონლაინ წყაროდან დაახლოებით ყოველ 3 საათში. ფასები და ბოლო განახლების დრო წყაროს მიხედვით.</div></main>
 <script>
 let data=null,selected='Ρέθυμνο';
@@ -17,5 +17,8 @@ document.getElementById('status').textContent='სადგურები: '+re
 box.innerHTML=region.stations.map(s=>'<article class="station"><div class="name">'+esc(s.name)+'</div><div class="address">'+esc(s.address||'მისამართი წყაროში მითითებული არ არის')+'</div><div class="prices">'+s.prices.map(p=>'<div class="price"><span class="fuel">'+(names[p.type]||esc(p.type))+'</span><span class="value">'+(p.price?Number(p.price).toLocaleString("el-GR",{minimumFractionDigits:3,maximumFractionDigits:3})+" €":"—")+'</span></div>').join('')+'</div><div class="updated">წყაროს ბოლო განახლება: '+esc(s.updated||'მითითებული არ არის')+'</div></article>').join('')}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 document.querySelectorAll('.region').forEach(b=>b.addEventListener('click',()=>{selected=b.dataset.region;document.querySelectorAll('.region').forEach(x=>x.classList.toggle('active',x===b));render()}));
-fetch('./fuel-data.json?'+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('data unavailable');return r.json()}).then(d=>{data=d;render()}).catch(()=>{document.getElementById('status').textContent='ონლაინ მონაცემები ჯერ არ არის სინქრონიზებული';document.getElementById('stations').innerHTML='<div class="error">ავტომატური წამოღების პირველი გაშვება მიმდინარეობს. როგორც კი მონაცემები შეიქმნება, სადგურები აქ გამოჩნდება.</div>'});
+function showUnavailable(){document.getElementById('status').textContent='';document.getElementById('stations').innerHTML='<div style="padding:8px 4px;color:#6b8192;font-size:13px">ამ რეგიონის ონლაინ ფასები ამჟამად მიუწვდომელია.</div>'}
+function loadFuelData(){fetch('./fuel-data.json?'+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('data unavailable');return r.json()}).then(d=>{data=d;render()}).catch(showUnavailable)}
+loadFuelData();
+setInterval(loadFuelData,15*60*1000);
 </script></body></html>
