@@ -1,17 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-<defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10cfff"/><stop offset=".48" stop-color="#087cff"/><stop offset="1" stop-color="#063fc8"/></linearGradient>
- <linearGradient id="pin" x1=".2" y1="0" x2=".8" y2="1"><stop stop-color="#19dfff"/><stop offset=".5" stop-color="#087cff"/><stop offset="1" stop-color="#0640c8"/></linearGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-</defs>
-<rect x="8" y="8" width="496" height="496" rx="78" fill="url(#bg)" stroke="#62f5ff" stroke-width="7"/>
-<circle cx="256" cy="205" r="126" fill="#0bbfff" opacity=".22" filter="url(#glow)"/>
-<path d="M256 94c-63 0-113 49-113 110 0 82 113 181 113 181s113-99 113-181c0-61-50-110-113-110z" fill="url(#pin)" stroke="#62f5ff" stroke-width="7"/>
-<circle cx="256" cy="202" r="68" fill="#fff" stroke="#073fc8" stroke-width="8"/>
-<path d="M218 174h18l8 12h55l-9 42h-59zM231 240h54M238 257a10 10 0 1 0 0-20 10 10 0 0 0 0 20M277 257a10 10 0 1 0 0-20 10 10 0 0 0 0 20" fill="none" stroke="#0875e8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M92 330l86-42 78 28 91-34 73 51-82 56-93-21-79 27z" fill="#55d3ef" stroke="#fff" stroke-width="6"/>
-<path d="M111 330l67-32 78 28 91-34M171 310l-6 76M258 316l-4 52M347 282l-4 62" fill="none" stroke="#8fe98f" stroke-width="10"/>
-<text x="82" y="145" font-size="45">💊</text><text x="405" y="145" font-size="45">☕</text>
-<text x="70" y="270" font-size="45">🍽️</text><text x="405" y="270" font-size="45">🍺</text><text x="405" y="355" font-size="45">🥖</text>
-<text x="256" y="465" text-anchor="middle" font-family="Arial,sans-serif" font-size="72" font-weight="900" fill="#fff" stroke="#0875e8" stroke-width="5" paint-order="stroke">TEMO</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="b" x2="0" y2="1"><stop stop-color="#04eaff"/><stop offset=".35" stop-color="#087dff"/><stop offset="1" stop-color="#0034c8"/></linearGradient></defs><rect x="5" y="5" width="502" height="502" rx="90" fill="url(#b)" stroke="#4dfbff" stroke-width="10"/><rect x="18" y="18" width="476" height="476" rx="80" fill="none" stroke="#a4ffff" stroke-width="5"/><path d="M256 82c-76 0-138 59-138 133 0 70 81 161 124 218 7 10 21 10 28 0 43-57 124-148 124-218 0-74-62-133-138-133z" fill="#0074ff" stroke="#37ffff" stroke-width="8"/><circle cx="256" cy="213" r="82" fill="#fff" stroke="#003dca" stroke-width="8"/><g fill="none" stroke="#0758e8" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><path d="M214 183h-25l15 18 12 43h72l17-43h-90"/><path d="M222 215h72M235 201v28M258 201v28M279 201v28"/></g><circle cx="233" cy="254" r="8" fill="#0758e8"/><circle cx="280" cy="254" r="8" fill="#0758e8"/><g font-family="Arial,sans-serif" font-weight="900" text-anchor="middle" fill="white" stroke="#087dff" stroke-width="3" paint-order="stroke" font-size="80"><text x="256" y="421" letter-spacing="2">TEMO</text></g><g font-size="60" text-anchor="middle"><text x="100" y="135">💊</text><text x="405" y="130">☕</text><text x="95" y="270">🍽️</text><text x="412" y="265">🍺</text><text x="414" y="350">🥖</text></g></svg>
