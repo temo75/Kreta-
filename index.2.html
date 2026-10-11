@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#087dcc">
+<title>TEMO • კრეტა</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#f2f7fb;color:#183247;font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:flex-start}
+main{width:min(100%,600px);padding:34px 20px}
+header{text-align:center;margin:18px 0 34px}
+.logo{display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:22px;background:#087dcc;color:#fff;font-size:24px;font-weight:800;box-shadow:0 8px 25px #087dcc35}
+h1{font-size:25px;margin:16px 0 6px}
+p{color:#6b8192;margin:0}
+.categories{display:grid;grid-template-columns:1fr;gap:14px}
+a.category{display:flex;align-items:center;gap:16px;padding:20px;border-radius:18px;background:#fff;border:1px solid #d9e8f3;box-shadow:0 6px 20px #173e5510;text-decoration:none;color:#183247;font-size:19px;font-weight:700;transition:transform .15s,box-shadow .15s}
+a.category:active{transform:scale(.985)}
+.symbol{display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:15px;background:#e5f4ff;font-size:29px}
+.arrow{margin-left:auto;color:#087dcc;font-size:24px}
+footer{text-align:center;color:#91a2af;font-size:12px;margin-top:36px}
+</style>
+</head>
+<body>
+<main>
+<header><div class="logo">TEMO</div><h1>კრეტა</h1><p>აირჩიე კატეგორია</p></header>
+<section class="categories">
+<a class="category" href="./pharmacy.html"><span class="symbol">💊</span><span>აფთიაქი</span><span class="arrow">›</span></a>
+<a class="category" href="./fuel.html"><span class="symbol">⛽</span><span>საწვავის ფასები</span><span class="arrow">›</span></a>
+</section>
+<footer>TEMO • Crete</footer>
+</main>
+</body>
+</html>
