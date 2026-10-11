@@ -19,6 +19,13 @@ a.category:active{transform:scale(.985)}
 .symbol{display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:15px;background:#e5f4ff;font-size:29px}
 .arrow{margin-left:auto;color:#087dcc;font-size:24px}
 footer{text-align:center;color:#91a2af;font-size:12px;margin-top:36px}
+
+.bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:9999;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid #d5e5ef;box-shadow:0 -5px 18px #173e5512;backdrop-filter:blur(12px)}
+.bottom-nav a,.bottom-nav button{min-width:0;min-height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:1px solid #d9e8f3;border-radius:12px;background:#f2f7fb;color:#35566d;text-decoration:none;font:700 12px Arial,sans-serif;padding:4px 2px}
+.bottom-nav .home{background:#e5f4ff;border-color:#087dcc;color:#075f9c}
+.bottom-nav .nav-number{font-size:17px;font-weight:800;line-height:1.1}
+.bottom-nav .nav-label{font-size:10px;font-weight:700}
+body{padding-bottom:88px}
 </style>
 </head>
 <body>
@@ -30,5 +37,13 @@ footer{text-align:center;color:#91a2af;font-size:12px;margin-top:36px}
 </section>
 <footer>TEMO • Crete</footer>
 </main>
+
+<nav class="bottom-nav" aria-label="მთავარი ნავიგაცია">
+<a class="home" href="./" aria-label="მთავარი"><span style="font-size:19px;line-height:1">⌂</span><span class="nav-label">მთავარი</span></a>
+<button type="button" aria-label="გვერდი 2, მომავალში დაემატება"><span class="nav-number">2</span></button>
+<button type="button" aria-label="გვერდი 3, მომავალში დაემატება"><span class="nav-number">3</span></button>
+<button type="button" aria-label="გვერდი 4, მომავალში დაემატება"><span class="nav-number">4</span></button>
+<button type="button" aria-label="გვერდი 5, მომავალში დაემატება"><span class="nav-number">5</span></button>
+</nav>
 </body>
 </html>
