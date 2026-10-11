@@ -7,9 +7,9 @@
       body { padding-bottom: calc(92px + env(safe-area-inset-bottom)) !important; }
       .bottom-nav {
         position: fixed !important; left: 0 !important; right: 0 !important;
-        bottom: 0 !important; z-index: 2147483000 !important;
+        bottom: 0px !important; margin-bottom: 0 !important; transform: none !important; z-index: 2147483000 !important;
         display: grid !important; grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-        gap: 6px !important; padding: 9px 10px calc(9px + env(safe-area-inset-bottom)) !important;
+        gap: 6px !important; padding: 9px 10px 9px !important;
         background: rgba(255,255,255,.97) !important; border-top: 1px solid #d5e5ef !important;
         box-shadow: 0 -5px 18px #173e5512 !important; backdrop-filter: blur(12px) !important;
         box-sizing: border-box !important;
