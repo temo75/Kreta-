@@ -18,7 +18,7 @@ box.innerHTML=region.stations.map(s=>'<article class="station"><div class="name"
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 document.querySelectorAll('.region').forEach(b=>b.addEventListener('click',()=>{selected=b.dataset.region;document.querySelectorAll('.region').forEach(x=>x.classList.toggle('active',x===b));render()}));
 function showUnavailable(){document.getElementById('status').textContent='';document.getElementById('stations').innerHTML='<div style="padding:8px 4px;color:#6b8192;font-size:13px">ამ რეგიონის ონლაინ ფასები ამჟამად მიუწვდომელია.</div>'}
-function loadFuelData(){fetch('./fuel-data.json?'+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('data unavailable');return r.json()}).then(d=>{data=d;render()}).catch(showUnavailable)}
+function loadFuelData(){fetch('./fuel-data.json?'+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('data unavailable');return r.json()}).then(d=>{data=d;render();document.getElementById('status').textContent+=' • ფასები შენახულია ბოლო წარმატებული ონლაინ განახლებიდან'}).catch(()=>{if(data){render();document.getElementById('status').textContent+=' • განახლება ვერ მოხერხდა — ნაჩვენებია ბოლო მიღებული ფასები'}else{showUnavailable()}})}
 loadFuelData();
 setInterval(loadFuelData,60*1000);
 </script></body></html>
