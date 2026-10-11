@@ -28,14 +28,19 @@
     `;
     document.head.appendChild(style);
   }
-  if (!document.querySelector('.bottom-nav')) {
+  let nav = document.querySelector('.bottom-nav');
+  if (!nav) {
     const scriptUrl = document.currentScript && document.currentScript.src;
     const homeUrl = scriptUrl ? new URL('./', scriptUrl).href : './';
-    const nav = document.createElement('nav');
+    nav = document.createElement('nav');
     nav.className = 'bottom-nav';
     nav.setAttribute('aria-label', 'მთავარი ნავიგაცია');
     nav.innerHTML = '<a class="home" href="' + homeUrl + '" aria-label="მთავარი"><span style="font-size:19px;line-height:1">⌂</span><span class="nav-label">მთავარი</span></a>' +
       [2,3,4,5].map(n => '<button type="button" aria-label="გვერდი ' + n + ', მომავალში დაემატება"><span class="nav-number">' + n + '</span></button>').join('');
     document.body.appendChild(nav);
+  }
+  // Keep the shared bar outside page containers so transforms/scrolling on any page cannot move it.
+  if (nav.parentElement !== document.documentElement) {
+    document.documentElement.appendChild(nav);
   }
 })();
