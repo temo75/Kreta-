@@ -131,6 +131,21 @@ def in_bounds(station, bounds):
     return south <= station["lat"] <= north and west <= station["lon"] <= east
 
 
+def is_older_than_24h(value):
+    """Treat a price as stale based on its confirmation time, not file-fetch time."""
+    if not value:
+        return True
+    match = re.search(r"(\\d{4}-\\d{2}-\\d{2})(?:[ T](\\d{2}:\\d{2})(?::\\d{2}(?:\\.\\d+)?)?\\s*UTC)?", str(value))
+    if not match:
+        return True
+    clock = match.group(2) or "00:00"
+    try:
+        stamp = datetime.fromisoformat(f"{match.group(1)}T{clock}:00+00:00")
+    except ValueError:
+        return True
+    return (datetime.now(timezone.utc) - stamp).total_seconds() > 24 * 60 * 60
+
+
 def main():
     result = {
         "source_name": "FuelGR / DEiXTo (third-party data feed)",
@@ -231,13 +246,15 @@ def main():
                         carried["last_confirmed_at"] = old_price.get("last_confirmed_at") or old.get("updated") or previous.get("fetched_at")
                         station["prices"].append(carried)
                     else:
-                        new_prices[fuel_key]["stale"] = False
-                        # Preserve confirmation time if the numeric price did not change.
-                        # This avoids implying a price changed just because the feed was polled.
+                        # A successful poll does not mean the station price itself was updated.
+                        # Keep the last-confirmed timestamp when the numeric value is unchanged,
+                        # and mark that price stale after 24 hours instead of pretending it is fresh.
                         if old_price and str(old_price.get("price")) == str(new_prices[fuel_key].get("price")):
-                            new_prices[fuel_key]["last_confirmed_at"] = old_price.get("last_confirmed_at") or old.get("updated") or previous.get("fetched_at")
+                            confirmed = old_price.get("last_confirmed_at") or old.get("updated") or previous.get("fetched_at")
                         else:
-                            new_prices[fuel_key]["last_confirmed_at"] = result["fetched_at"]
+                            confirmed = result["fetched_at"]
+                        new_prices[fuel_key]["last_confirmed_at"] = confirmed
+                        new_prices[fuel_key]["stale"] = is_older_than_24h(confirmed)
                 # Preserve previous station coordinates if source values are invalid/missing.
                 if old and (not station.get("latitude") or not station.get("longitude")):
                     station["latitude"] = old.get("latitude", station.get("latitude"))
