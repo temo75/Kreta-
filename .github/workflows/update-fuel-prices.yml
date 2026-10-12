@@ -23,15 +23,26 @@ jobs:
         with:
           python-version: "3.x"
       - run: pip install requests
-      - name: Fetch and validate Crete prices from FuelGR / DEiXTo
-        run: python scripts/update_fuel_prices.py
-      - name: Commit refreshed data
+      - name: Refresh and publish prices with conflict retry
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fuel-data.json
-          if ! git diff --cached --quiet; then
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/update_fuel_prices.py
+            git add fuel-data.json
+            if git diff --cached --quiet; then
+              echo "Fuel data is already current."
+              exit 0
+            fi
             git commit -m "Refresh online fuel prices"
-            git pull --rebase origin main
-            git push
-          fi
+            if git push origin HEAD:main; then
+              echo "Fuel prices published successfully on attempt ${attempt}."
+              exit 0
+            fi
+            echo "Push conflict on attempt ${attempt}; retrying from latest main."
+            sleep 2
+          done
+          echo "Could not publish fuel prices after 5 attempts."
+          exit 1
