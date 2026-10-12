@@ -63,8 +63,8 @@ def tag_text(node, name):
     return "".join(child.itertext()).strip()
 
 
-def parse_response(xml_text, fuel_key):
-    """Return station records from the FuelGR XML; never invent missing prices."""
+def parse_response(xml_text, fuel_code, fuel_key):
+    """Return station records and only prices that can be attributed to the requested fuel."""
     try:
         root = ET.fromstring(xml_text)
     except ET.ParseError:
@@ -93,8 +93,9 @@ def parse_response(xml_text, fuel_key):
 
         brand = tag_text(node, "br")
         address = tag_text(node, "ad")
-        # The response may include more than one <ft>; use the first valid price.
-        price = None
+        # A response can contain several <ft> nodes for different fuels.
+        # Never assume the first price belongs to the requested fuel.
+        priced_nodes = []
         for child in node.iter():
             if child.tag.split("}")[-1] != "ft":
                 continue
@@ -104,8 +105,28 @@ def parse_response(xml_text, fuel_key):
             except (TypeError, ValueError):
                 continue
             if 0.5 < candidate < 5.0:
-                price = round(candidate, 3)
+                priced_nodes.append((child, round(candidate, 3)))
+
+        wanted = str(fuel_code).strip().casefold()
+        price = None
+        for child, candidate in priced_nodes:
+            attrs = {str(k).casefold(): str(v).strip().casefold()
+                     for k, v in child.attrib.items()}
+            explicit_type = next(
+                (attrs[k] for k in ("f", "fuel", "fuelid", "fuel_id",
+                                    "type", "typeid", "type_id", "code")
+                 if k in attrs),
+                None,
+            )
+            if explicit_type == wanted:
+                price = candidate
                 break
+
+        # A single unambiguous priced node is safe if the endpoint filters
+        # by the requested fuel. If several nodes exist without type labels,
+        # skip rather than publishing a potentially wrong fuel price.
+        if price is None and len(priced_nodes) == 1:
+            price = priced_nodes[0][1]
         records.append({
             "id": sid,
             "name": brand,
@@ -123,7 +144,7 @@ def fetch_point(lat, lon, fuel_code, fuel_key):
     params = dict(PARAMS_BASE, lat=lat, **{"long": lon}, f=fuel_code)
     response = SESSION.get(BASE_URL, params=params, timeout=25)
     response.raise_for_status()
-    return parse_response(response.text, fuel_key)
+    return parse_response(response.text, fuel_code, fuel_key)
 
 
 def in_bounds(station, bounds):
