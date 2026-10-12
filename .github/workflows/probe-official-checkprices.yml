@@ -1,5 +1,9 @@
 name: Probe official fuel price form
 on:
+  push:
+    paths:
+      - 'scripts/probe_official_checkprices.py'
+      - '.github/workflows/probe-official-checkprices.yml'
   workflow_dispatch:
 permissions:
   contents: read
