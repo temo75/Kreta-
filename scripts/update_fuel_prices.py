@@ -133,7 +133,8 @@ def in_bounds(station, bounds):
 
 def main():
     result = {
-        "source_name": "FuelGR / Deixto",
+        "source_name": "FuelGR / DEiXTo — official-observatory-sourced data",
+        "official_source_url": "https://www.fuelprices.gr/CheckPrices",
         "source_url": "https://deixto.gr/",
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "regions": [],
@@ -190,7 +191,7 @@ def main():
             )
         result["regions"].append({
             "region": region["region"],
-            "source": "FuelGR / Deixto",
+            "source": "FuelGR / DEiXTo — official-observatory-sourced data",
             "stations": station_list,
         })
         total += len(station_list)
