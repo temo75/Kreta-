@@ -1,0 +1,16 @@
+name: Test 4real fuel source (read-only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: python -m pip install requests
+      - name: Fetch and parse 4real pages without changing live data
+        run: python scripts/test_4real_fuel_source.py
