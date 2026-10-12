@@ -1,6 +1,12 @@
 name: Test 4real fuel source (read-only)
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - "test/fuel-source-4real-2026-10-12"
+    paths:
+      - "scripts/test_4real_fuel_source.py"
+      - ".github/workflows/test-4real-fuel-source.yml"
 permissions:
   contents: read
 jobs:
