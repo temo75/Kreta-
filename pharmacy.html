@@ -119,10 +119,15 @@ function updateDuty(){
  let data=schedule[key];
  if(hour<8){const prev=new Date(now);prev.setDate(prev.getDate()-1);const pk=prev.getFullYear()+'-'+String(prev.getMonth()+1).padStart(2,'0')+'-'+String(prev.getDate()).padStart(2,'0');if(schedule[pk])data=schedule[pk]}
  const isNight=hour>=21||hour<8;
- activeNames=data?(isNight?data.night:data.day).map(p=>typeof p==='string'?p:p.name):[];
+ const entries=data?(isNight?(data.night||[]):(data.day||[])):[];
+ activeNames=entries.map(p=>typeof p==='string'?p:(p.name||'')).filter(Boolean);
  const duty=document.getElementById('duty');
- const matches=pharmacies.filter(p=>activeNames.includes(p.name));
- duty.innerHTML=matches.length?matches.map(p=>card(p,true)).join(''):'<article class="pharmacy">ოფიციალურ განრიგში ამ დროისთვის მორიგე აფთიაქი ვერ დადასტურდა. გთხოვ, გადაამოწმე ოფიციალურ წყაროზე.</article>';
+ const matches=entries.map(entry=>{
+   if(typeof entry==='string') return pharmacies.find(p=>p.name===entry);
+   const phones=(entry.phones||[]).map(n=>String(n).replace(/\D/g,'' )).filter(Boolean);
+   return pharmacies.find(p=>p.name===entry.name || (phones.length && (p.phones||[]).some(n=>phones.includes(String(n).replace(/\D/g,''))))) || entry;
+ }).filter(Boolean);
+ duty.innerHTML=matches.length?matches.map(p=>card(p,true)).join(''):'<article class="pharmacy">ოფიციალურ განრიგში ამ დროისთვის მორიგე აფთიაქი ვერ დადასტურდა. განრიგი გადაამოწმე მუნიციპალიტეტის ოფიციალურ გვერდზე.</article>';
 }
 async function loadOfficialData(){
  try {
