@@ -1,11 +1,11 @@
 {
-  "source_name": "FuelGR / Deixto",
-  "source_url": "https://deixto.gr/",
-  "fetched_at": "2026-10-12T06:19:09.994753+00:00",
+  "source_name": "4real.gr",
+  "source_url": "https://www.4real.gr/FuelPrices/public/times",
+  "fetched_at": "2026-10-12T14:42:44.285819+00:00",
   "regions": [
     {
       "region": "Ρέθυμνο",
-      "source": "FuelGR / Deixto",
+      "source": "4real.gr (verified station matches; partial coverage)",
       "stations": [
         {
           "name": "AVIN",
@@ -344,22 +344,22 @@
               "type": "95",
               "price": 2.19,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:28:14.296Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "100",
               "price": 2.36,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:28:14.296Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "diesel",
               "price": 2.038,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:28:14.296Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             }
           ],
-          "updated": "4real.gr-ის წყაროდან გადამოწმებულია 2026-10-12"
+          "updated": "4real.gr 2026-10-12T14:42:44.285819+00:00"
         },
         {
           "name": "BP",
@@ -533,10 +533,10 @@
               "type": "diesel",
               "price": 2.088,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:36:52.001Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-12 06:19 UTC"
+          "updated": "4real.gr 2026-10-12T14:42:44.285819+00:00"
         },
         {
           "name": "EKO",
@@ -968,7 +968,7 @@
     },
     {
       "region": "Ηράκλειο",
-      "source": "FuelGR / Deixto",
+      "source": "4real.gr (verified station matches; partial coverage)",
       "stations": [
         {
           "name": "AVIN",
@@ -1271,28 +1271,28 @@
               "type": "autogas",
               "price": 1.249,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "95",
               "price": 2.239,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "100",
               "price": 2.289,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "diesel",
               "price": 2.149,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             }
           ],
-          "updated": "4real.gr verified 2026-10-12T14:37:12.573Z"
+          "updated": "4real.gr 2026-10-12T14:42:44.285819+00:00"
         },
         {
           "name": "BP",
@@ -1427,28 +1427,28 @@
               "type": "autogas",
               "price": 1.179,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "95",
               "price": 2.182,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "100",
               "price": 2.232,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "diesel",
               "price": 2.188,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             }
           ],
-          "updated": "4real.gr verified 2026-10-12T14:37:12.573Z"
+          "updated": "4real.gr 2026-10-12T14:42:44.285819+00:00"
         },
         {
           "name": "BP",
@@ -3069,22 +3069,22 @@
               "type": "95",
               "price": 2.199,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "100",
               "price": 2.409,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "diesel",
               "price": 2.189,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             }
           ],
-          "updated": "4real.gr verified 2026-10-12T14:37:12.573Z"
+          "updated": "4real.gr 2026-10-12T14:42:44.285819+00:00"
         },
         {
           "name": "SHELL",
@@ -3417,28 +3417,28 @@
               "type": "95",
               "price": 2.174,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "100",
               "price": 2.362,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "diesel",
               "price": 2.168,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "autogas",
               "price": 1.178,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             }
           ],
-          "updated": "4real.gr verified 2026-10-12T14:37:12.573Z"
+          "updated": "4real.gr 2026-10-12T14:42:44.285819+00:00"
         },
         {
           "name": "ΑΙΓΑΙΟ (AEGEAN)",
@@ -4179,7 +4179,7 @@
     },
     {
       "region": "Χανιά",
-      "source": "FuelGR / Deixto",
+      "source": "4real.gr (verified station matches; partial coverage)",
       "stations": [
         {
           "name": "AVIN",
@@ -6186,7 +6186,7 @@
     },
     {
       "region": "Λασίθι",
-      "source": "FuelGR / Deixto",
+      "source": "4real.gr (verified station matches; partial coverage)",
       "stations": [
         {
           "name": "AVIN",
@@ -6645,28 +6645,28 @@
               "type": "95",
               "price": 2.118,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "100",
               "price": 2.378,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "diesel",
               "price": 2.129,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "autogas",
               "price": 1.026,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             }
           ],
-          "updated": "4real.gr verified 2026-10-12T14:37:12.573Z"
+          "updated": "4real.gr 2026-10-12T14:42:44.285819+00:00"
         },
         {
           "name": "EKO",
@@ -6792,22 +6792,22 @@
               "type": "95",
               "price": 2.209,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "100",
               "price": 2.264,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "diesel",
               "price": 2.079,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             }
           ],
-          "updated": "4real.gr verified 2026-10-12T14:37:12.573Z"
+          "updated": "4real.gr 2026-10-12T14:42:44.285819+00:00"
         },
         {
           "name": "EKO",
@@ -7368,16 +7368,16 @@
               "type": "95",
               "price": 2.205,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             },
             {
               "type": "diesel",
               "price": 2.199,
               "stale": false,
-              "last_confirmed_at": "2026-10-12T14:37:12.573Z"
+              "last_confirmed_at": "2026-10-12T14:42:44.285819+00:00"
             }
           ],
-          "updated": "4real.gr verified 2026-10-12T14:37:12.573Z"
+          "updated": "4real.gr 2026-10-12T14:42:44.285819+00:00"
         },
         {
           "name": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
