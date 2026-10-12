@@ -75,6 +75,7 @@ def main():
                 new=row["prices"].get(typ)
                 if new is not None and old.get(typ) is not None and abs(float(old[typ])-new)>0.0005:
                     changed.append(f"{typ}: {old[typ]} -> {new}")
+            print(f"MATCH | {region} | phone={row['phone']} | {station.get('name')} | {row['address']} | prices={json.dumps(row['prices'],ensure_ascii=False,sort_keys=True)}")
             if changed:
                 region_diffs+=1; differences+=1
                 print(f"DIFF | {region} | {station.get('name')} | {row['address']} | "+"; ".join(changed))
