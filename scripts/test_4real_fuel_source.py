@@ -123,7 +123,10 @@ def main():
                     title = re.search(r"<title[^>]*>(.*?)</title>", response.text, re.I | re.S)
                     title_text = re.sub(r"\s+", " ", title.group(1)).strip() if title else "(no title)"
                     excerpt = re.sub(r"\s+", " ", response.text[:700]).strip()
-                    print(f"DEBUG | HTTP={response.status_code} | type={response.headers.get('Content-Type')} | title={title_text} | html={excerpt[:350]}")
+                    price_at = response.text.find("1,953")
+                    sample_at = price_at if price_at >= 0 else response.text.lower().find("<table")
+                    sample = re.sub(r"\s+", " ", response.text[max(0, sample_at-250):sample_at+900]).strip() if sample_at >= 0 else "(no table or sample price in HTML)"
+                    print(f"DEBUG | HTTP={response.status_code} | type={response.headers.get('Content-Type')} | title={title_text} | tags table={response.text.lower().count('<table')} tr={response.text.lower().count('<tr')} td={response.text.lower().count('<td')} img={response.text.lower().count('<img')} | html={excerpt[:200]} | sample={sample[:900]}")
                     raise RuntimeError("no station prices parsed")
                 region_count = max(region_count, len(records))
                 print(f"OK | {region} | {fuel} | {len(records)} stations | HTTP {response.status_code}")
