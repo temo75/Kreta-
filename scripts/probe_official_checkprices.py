@@ -6,11 +6,10 @@ BASE = "https://www.fuelprices.gr/"
 s = requests.Session()
 s.headers["User-Agent"] = "Mozilla/5.0 (compatible; TEMO-Kreta/1.0)"
 for url in [
-    urljoin(BASE, "CheckPrices"),
-    urljoin(BASE, "GetGeography?nomos=81000000&return_to=CheckPrices"),
-    urljoin(BASE, "GetGeography?nomos=82000000&return_to=CheckPrices"),
-    urljoin(BASE, "GetGeography?nomos=83000000&return_to=CheckPrices"),
-    urljoin(BASE, "GetGeography?nomos=84000000&return_to=CheckPrices"),
+    urljoin(BASE, "GetGeography?nomos=91000000&return_to=CheckPrices"),
+    urljoin(BASE, "GetGeography?nomos=92000000&return_to=CheckPrices"),
+    urljoin(BASE, "GetGeography?nomos=93000000&return_to=CheckPrices"),
+    urljoin(BASE, "GetGeography?nomos=94000000&return_to=CheckPrices"),
 ]:
     r=s.get(url, timeout=30)
     r.encoding = r.apparent_encoding or "cp1253"
