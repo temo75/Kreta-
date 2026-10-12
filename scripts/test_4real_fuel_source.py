@@ -120,6 +120,10 @@ def main():
                     raise RuntimeError("response is not HTML")
                 records = parse_page(response.text)
                 if not records:
+                    title = re.search(r"<title[^>]*>(.*?)</title>", response.text, re.I | re.S)
+                    title_text = re.sub(r"\s+", " ", title.group(1)).strip() if title else "(no title)"
+                    excerpt = re.sub(r"\s+", " ", response.text[:700]).strip()
+                    print(f"DEBUG | HTTP={response.status_code} | type={response.headers.get('Content-Type')} | title={title_text} | html={excerpt[:350]}")
                     raise RuntimeError("no station prices parsed")
                 region_count = max(region_count, len(records))
                 print(f"OK | {region} | {fuel} | {len(records)} stations | HTTP {response.status_code}")
