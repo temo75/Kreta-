@@ -1,5 +1,9 @@
 name: Update fuel prices from 4real
 on:
+  push:
+    paths:
+      - 'scripts/update_fuel_prices_4real.py'
+      - '.github/workflows/update-fuel-prices-4real.yml'
   workflow_dispatch:
   schedule:
     - cron: "17 */3 * * *"
