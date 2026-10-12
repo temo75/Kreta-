@@ -1,5 +1,9 @@
 name: Test Vrisko Rethymno fuel source
 on:
+  push:
+    paths:
+      - "scripts/probe_vrisko_rethymno.py"
+      - ".github/workflows/probe-vrisko-rethymno.yml"
   workflow_dispatch:
 permissions:
   contents: read
