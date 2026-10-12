@@ -1,11 +1,11 @@
-name: Update live fuel prices
+name: Update official-observatory-sourced fuel prices
 on:
   push:
     paths:
       - "scripts/update_fuel_prices.py"
       - ".github/workflows/update-fuel-prices.yml"
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "17 */3 * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.x"
       - run: pip install requests
-      - name: Fetch and validate live Crete fuel prices
+      - name: Fetch and validate official-observatory-sourced Crete fuel prices
         run: python scripts/update_fuel_prices.py
       - name: Commit refreshed data
         run: |
