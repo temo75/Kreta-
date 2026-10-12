@@ -342,24 +342,24 @@
           "prices": [
             {
               "type": "95",
-              "price": 2.26,
+              "price": 2.19,
               "stale": false,
-              "last_confirmed_at": "2026-10-11T21:05:13.210282+00:00"
+              "last_confirmed_at": "2026-10-12T14:28:14.296Z"
             },
             {
               "type": "100",
-              "price": 2.395,
+              "price": 2.36,
               "stale": false,
-              "last_confirmed_at": "2026-10-11T21:05:13.210282+00:00"
+              "last_confirmed_at": "2026-10-12T14:28:14.296Z"
             },
             {
               "type": "diesel",
-              "price": 1.846,
+              "price": 2.038,
               "stale": false,
-              "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
+              "last_confirmed_at": "2026-10-12T14:28:14.296Z"
             }
           ],
-          "updated": "ონლაინ წყაროდან მიღებულია 2026-10-12 06:19 UTC"
+          "updated": "4real.gr-ის წყაროდან გადამოწმებულია 2026-10-12"
         },
         {
           "name": "BP",
@@ -7399,7 +7399,7 @@
             },
             {
               "type": "diesel",
-              "price": 2.0,
+              "price": 2,
               "stale": false,
               "last_confirmed_at": "2026-10-11T12:42:31.559944+00:00"
             }
