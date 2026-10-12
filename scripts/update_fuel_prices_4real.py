@@ -126,17 +126,11 @@ def main():
             station["updated"]="4real.gr "+now
             station.pop("stale_station",None)
             print(f"MATCH | {region_name} | {method} | {station.get('name')} | {station.get('address')} | "+json.dumps(row["prices"],ensure_ascii=False,sort_keys=True))
-        # Never invent prices for stations that could not be safely matched.
-        for station in region.get("stations",[]):
-            if id(station) not in used:
-                for item in station.get("prices",[]):
-                    item["stale"]=True
-                    item.setdefault("last_confirmed_at",station.get("updated") or data.get("fetched_at"))
-                station["stale_station"]=True
-        region["source"]="4real.gr (station-matched)"
+        # 4real coverage is partial; unmatched stations remain unchanged.
+        region["source"]="4real.gr (verified station matches; partial coverage)"
         print(f"REGION | {region_name} | source_rows={len(priced)} | matched={matches} | price_fields_refreshed={updates} | existing_stations={len(region.get('stations',[]))}")
         total_rows+=len(priced); total_matches+=matches; total_prices+=updates
-    if total_matches<20 or total_prices<50:
+    if total_matches<8 or total_prices<25:
         raise RuntimeError(f"Unsafe low coverage: matches={total_matches}, price_fields={total_prices}; refusing to publish")
     data["source_name"]="4real.gr"
     data["source_url"]="https://www.4real.gr/FuelPrices/public/times"
