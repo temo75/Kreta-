@@ -1,0 +1,33 @@
+name: Update live fuel prices
+on:
+  push:
+    paths:
+      - "scripts/update_fuel_prices.py"
+      - ".github/workflows/update-fuel-prices.yml"
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+
+# Avoid simultaneous scraper runs racing to commit fuel-data.json.
+concurrency:
+  group: fuel-price-update-${{ github.ref }}
+  queue: max
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: pip install requests
+      - name: Fetch and validate live Crete fuel prices
+        run: python scripts/update_fuel_prices.py
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fuel-data.json
+          git diff --cached --quiet || (git commit -m "Refresh online fuel prices" && git push)
