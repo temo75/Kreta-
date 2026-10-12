@@ -48,7 +48,7 @@ class TableParser(HTMLParser):
 
     def handle_endtag(self, tag):
         if tag in ("td", "th") and self.cell is not None and self.row is not None:
-            self.cell["text"] = re.sub(r"\\s+", " ", self.cell["text"]).strip()
+            self.cell["text"] = re.sub(r"\s+", " ", self.cell["text"]).strip()
             self.row.append(self.cell)
             self.cell, self.in_cell = None, False
         elif tag == "tr" and self.row is not None and self.table is not None:
@@ -64,7 +64,7 @@ def parse_price(text):
     text = text.strip().replace(",", ".")
     if not text or text in ("-", "—", "N/A"):
         return None
-    m = re.search(r"(?<!\\d)(\\d[.]?\\d{2,3})(?!\\d)", text)
+    m = re.search(r"(?<!\d)(\d[.]?\d{2,3})(?!\d)", text)
     if not m:
         return None
     try:
@@ -92,7 +92,7 @@ def parse_page(html):
             values = [parse_price(c) for c in texts[2:8]]
             if not any(v is not None for v in values):
                 continue
-            key = (brand.casefold().strip(), re.sub(r"\\s+", " ", location.casefold()).strip())
+            key = (brand.casefold().strip(), re.sub(r"\s+", " ", location.casefold()).strip())
             found[key] = {
                 "brand": brand, "location": location,
                 "95": values[0] if len(values) > 0 else None,
