@@ -126,7 +126,19 @@ def main():
                     price_at = response.text.find("1,953")
                     sample_at = price_at if price_at >= 0 else response.text.lower().find("<table")
                     sample = re.sub(r"\s+", " ", response.text[max(0, sample_at-250):sample_at+900]).strip() if sample_at >= 0 else "(no table or sample price in HTML)"
-                    print(f"DEBUG | HTTP={response.status_code} | type={response.headers.get('Content-Type')} | title={title_text} | tags table={response.text.lower().count('<table')} tr={response.text.lower().count('<tr')} td={response.text.lower().count('<td')} img={response.text.lower().count('<img')} | html={excerpt[:200]} | sample={sample[:900]}")
+                    parser = TableParser()
+                    parser.feed(response.text)
+                    row_samples = []
+                    for table in parser.tables:
+                        for row in table:
+                            cells = ["text=" + c["text"][:70] + " alt=" + ",".join(c["alt"])[:50] for c in row]
+                            if len(row) >= 5:
+                                row_samples.append(" || ".join(cells[:10]))
+                            if len(row_samples) >= 3:
+                                break
+                        if len(row_samples) >= 3:
+                            break
+                    print(f"DEBUG | HTTP={response.status_code} | type={response.headers.get('Content-Type')} | title={title_text} | tags table={response.text.lower().count('<table')} tr={response.text.lower().count('<tr')} td={response.text.lower().count('<td')} img={response.text.lower().count('<img')} | rows={' ### '.join(row_samples)}")
                     raise RuntimeError("no station prices parsed")
                 region_count = max(region_count, len(records))
                 print(f"OK | {region} | {fuel} | {len(records)} stations | HTTP {response.status_code}")
