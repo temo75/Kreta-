@@ -133,7 +133,7 @@ def in_bounds(station, bounds):
 
 def main():
     result = {
-        "source_name": "FuelGR / DEiXTo — official-observatory-sourced data",
+        "source_name": "FuelGR / DEiXTo (third-party data feed)",
         "official_source_url": "https://www.fuelprices.gr/CheckPrices",
         "source_url": "https://deixto.gr/",
         "fetched_at": datetime.now(timezone.utc).isoformat(),
