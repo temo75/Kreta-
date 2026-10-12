@@ -138,10 +138,10 @@ def scrape_duty():
             current_date=t
             records.append({"dateLabel":t,"date":None,"day":[],"night":[]})
             period=None
-        elif records and "08:00" in t and any("21:00" in nearby for nearby in parts[max(0,i-2):min(len(parts),i+3)]):
-            period="day"
         elif records and "21:00" in t and any("08:00" in nearby for nearby in parts[max(0,i-2):min(len(parts),i+3)]):
             period="night"
+        elif records and "08:00" in t and any("21:00" in nearby for nearby in parts[max(0,i-2):min(len(parts),i+3)]):
+            period="day"
         elif records and period and i+1 < len(parts):
             # A pharmacy record starts with a Greek name followed by its address and phone.
             if "Φαρμακείο" not in t and not t.startswith("Τηλέφωνο"):
