@@ -6,6 +6,7 @@ on:
       - "test/fuel-source-4real-2026-10-12"
     paths:
       - "scripts/test_4real_fuel_source.py"
+      - "scripts/compare_4real_with_current.py"
       - ".github/workflows/test-4real-fuel-source.yml"
 permissions:
   contents: read
@@ -20,3 +21,5 @@ jobs:
       - run: python -m pip install requests
       - name: Fetch and parse 4real pages without changing live data
         run: python scripts/test_4real_fuel_source.py
+      - name: Compare source prices with current data by exact station phone
+        run: python scripts/compare_4real_with_current.py
