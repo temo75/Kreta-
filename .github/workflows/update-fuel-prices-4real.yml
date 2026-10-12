@@ -1,31 +1,8 @@
-name: Update fuel prices from 4real
+name: Legacy 4real updater (disabled)
 on:
-  push:
-    paths:
-      - 'scripts/update_fuel_prices_4real.py'
-      - '.github/workflows/update-fuel-prices-4real.yml'
   workflow_dispatch:
-  schedule:
-    - cron: "17 */3 * * *"
-permissions:
-  contents: write
-concurrency:
-  group: fuel-price-update-4real
-  queue: max
 jobs:
-  update:
+  disabled:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-      - run: pip install requests
-      - name: Match and refresh verified station prices
-        run: python scripts/update_fuel_prices_4real.py
-      - name: Commit updated fuel data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fuel-data.json
-          git diff --cached --quiet || (git commit -m "Refresh station-matched fuel prices from 4real" && git push)
+      - run: echo "This legacy updater is disabled. The active fuel feed is updated by update-fuel-prices.yml."
