@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Live updater verified to use conservative phone/address matching; ambiguous stations remain untouched.
 """Refresh Crete fuel prices from 4real; conservative station matching."""
 import json, re, sys, unicodedata
 from difflib import SequenceMatcher
