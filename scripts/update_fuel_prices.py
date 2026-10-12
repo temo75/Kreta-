@@ -191,7 +191,7 @@ def main():
             )
         result["regions"].append({
             "region": region["region"],
-            "source": "FuelGR / DEiXTo — official-observatory-sourced data",
+            "source": "FuelGR / DEiXTo (third-party data feed)",
             "stations": station_list,
         })
         total += len(station_list)
