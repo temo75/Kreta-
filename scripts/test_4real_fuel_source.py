@@ -81,18 +81,20 @@ def parse_page(html):
     for table in parser.tables:
         for row in table:
             texts = [c["text"] for c in row]
-            if len(row) < 5:
+            # Real 4real station rows have an empty/logo first cell, the
+            # station address in column 2, then six fuel-price columns.
+            if len(row) < 8:
                 continue
-            # 4real fuel tables place station name/logo and location first,
-            # then 95, 100, super, diesel, heating oil and LPG columns.
-            brand = next((a for c in row for a in c["alt"]), "")
             location = texts[1] if len(texts) > 1 else ""
-            if not brand or not location:
+            if not location or location.strip().lower() in ("πρατήριο", "διεύθυνση"):
                 continue
             values = [parse_price(c) for c in texts[2:8]]
             if not any(v is not None for v in values):
                 continue
-            key = (brand.casefold().strip(), re.sub(r"\s+", " ", location.casefold()).strip())
+            brand = next((a for c in row for a in c["alt"]), "")
+            if not brand:
+                brand = texts[0].strip() or "Station"
+            key = (brand.casefold().strip(), re.sub(r"\\s+", " ", location.casefold()).strip())
             found[key] = {
                 "brand": brand, "location": location,
                 "95": values[0] if len(values) > 0 else None,
@@ -103,7 +105,6 @@ def parse_page(html):
                 "autogas": values[5] if len(values) > 5 else None,
             }
     return list(found.values())
-
 
 def main():
     session = requests.Session()
