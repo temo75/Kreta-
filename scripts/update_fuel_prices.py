@@ -135,16 +135,25 @@ def is_older_than_24h(value):
     """Treat a price as stale based on its confirmation time, not file-fetch time."""
     if not value:
         return True
-    match = re.search(r"(\\d{4}-\\d{2}-\\d{2})(?:[ T](\\d{2}:\\d{2})(?::\\d{2}(?:\\.\\d+)?)?\\s*UTC)?", str(value))
+
+    # Source values may be ISO timestamps or a timestamp embedded in a label.
+    match = re.search(
+        r"\\d{4}-\\d{2}-\\d{2}(?:[ T]\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z| UTC|[+-]\\d{2}:\\d{2})?)?",
+        str(value),
+    )
     if not match:
         return True
-    clock = match.group(2) or "00:00"
+
+    raw_stamp = match.group(0).replace(" UTC", "+00:00").replace("Z", "+00:00")
+    if len(raw_stamp) == 10:
+        raw_stamp += "T00:00:00+00:00"
     try:
-        stamp = datetime.fromisoformat(f"{match.group(1)}T{clock}:00+00:00")
+        stamp = datetime.fromisoformat(raw_stamp)
     except ValueError:
         return True
-    return (datetime.now(timezone.utc) - stamp).total_seconds() > 24 * 60 * 60
-
+    if stamp.tzinfo is None:
+        stamp = stamp.replace(tzinfo=timezone.utc)
+    return (datetime.now(timezone.utc) - stamp.astimezone(timezone.utc)).total_seconds() > 24 * 60 * 60
 
 def main():
     result = {
