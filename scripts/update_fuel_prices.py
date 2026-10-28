@@ -131,19 +131,80 @@ def in_bounds(station, bounds):
     return south <= station["lat"] <= north and west <= station["lon"] <= east
 
 
-def is_older_than_24h(value):
-    """Treat a price as stale based on its confirmation time, not file-fetch time."""
-    if not value:
-        return True
-    match = re.search(r"(\\d{4}-\\d{2}-\\d{2})(?:[ T](\\d{2}:\\d{2})(?::\\d{2}(?:\\.\\d+)?)?\\s*UTC)?", str(value))
-    if not match:
-        return True
-    clock = match.group(2) or "00:00"
+STALE_AFTER_HOURS = 72  # a price not seen changing for this long is shown as "old"
+CONFIRMED_RE = re.compile(r"(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}))?")
+
+
+def parse_confirmed(value):
+    """Parse the first YYYY-MM-DD[ T]HH:MM (UTC) found in value; date-only counts as end of day."""
+    m = CONFIRMED_RE.search(str(value or ""))
+    if not m:
+        return None
+    y, mo, d, hh, mm = m.groups()
     try:
-        stamp = datetime.fromisoformat(f"{match.group(1)}T{clock}:00+00:00")
+        return datetime(int(y), int(mo), int(d), int(hh) if hh else 23, int(mm) if mm else 59, tzinfo=timezone.utc)
     except ValueError:
+        return None
+
+
+def is_stale(value):
+    stamp = parse_confirmed(value)
+    if stamp is None:
         return True
-    return (datetime.now(timezone.utc) - stamp).total_seconds() > 24 * 60 * 60
+    return (datetime.now(timezone.utc) - stamp).total_seconds() > STALE_AFTER_HOURS * 3600
+
+
+def merge_previous(result, previous):
+    """Stamp every price with last_confirmed_at/stale and carry over prices the source omitted."""
+    previous_regions = {r.get("region"): r for r in previous.get("regions", [])}
+    fallback = previous.get("fetched_at") or result["fetched_at"]
+    for region in result["regions"]:
+        old_stations = previous_regions.get(region["region"], {}).get("stations", [])
+
+        def key_of(s):
+            return (str(s.get("name", "")).strip().casefold(), str(s.get("address", "")).strip().casefold())
+
+        old_by_key = {key_of(s): s for s in old_stations}
+        new_keys = set()
+        for station in region["stations"]:
+            key = key_of(station)
+            new_keys.add(key)
+            old = old_by_key.get(key) or {}
+            old_prices = {p.get("type"): p for p in old.get("prices", [])}
+            new_prices = {p.get("type"): p for p in station.get("prices", [])}
+            # Every price in the current feed gets a timestamp (also new stations / new fuel types).
+            for fuel_key, new_p in new_prices.items():
+                old_p = old_prices.get(fuel_key)
+                if old_p and str(old_p.get("price")) == str(new_p.get("price")):
+                    confirmed = old_p.get("last_confirmed_at") or old.get("updated") or fallback
+                else:
+                    confirmed = result["fetched_at"]
+                new_p["last_confirmed_at"] = confirmed
+                new_p["stale"] = is_stale(confirmed)
+            # Prices the source omitted this time: keep the old value, clearly stale.
+            for fuel_key, old_p in old_prices.items():
+                if fuel_key not in new_prices:
+                    carried = dict(old_p)
+                    carried["stale"] = True
+                    carried["last_confirmed_at"] = old_p.get("last_confirmed_at") or old.get("updated") or fallback
+                    station["prices"].append(carried)
+            if old and (not station.get("latitude") or not station.get("longitude")):
+                station["latitude"] = old.get("latitude", station.get("latitude"))
+                station["longitude"] = old.get("longitude", station.get("longitude"))
+
+        # Stations missing from a partial upstream response are kept, with stale prices.
+        for old in old_stations:
+            if key_of(old) in new_keys or not old.get("prices"):
+                continue
+            carried_station = dict(old)
+            carried_station["prices"] = []
+            for price in old.get("prices", []):
+                carried = dict(price)
+                carried["stale"] = True
+                carried["last_confirmed_at"] = price.get("last_confirmed_at") or old.get("updated") or fallback
+                carried_station["prices"].append(carried)
+            carried_station["stale_station"] = True
+            region["stations"].append(carried_station)
 
 
 def main():
@@ -215,65 +276,15 @@ def main():
     if total < 5:
         raise RuntimeError(f"Only {total} stations returned; refusing to publish incomplete data.")
 
-    # Preserve previously published station prices when the source temporarily omits them.
-    # New prices are stamped individually; carried-over prices are explicitly marked stale.
+    # Always stamp prices; merge with the previously published file when it exists.
     target = Path("fuel-data.json")
+    previous = {}
     if target.exists():
         try:
             previous = json.loads(target.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             previous = {}
-
-        previous_regions = {r.get("region"): r for r in previous.get("regions", [])}
-        for region in result["regions"]:
-            old_region = previous_regions.get(region["region"], {})
-            old_stations = old_region.get("stations", [])
-            old_by_key = {
-                (str(s.get("name", "")).strip().casefold(), str(s.get("address", "")).strip().casefold()): s
-                for s in old_stations
-            }
-            new_keys = set()
-            for station in region["stations"]:
-                key = (str(station.get("name", "")).strip().casefold(), str(station.get("address", "")).strip().casefold())
-                new_keys.add(key)
-                old = old_by_key.get(key)
-                old_prices = {p.get("type"): p for p in (old or {}).get("prices", [])}
-                new_prices = {p.get("type"): p for p in station.get("prices", [])}
-                for fuel_key, old_price in old_prices.items():
-                    if fuel_key not in new_prices:
-                        carried = dict(old_price)
-                        carried["stale"] = True
-                        carried["last_confirmed_at"] = old_price.get("last_confirmed_at") or old.get("updated") or previous.get("fetched_at")
-                        station["prices"].append(carried)
-                    else:
-                        # A successful poll does not mean the station price itself was updated.
-                        # Keep the last-confirmed timestamp when the numeric value is unchanged,
-                        # and mark that price stale after 24 hours instead of pretending it is fresh.
-                        if old_price and str(old_price.get("price")) == str(new_prices[fuel_key].get("price")):
-                            confirmed = old_price.get("last_confirmed_at") or old.get("updated") or previous.get("fetched_at")
-                        else:
-                            confirmed = result["fetched_at"]
-                        new_prices[fuel_key]["last_confirmed_at"] = confirmed
-                        new_prices[fuel_key]["stale"] = is_older_than_24h(confirmed)
-                # Preserve previous station coordinates if source values are invalid/missing.
-                if old and (not station.get("latitude") or not station.get("longitude")):
-                    station["latitude"] = old.get("latitude", station.get("latitude"))
-                    station["longitude"] = old.get("longitude", station.get("longitude"))
-
-            # Keep stations omitted by a partial upstream response, with old prices clearly stale.
-            for old in old_stations:
-                key = (str(old.get("name", "")).strip().casefold(), str(old.get("address", "")).strip().casefold())
-                if key in new_keys or not old.get("prices"):
-                    continue
-                carried_station = dict(old)
-                carried_station["prices"] = []
-                for price in old.get("prices", []):
-                    carried = dict(price)
-                    carried["stale"] = True
-                    carried["last_confirmed_at"] = price.get("last_confirmed_at") or old.get("updated") or previous.get("fetched_at")
-                    carried_station["prices"].append(carried)
-                carried_station["stale_station"] = True
-                region["stations"].append(carried_station)
+    merge_previous(result, previous)
 
     # Write only after all four regions returned valid real data.
     target.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
